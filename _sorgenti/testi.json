@@ -1741,7 +1741,7 @@
         ],
         [
          "Navigazione",
-         "Sicurezza del sito e dei pagamenti",
+         "Sicurezza del sito e del sistema di prenotazione",
          "Lett. f: legittimo interesse alla sicurezza",
          "Li conservano i fornitori (GitHub, Beddy, Stripe) secondo le loro regole"
         ]
@@ -1760,11 +1760,11 @@
       "items": [
        {
         "t": "Prenotazioni",
-        "d": "Zucchetti Hospitality (sistema di prenotazione Beddy) e i portali da cui prenotate, per esempio Booking.com."
+        "d": "Zucchetti Hospitality (sistema di prenotazione Beddy) e i fornitori che usa, per esempio Stripe, e i portali da cui prenotate, per esempio Booking.com."
        },
        {
         "t": "Pagamenti",
-        "d": "Stripe, le banche e i circuiti delle carte."
+        "d": "Le banche e i circuiti delle carte: la carta data alla prenotazione serve solo come garanzia e il soggiorno si paga in hotel."
        },
        {
         "t": "Posta e messaggi",
@@ -1914,7 +1914,7 @@
         ],
         [
          "Browsing data",
-         "Security of the website and payments",
+         "Security of the website and the booking system",
          "Point (f): legitimate interest in security",
          "Kept by our providers (GitHub, Beddy, Stripe) under their own rules"
         ]
@@ -1933,11 +1933,11 @@
       "items": [
        {
         "t": "Bookings",
-        "d": "Zucchetti Hospitality (Beddy booking system) and the portals you book through, such as Booking.com."
+        "d": "Zucchetti Hospitality (Beddy booking system) and the providers it uses, such as Stripe, and the portals you book through, such as Booking.com."
        },
        {
         "t": "Payments",
-        "d": "Stripe, banks and card networks."
+        "d": "Banks and card networks: the card you give when booking is only a guarantee, and you pay for your stay at the hotel."
        },
        {
         "t": "Email and messages",
@@ -2087,7 +2087,7 @@
         ],
         [
          "Przeglądanie strony",
-         "Bezpieczeństwo strony i płatności",
+         "Bezpieczeństwo strony i systemu rezerwacji",
          "Lit. f: prawnie uzasadniony interes w zakresie bezpieczeństwa",
          "Przechowują je nasi dostawcy (GitHub, Beddy, Stripe) według własnych zasad"
         ]
@@ -2106,11 +2106,11 @@
       "items": [
        {
         "t": "Rezerwacje",
-        "d": "Zucchetti Hospitality (system rezerwacji Beddy) oraz portale, przez które rezerwujecie, np. Booking.com."
+        "d": "Zucchetti Hospitality (system rezerwacji Beddy) i dostawcy, z których korzysta, np. Stripe, oraz portale, przez które rezerwujecie, np. Booking.com."
        },
        {
         "t": "Płatności",
-        "d": "Stripe, banki i organizacje kart płatniczych."
+        "d": "Banki i organizacje kart płatniczych: karta podana przy rezerwacji służy tylko jako gwarancja, a za pobyt płacicie w hotelu."
        },
        {
         "t": "Poczta i wiadomości",
@@ -2241,20 +2241,20 @@
         ],
         [
          "Cookie __stripe_mid",
-         "Stripe",
-         "Sicurezza dei pagamenti e prevenzione delle frodi nella barra di prenotazione",
+         "Stripe, per conto di Beddy",
+         "Prevenzione delle frodi con le carte. Arriva con la barra di prenotazione di Beddy, anche se nella barra non si paga nulla",
          "1 anno"
         ],
         [
          "Cookie __stripe_sid",
-         "Stripe",
-         "Sicurezza dei pagamenti e prevenzione delle frodi nella barra di prenotazione",
+         "Stripe, per conto di Beddy",
+         "Prevenzione delle frodi con le carte. Arriva con la barra di prenotazione di Beddy, anche se nella barra non si paga nulla",
          "30 minuti"
         ]
        ]
       },
       "dopo": [
-       "I cookie di Stripe arrivano con la barra di prenotazione di Beddy (Zucchetti Hospitality), che si carica alla vostra prima azione sulla pagina (un tocco, un clic, il mouse, la tastiera o lo scorrimento) oppure quando una pagina si apre già scorsa. In quel momento la barra scarica i suoi file e il suo carattere dai server di Beddy e di Stripe, che ricevono l'indirizzo IP del vostro dispositivo."
+       "I cookie di Stripe arrivano con la barra di prenotazione di Beddy (Zucchetti Hospitality): il programma della barra carica quello di Stripe, il fornitore di pagamenti che Beddy usa, e Stripe salva i suoi due cookie antifrode. Nella barra non si inserisce nessuna carta. La barra si carica alla vostra prima azione sulla pagina (un tocco, un clic, il mouse, la tastiera o lo scorrimento) oppure quando una pagina si apre già scorsa. In quel momento scarica i suoi file e il suo carattere dai server di Beddy e di Stripe, che ricevono l'indirizzo IP del vostro dispositivo."
       ]
      },
      {
@@ -2333,20 +2333,20 @@
         ],
         [
          "Cookie __stripe_mid",
-         "Stripe",
-         "Payment security and fraud prevention in the booking bar",
+         "Stripe, on behalf of Beddy",
+         "Card fraud prevention. It comes with the Beddy booking bar, even though nothing is paid in the bar",
          "1 year"
         ],
         [
          "Cookie __stripe_sid",
-         "Stripe",
-         "Payment security and fraud prevention in the booking bar",
+         "Stripe, on behalf of Beddy",
+         "Card fraud prevention. It comes with the Beddy booking bar, even though nothing is paid in the bar",
          "30 minutes"
         ]
        ]
       },
       "dopo": [
-       "Stripe's cookies come with the Beddy booking bar (Zucchetti Hospitality), which loads at your first action on the page (a tap, a click, the mouse, the keyboard or scrolling) or when a page opens already scrolled. At that moment the bar downloads its files and its font from Beddy's and Stripe's servers, which receive your device's IP address."
+       "Stripe's cookies come with the Beddy booking bar (Zucchetti Hospitality): the bar's code loads Stripe's, the payment provider Beddy uses, and Stripe saves its two anti-fraud cookies. No card is entered in the bar. The bar loads at your first action on the page (a tap, a click, the mouse, the keyboard or scrolling) or when a page opens already scrolled. At that moment it downloads its files and its font from Beddy's and Stripe's servers, which receive your device's IP address."
       ]
      },
      {
@@ -2425,20 +2425,20 @@
         ],
         [
          "Plik cookie __stripe_mid",
-         "Stripe",
-         "Bezpieczeństwo płatności i zapobieganie oszustwom w pasku rezerwacji",
+         "Stripe, w imieniu Beddy",
+         "Zapobieganie oszustwom z użyciem kart. Pojawia się razem z paskiem rezerwacji Beddy, choć w pasku niczego się nie płaci",
          "1 rok"
         ],
         [
          "Plik cookie __stripe_sid",
-         "Stripe",
-         "Bezpieczeństwo płatności i zapobieganie oszustwom w pasku rezerwacji",
+         "Stripe, w imieniu Beddy",
+         "Zapobieganie oszustwom z użyciem kart. Pojawia się razem z paskiem rezerwacji Beddy, choć w pasku niczego się nie płaci",
          "30 minut"
         ]
        ]
       },
       "dopo": [
-       "Pliki cookie Stripe pojawiają się razem z paskiem rezerwacji Beddy (Zucchetti Hospitality), który ładuje się przy Waszym pierwszym ruchu na stronie (dotknięcie, kliknięcie, mysz, klawiatura lub przewinięcie) albo gdy strona otwiera się już przewinięta. Wtedy pasek pobiera swoje pliki i czcionkę z serwerów Beddy i Stripe, które otrzymują w ten sposób adres IP Waszego urządzenia."
+       "Pliki cookie Stripe pojawiają się razem z paskiem rezerwacji Beddy (Zucchetti Hospitality): kod paska ładuje kod Stripe – dostawcy płatności, z którego korzysta Beddy – a Stripe zapisuje swoje dwa pliki cookie chroniące przed oszustwami. W pasku nie podaje się żadnej karty. Pasek ładuje się przy Waszym pierwszym ruchu na stronie (dotknięcie, kliknięcie, mysz, klawiatura lub przewinięcie) albo gdy strona otwiera się już przewinięta. Wtedy pobiera swoje pliki i czcionkę z serwerów Beddy i Stripe, które otrzymują w ten sposób adres IP Waszego urządzenia."
       ]
      },
      {
