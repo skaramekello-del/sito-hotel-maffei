@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_sorgenti/
 
 Sitemap: https://hotelmaffeipinzolo.it/sitemap.xml

@@ -1,0 +1,322 @@
+{
+ "dominio": "https://hotelmaffeipinzolo.it",
+ "nome": "Hotel Garnì Maffei",
+ "lingue": [
+  "it",
+  "en",
+  "pl"
+ ],
+ "locale": {
+  "it": "it_IT",
+  "en": "en_GB",
+  "pl": "pl_PL"
+ },
+ "pagine": [
+  "home",
+  "camere",
+  "colazione",
+  "pinzolo",
+  "contatti",
+  "privacy"
+ ],
+ "slug": {
+  "home": {
+   "it": "",
+   "en": "en/",
+   "pl": "pl/"
+  },
+  "camere": {
+   "it": "camere/",
+   "en": "en/rooms/",
+   "pl": "pl/pokoje/"
+  },
+  "colazione": {
+   "it": "colazione/",
+   "en": "en/breakfast/",
+   "pl": "pl/sniadanie/"
+  },
+  "pinzolo": {
+   "it": "pinzolo/",
+   "en": "en/pinzolo/",
+   "pl": "pl/pinzolo/"
+  },
+  "contatti": {
+   "it": "contatti/",
+   "en": "en/contact/",
+   "pl": "pl/kontakt/"
+  },
+  "privacy": {
+   "it": "privacy/",
+   "en": "en/privacy/",
+   "pl": "pl/prywatnosc/"
+  }
+ },
+ "menu": [
+  "camere",
+  "colazione",
+  "pinzolo",
+  "contatti"
+ ],
+ "reindirizzi": {
+  "stanze/": "camere/",
+  "eventi/": "pinzolo/",
+  "contatti-2/": "contatti/"
+ },
+ "contatti": {
+  "cellulare": "+39 366 480 5227",
+  "cellulare_tel": "+393664805227",
+  "whatsapp": "393664805227",
+  "fisso": "+39 0465 503587",
+  "fisso_tel": "+390465503587",
+  "email": "info@hotelmaffeipinzolo.it",
+  "via": "Via N. Bolognini 72",
+  "cap": "38086",
+  "citta": "Pinzolo",
+  "provincia": "TN",
+  "regione": "Trentino",
+  "paese": "IT",
+  "lat": 46.163,
+  "lon": 10.7656,
+  "maps": "https://www.google.com/maps/search/?api=1&query=Hotel%20Maffei%2C%20Via%20N.%20Bolognini%2072%2C%2038086%20Pinzolo%20TN",
+  "instagram": "https://www.instagram.com/hotelmaffei/"
+ },
+ "societa": {
+  "ragione": "L&M snc di Scaramuzzi Luca e Pederzolli Manuela",
+  "piva": "02588730222",
+  "rea": "[REA da inserire]",
+  "cin": "IT022143A14SHAM2B4"
+ },
+ "prenotazione": {
+  "widget": "ee94469fef601",
+  "engine": "https://hotelgarnimaffei.beddy.io/",
+  "script": "https://cdn.beddy.io/bol-v2/prod/beddy-bar-web-component.js",
+  "lingua_engine": {
+   "it": "it",
+   "en": "en",
+   "pl": "en"
+  },
+  "stagioni": [
+   [
+    "2026-12-03",
+    "2027-04-06"
+   ]
+  ]
+ },
+ "camere": [
+  {
+   "id": "matrimoniale",
+   "adulti": 2,
+   "quante": 4,
+   "ospiti": {
+    "it": "2",
+    "en": "2",
+    "pl": "2"
+   },
+   "letti": {
+    "it": "letto matrimoniale",
+    "en": "double bed",
+    "pl": "łóżko małżeńskie"
+   },
+   "foto": [
+    62,
+    65,
+    31
+   ]
+  },
+  {
+   "id": "matrimoniale-doppia",
+   "adulti": 2,
+   "quante": 4,
+   "ospiti": {
+    "it": "2",
+    "en": "2",
+    "pl": "2"
+   },
+   "letti": {
+    "it": "letto matrimoniale oppure due letti singoli",
+    "en": "double bed or two single beds",
+    "pl": "łóżko małżeńskie lub dwa łóżka pojedyncze"
+   },
+   "foto": [
+    88,
+    86,
+    89
+   ]
+  },
+  {
+   "id": "tripla",
+   "adulti": 3,
+   "quante": 3,
+   "ospiti": {
+    "it": "fino a 3",
+    "en": "up to 3",
+    "pl": "do 3"
+   },
+   "letti": {
+    "it": "letto matrimoniale e letto singolo",
+    "en": "double bed and single bed",
+    "pl": "łóżko małżeńskie i łóżko pojedyncze"
+   },
+   "foto": [
+    41,
+    49,
+    50
+   ]
+  },
+  {
+   "id": "familiare",
+   "adulti": 2,
+   "quante": 1,
+   "ospiti": {
+    "it": "fino a 4",
+    "en": "up to 4",
+    "pl": "do 4"
+   },
+   "letti": {
+    "it": "letto matrimoniale e letto a castello",
+    "en": "double bed and bunk bed",
+    "pl": "łóżko małżeńskie i łóżko piętrowe"
+   },
+   "foto": [
+    75,
+    83,
+    333
+   ]
+  },
+  {
+   "id": "singola",
+   "adulti": 1,
+   "quante": 1,
+   "ospiti": {
+    "it": "1",
+    "en": "1",
+    "pl": "1"
+   },
+   "letti": {
+    "it": "letto singolo",
+    "en": "single bed",
+    "pl": "łóżko pojedyncze"
+   },
+   "foto": [
+    324,
+    109,
+    320
+   ]
+  }
+ ],
+ "recensioni": {
+  "booking": {
+   "voto": "9,4",
+   "voto_en": "9.4",
+   "su": "10",
+   "numero": 179,
+   "url": "https://www.booking.com/hotel/it/garni-maffei.html#tab-reviews"
+  },
+  "google": {
+   "voto": "4,6",
+   "voto_en": "4.6",
+   "su": "5",
+   "numero": 132
+  },
+  "citazioni": [
+   {
+    "testo": "Per chi scia la posizione è a dir poco invidiabile. Si esce dall'hotel e a due passi si trova l'ingresso dell'ovovia che porta sulle piste.",
+    "lingua": "it",
+    "autore": "raffaellao_13",
+    "fonte": "Tripadvisor"
+   },
+   {
+    "testo": "Owners are really friendly, welcoming and honest people. Room was clean, tidy and had an amazing view of mountains.",
+    "lingua": "en",
+    "autore": "Ilmārs S.",
+    "fonte": "Google"
+   },
+   {
+    "testo": "I proprietari si sono dimostrati gentilissimi e disponibili, offrendosi di preparare la colazione in anticipo…",
+    "lingua": "it",
+    "autore": "Daniele T.",
+    "fonte": "Google"
+   }
+  ]
+ },
+ "link_esterni": {
+  "come-arrivare": {
+   "it": "https://www.campigliodolomiti.it/it/pianifica/come-arrivare",
+   "en": "https://www.campigliodolomiti.it/en/plan/how-to-get-here",
+   "pl": "https://www.campigliodolomiti.it/en/plan/how-to-get-here"
+  },
+  "taxi": {
+   "it": "https://www.campigliodolomiti.it/it/come-arrivare/in-taxi",
+   "en": "https://www.campigliodolomiti.it/en/how-to-arrive/by-taxi",
+   "pl": "https://www.campigliodolomiti.it/en/how-to-arrive/by-taxi"
+  },
+  "flyski": {
+   "it": "https://www.campigliodolomiti.it/it/come-arrivare/con-flyski-shuttle",
+   "en": "https://www.campigliodolomiti.it/en/how-to-arrive/by-flyski-shuttle",
+   "pl": "https://www.campigliodolomiti.it/en/how-to-arrive/by-flyski-shuttle"
+  },
+  "bus": {
+   "it": "https://www.campigliodolomiti.it/it/come-arrivare/in-bus",
+   "en": "https://www.campigliodolomiti.it/en/how-to-arrive/by-bus",
+   "pl": "https://www.campigliodolomiti.it/en/how-to-arrive/by-bus"
+  },
+  "aereo": {
+   "it": "https://www.campigliodolomiti.it/it/come-arrivare/in-aereo",
+   "en": "https://www.campigliodolomiti.it/en/how-to-arrive/by-airplane",
+   "pl": "https://www.campigliodolomiti.it/en/how-to-arrive/by-airplane"
+  },
+  "skipass": "https://www.ski.it/",
+  "auto": {
+   "it": "https://www.campigliodolomiti.it/it/come-arrivare/in-auto",
+   "en": "https://www.campigliodolomiti.it/en/how-to-arrive/by-car",
+   "pl": "https://www.campigliodolomiti.it/en/how-to-arrive/by-car"
+  }
+ },
+ "foto_pagine": {
+  "home_hero": 399,
+  "home_colazione": 141,
+  "home_luca_manuela": 9238,
+  "home_pinzolo": 531,
+  "home_dove": 9900,
+  "camere_hero": 62,
+  "camere_bagni": [
+   331,
+   46,
+   502
+  ],
+  "camere_balconi": [
+   54,
+   55,
+   58
+  ],
+  "colazione_hero": 120,
+  "colazione_buffet": [
+   141,
+   495,
+   145,
+   168
+  ],
+  "colazione_torte": 472,
+  "colazione_sala": [
+   129,
+   414,
+   388
+  ],
+  "pinzolo_hero": 531,
+  "pinzolo_inverno": 532,
+  "pinzolo_estate": 566,
+  "pinzolo_arrivo": 130,
+  "contatti_hero": 564,
+  "contatti_dove": 9900,
+  "contatti_ingresso": 266,
+  "og": {
+   "home": 399,
+   "camere": 62,
+   "colazione": 120,
+   "pinzolo": 531,
+   "contatti": 564,
+   "privacy": 399
+  }
+ },
+ "cartella_master": "~/Desktop/hotel-maffei/analisi/sito-2026/foto-master"
+}

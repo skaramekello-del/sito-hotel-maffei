@@ -1,0 +1,5 @@
+Caratteri del sito (ospitati qui, non caricati da Google):
+- Gloock (Duarte Pinto) — SIL Open Font License 1.1 — https://fonts.google.com/specimen/Gloock
+- Hanken Grotesk (Alfredo Marco Pradil, Hanken Design Co.) — SIL Open Font License 1.1 — https://fonts.google.com/specimen/Hanken+Grotesk
+Testo della licenza: https://openfontlicense.org/open-font-license-official-text/
+Sottoinsiemi: latin e latin-ext (servono per il polacco). Scaricati da fonts.gstatic.com il 31/10/2026.
