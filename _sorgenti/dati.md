@@ -13,7 +13,7 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 
 ## Cosa NON facciamo (da dire chiaramente)
 - Niente ristorante, niente cena, niente mezza pensione. I ristoranti del centro sono a 5 minuti a piedi.
-- Non accettiamo gatti. Cani: chiedere prima di prenotare.
+- Cani ammessi su richiesta, in base alla disponibilita' delle camere: contattarci prima di prenotare (Manuela, 1/11/2026). Non accettiamo gatti.
 
 ## Posizione e distanze (decise da Luca il 31/10)
 - 30 metri dalla cabinovia di Pinzolo (Pinzolo–Prà Rodont), la cui stazione a valle e' sulla stessa strada dell'hotel. Nel linguaggio di tutti i giorni (e di Luca) e' "la funivia": nel menu e nei titoli si puo' dire "funivia", nel testo si precisa "cabinovia Pinzolo–Prà Rodont".
@@ -26,7 +26,7 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 | Tipologia | Quante | Letti | Ospiti |
 |---|---|---|---|
 | Camera Matrimoniale | 4 | letto matrimoniale | 2 |
-| Camera Matrimoniale o Doppia | 4 | letto matrimoniale oppure due letti singoli | 2 |
+| Camera Doppia | 4 | due letti singoli, avvicinabili e preparati come matrimoniale su richiesta (Manuela, 1/11/2026) | 2 |
 | Camera Tripla | 3 | letto matrimoniale + letto singolo | fino a 3 |
 | Camera Familiare | 1 | letto matrimoniale + letto a castello | fino a 4 (adatta a famiglie con bambini) |
 
@@ -53,8 +53,9 @@ Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334
 
 ## Soggiorni e regole
 - Arrivo (check-in) dalle 14:00. Partenza (check-out) entro le 10:00.
+- Late check-out su richiesta, in base alla disponibilita': fino alle 14:00, 25 euro; fino alle 18:00, 50 euro (Manuela, 1/11/2026).
 - D'inverno, nelle settimane di alta stagione, si soggiorna da sabato a sabato (7 notti) o da sabato a venerdi' (6 notti); nei periodi piu' tranquilli si possono prenotare anche soggiorni piu' brevi: le date disponibili si vedono nella prenotazione online.
-- Tassa di soggiorno: 2,00 euro a persona a notte, per un massimo di 10 notti; esenti i minori di 14 anni. Non e' compresa nei prezzi e si paga in hotel.
+- Tassa di soggiorno: 2,00 euro a persona a notte, per un massimo di 10 notti; esenti i minori di 14 anni. Non e' compresa nei prezzi e si paga in hotel, in contanti (Manuela, 1/11/2026).
 - Prezzi: il prezzo migliore e' sul nostro sito (prenotazione diretta, senza intermediari). Sul sito NON si scrivono cifre di prezzo.
 - Condizioni di pagamento e cancellazione: dipendono dalla tariffa e sono indicate al momento della prenotazione. Non scrivere altre regole.
 - Trentino Guest Card: chi la desidera la chiede e gliela inviamo prima dell'arrivo.

@@ -47,7 +47,7 @@
       "kicker": "Le camere",
       "title": "Dalla singola alla familiare",
       "paragraphs": [
-       "Ambienti luminosi, con pavimenti in tonalità naturale e arredi in legno in stile di montagna: pratici e accoglienti."
+       "Ambienti luminosi e accoglienti, con pavimenti dalle tonalità naturali e arredi semplici e funzionali."
       ],
       "items": [
        {
@@ -55,8 +55,8 @@
         "d": "Letto matrimoniale, per 2 persone."
        },
        {
-        "t": "Camera Matrimoniale o Doppia",
-        "d": "Letto matrimoniale oppure due letti singoli, per 2 persone."
+        "t": "Camera Doppia",
+        "d": "Due letti singoli, avvicinabili su richiesta, per 2 persone."
        },
        {
         "t": "Camera Tripla",
@@ -173,7 +173,7 @@
       "kicker": "Our rooms",
       "title": "From single to family rooms",
       "paragraphs": [
-       "Bright, practical and welcoming, with natural-toned floors and mountain-style wooden furniture."
+       "Bright and welcoming, with natural-toned floors and simple, functional furnishings."
       ],
       "items": [
        {
@@ -181,8 +181,8 @@
         "d": "A double bed, for 2 people."
        },
        {
-        "t": "Double or Twin Room",
-        "d": "A double bed or two single beds, for 2 people."
+        "t": "Twin Room",
+        "d": "Two single beds, which can be pushed together on request, for 2 people."
        },
        {
         "t": "Triple Room",
@@ -299,7 +299,7 @@
       "kicker": "Pokoje",
       "title": "Od pokoju jednoosobowego po rodzinny",
       "paragraphs": [
-       "Jasne, praktyczne i przytulne wnętrza z podłogami w naturalnych odcieniach i drewnianymi meblami w górskim stylu."
+       "Jasne i przytulne wnętrza z podłogami w naturalnych odcieniach i prostymi, funkcjonalnymi meblami."
       ],
       "items": [
        {
@@ -307,8 +307,8 @@
         "d": "Łóżko małżeńskie, dla 2 osób."
        },
        {
-        "t": "Pokój dwuosobowy (łóżko małżeńskie lub dwa pojedyncze)",
-        "d": "Łóżko małżeńskie lub dwa łóżka pojedyncze, dla 2 osób."
+        "t": "Pokój dwuosobowy z dwoma łóżkami pojedynczymi",
+        "d": "Dwa łóżka pojedyncze (na życzenie je zsuwamy), dla 2 osób."
        },
        {
         "t": "Pokój trzyosobowy",
@@ -386,7 +386,7 @@
     "meta_description": "13 camere a Pinzolo, a 30 metri dalla cabinovia: matrimoniali, doppie, triple, familiare e singola, tutte con bagno privato. Colazione a buffet inclusa.",
     "kicker": "Camere e colazione",
     "h1": "Le camere",
-    "lead": "Abbiamo 13 camere in cinque tipologie, dalla singola alla familiare, che ospita fino a quattro persone. Sono ambienti luminosi, con pavimenti in tonalità naturale, pratici e accoglienti. Tutte hanno il bagno privato con doccia, e la colazione è inclusa nel prezzo.",
+    "lead": "Sono 13 camere di cinque tipologie: singola, matrimoniale, doppia con letti singoli, tripla e familiare, che ospita fino a quattro persone. Sono luminose e accoglienti, con pavimenti dai toni naturali e un arredo semplice e pratico. Tutte hanno il bagno privato con doccia, e la colazione è sempre inclusa nel prezzo.",
     "sections": [
      {
       "id": "da-sapere",
@@ -396,24 +396,24 @@
       "items": [
        {
         "t": "Pernottamento e prima colazione",
-        "d": "Siamo un hotel garnì: la colazione a buffet è inclusa, tutti i giorni dalle 7:30 alle 9:30. Per cena, i ristoranti del centro sono a pochi minuti a piedi.",
+        "d": "Siamo un hotel garnì: ogni mattina, dalle 7:30 alle 9:30, vi aspetta la colazione a buffet, inclusa nel prezzo. Per la cena, i ristoranti del centro sono a pochi minuti a piedi.",
         "link_interno": "colazione#cena"
        },
        {
         "t": "Soggiorni d'inverno",
-        "d": "Nelle settimane di alta stagione si soggiorna da sabato a sabato (7 notti) o da sabato a venerdì (6 notti). Nei periodi più tranquilli si possono prenotare anche soggiorni più brevi: trovate le date disponibili nella prenotazione online."
+        "d": "Nelle settimane di alta stagione si preferiscono i soggiorni settimanali, di solito con arrivo il sabato. Nei periodi più tranquilli si può prenotare anche per meno notti. Le date disponibili e il numero minimo di notti si vedono nella prenotazione online."
        },
        {
         "t": "Arrivo e partenza",
-        "d": "Arrivo (check-in) dalle 14:00, partenza (check-out) entro le 10:00."
+        "d": "Arrivo (check-in) dalle 14:00, partenza (check-out) entro le 10:00. Late check-out su richiesta, in base alla disponibilità: fino alle 14:00, 25 €; fino alle 18:00, 50 €."
        },
        {
         "t": "Tassa di soggiorno",
-        "d": "2 euro a persona a notte, per un massimo di 10 notti; esenti i minori di 14 anni. Non è compresa nei prezzi e si paga in hotel."
+        "d": "2 € a persona a notte, per un massimo di 10 notti. Sono esenti i ragazzi sotto i 14 anni. Non è compresa nel prezzo e si paga in hotel, in contanti."
        },
        {
         "t": "Animali",
-        "d": "Non accettiamo gatti. Per i cani, chiedeteci prima di prenotare."
+        "d": "Cani ammessi su richiesta, in base alla disponibilità delle camere: contattateci prima di prenotare. Non accettiamo gatti."
        }
       ],
       "cta": ""
@@ -431,9 +431,9 @@
      {
       "id": "matrimoniale-doppia",
       "kicker": "Per chi viaggia in due",
-      "title": "Camera Matrimoniale o Doppia",
+      "title": "Camera Doppia",
       "paragraphs": [
-       "Un letto matrimoniale oppure due letti singoli. Alcune delle nostre camere sono in mansarda, con il soffitto in legno."
+       "Due letti singoli che, su richiesta, possono essere avvicinati e preparati come un letto matrimoniale. Alcune delle nostre camere sono in mansarda, con il soffitto in legno."
       ],
       "items": [],
       "cta": "Verifica prezzi e prenota"
@@ -525,7 +525,7 @@
     "meta_description": "13 rooms in Pinzolo, 30 metres from the gondola: double, twin, triple, family and single, all with a private bathroom. Buffet breakfast included.",
     "kicker": "Bed & breakfast",
     "h1": "Our rooms",
-    "lead": "Our 13 rooms come in five types, from the single to the family room, which sleeps up to four. They're bright, practical and welcoming, with natural-toned floors. All of them have a private bathroom with shower, and breakfast is included in the price.",
+    "lead": "We have 13 rooms in five types: single, double, twin, triple and family, which sleeps up to four. They're bright and welcoming, with natural-toned floors and simple, practical furnishings. All of them have a private bathroom with shower, and breakfast is always included in the price.",
     "sections": [
      {
       "id": "da-sapere",
@@ -535,24 +535,24 @@
       "items": [
        {
         "t": "Room and breakfast",
-        "d": "We're a B&B (garni hotel): the buffet breakfast is included and served every day from 7:30 to 9:30. For dinner, the restaurants in the centre of Pinzolo are a few minutes' walk away.",
+        "d": "We're a B&B (garni hotel): every morning from 7:30 to 9:30 a buffet breakfast awaits you, included in the price. For dinner, the restaurants in the centre are a few minutes' walk away.",
         "link_interno": "colazione#cena"
        },
        {
         "t": "Winter stays",
-        "d": "During high-season weeks, stays run from Saturday to Saturday (7 nights) or Saturday to Friday (6 nights). At quieter times you can also book shorter stays: you'll see which dates are available when you book online."
+        "d": "In high-season weeks we prefer week-long stays, usually arriving on Saturday. At quieter times you can also book fewer nights. You'll see the available dates and the minimum number of nights when you book online."
        },
        {
         "t": "Arrival and departure",
-        "d": "Check-in from 14:00, check-out by 10:00."
+        "d": "Check-in from 14:00, check-out by 10:00. Late check-out on request, subject to availability: until 14:00, €25; until 18:00, €50."
        },
        {
         "t": "Tourist tax",
-        "d": "€2 per person per night, up to a maximum of 10 nights; children under 14 are exempt. It isn't included in our prices and is payable at the hotel."
+        "d": "€2 per person per night, up to a maximum of 10 nights. Children under 14 are exempt. It isn't included in the price and is payable at the hotel, in cash."
        },
        {
         "t": "Pets",
-        "d": "We don't accept cats. If you'd like to bring a dog, please ask us before booking."
+        "d": "Dogs are welcome on request, depending on room availability: please contact us before booking. We don't accept cats."
        }
       ],
       "cta": ""
@@ -570,9 +570,9 @@
      {
       "id": "matrimoniale-doppia",
       "kicker": "For two travellers",
-      "title": "Double or Twin Room",
+      "title": "Twin Room",
       "paragraphs": [
-       "A double bed or two single beds. Some of our rooms are in the attic, with wooden ceilings."
+       "Two single beds, which we can push together and make up as a double bed on request. Some of our rooms are in the attic, with wooden ceilings."
       ],
       "items": [],
       "cta": "Check prices and book"
@@ -664,7 +664,7 @@
     "meta_description": "13 pokoi w Pinzolo, 30 m od gondoli: dwuosobowe (też z dwoma łóżkami), trzyosobowe, rodzinny i jednoosobowy, każdy z łazienką. Bufet śniadaniowy w cenie.",
     "kicker": "Pokoje i śniadanie",
     "h1": "Pokoje",
-    "lead": "Mamy 13 pokoi pięciu rodzajów: od jednoosobowego po rodzinny, który pomieści do czterech osób. To jasne, praktyczne i przytulne wnętrza z podłogami w naturalnych odcieniach. Wszystkie mają prywatną łazienkę z prysznicem, a śniadanie jest wliczone w cenę.",
+    "lead": "Mamy 13 pokoi pięciu rodzajów: jednoosobowy, dwuosobowy z łóżkiem małżeńskim, dwuosobowy z dwoma łóżkami pojedynczymi, trzyosobowy i rodzinny, który pomieści do czterech osób. Są jasne i przytulne, z podłogami w naturalnych odcieniach i prostym, praktycznym umeblowaniem. Wszystkie mają prywatną łazienkę z prysznicem, a śniadanie jest zawsze wliczone w cenę.",
     "sections": [
      {
       "id": "da-sapere",
@@ -674,24 +674,24 @@
       "items": [
        {
         "t": "Nocleg ze śniadaniem",
-        "d": "Jesteśmy pensjonatem ze śniadaniem (hotel garni). Bufet śniadaniowy jest wliczony w cenę i dostępny codziennie od 7:30 do 9:30. Na kolację macie do wyboru restauracje w centrum Pinzolo, kilka minut pieszo.",
+        "d": "Jesteśmy pensjonatem ze śniadaniem (hotel garni): każdego ranka od 7:30 do 9:30 czeka na Was bufet śniadaniowy wliczony w cenę. Na kolację macie restauracje w centrum, kilka minut pieszo.",
         "link_interno": "colazione#cena"
        },
        {
         "t": "Pobyty zimą",
-        "d": "W tygodniach wysokiego sezonu pobyty trwają od soboty do soboty (7 nocy) lub od soboty do piątku (6 nocy). W spokojniejszych okresach można też rezerwować krótsze pobyty – wolne terminy znajdziecie w rezerwacji online."
+        "d": "W tygodniach wysokiego sezonu preferujemy pobyty tygodniowe, zwykle z przyjazdem w sobotę. W spokojniejszych okresach można zarezerwować także mniej nocy. Wolne terminy i minimalną liczbę nocy zobaczycie w rezerwacji online."
        },
        {
         "t": "Przyjazd i wyjazd",
-        "d": "Zameldowanie (check-in) od 14:00, wymeldowanie (check-out) do 10:00."
+        "d": "Zameldowanie (check-in) od 14:00, wymeldowanie (check-out) do 10:00. Późne wymeldowanie na życzenie, w miarę możliwości: do 14:00 za 25 €, do 18:00 za 50 €."
        },
        {
         "t": "Podatek turystyczny",
-        "d": "2 euro za osobę za noc, maksymalnie za 10 nocy. Dzieci poniżej 14 lat nie płacą. Podatek nie jest wliczony w cenę i płacicie go w hotelu."
+        "d": "2 € za osobę za noc, maksymalnie za 10 nocy. Dzieci poniżej 14 lat nie płacą. Podatek nie jest wliczony w cenę i płacicie go w hotelu, gotówką."
        },
        {
         "t": "Zwierzęta",
-        "d": "Nie przyjmujemy kotów. Jeśli podróżujecie z psem, zapytajcie nas przed rezerwacją."
+        "d": "Psy przyjmujemy na życzenie, w zależności od dostępności pokoi: skontaktujcie się z nami przed rezerwacją. Nie przyjmujemy kotów."
        }
       ],
       "cta": ""
@@ -709,9 +709,9 @@
      {
       "id": "matrimoniale-doppia",
       "kicker": "Dla dwóch osób",
-      "title": "Pokój dwuosobowy (łóżko małżeńskie lub dwa pojedyncze)",
+      "title": "Pokój dwuosobowy z dwoma łóżkami pojedynczymi",
       "paragraphs": [
-       "Łóżko małżeńskie albo dwa łóżka pojedyncze. Niektóre z naszych pokoi są na poddaszu i mają drewniany sufit."
+       "Dwa łóżka pojedyncze, które na życzenie możemy zsunąć i przygotować jak łóżko małżeńskie. Niektóre z naszych pokoi są na poddaszu i mają drewniany sufit."
       ],
       "items": [],
       "cta": "Sprawdź ceny i zarezerwuj"
@@ -805,7 +805,7 @@
     "meta_description": "Colazione a buffet inclusa, tutti i giorni dalle 7:30 alle 9:30. Torte fatte in casa, pane fresco, formaggi e salumi, espresso e cappuccino.",
     "kicker": "Tutti i giorni, 7:30–9:30",
     "h1": "La colazione",
-    "lead": "La colazione è inclusa nel prezzo. È un buffet dolce e salato, con torte fatte in casa ogni giorno.",
+    "lead": "Per iniziare la giornata diamo grande importanza a una colazione sana: usiamo prodotti freschi e di alta qualità della regione e cerchiamo di accontentare i gusti di tutti. Le più amate sono le nostre torte fatte in casa, come una volta.",
     "sections": [
      {
       "id": "buffet",
@@ -897,7 +897,7 @@
     "meta_description": "Buffet breakfast included, served every day from 7:30 to 9:30. Homemade cakes, fresh bread, cheeses and cured meats, espresso and cappuccino.",
     "kicker": "Every day, 7:30–9:30",
     "h1": "Breakfast",
-    "lead": "Breakfast is included in the price. It's a sweet and savoury buffet, with homemade cakes every day.",
+    "lead": "We believe a healthy breakfast is the best way to start the day: we use fresh, high-quality produce from the region and try to cater to everyone's tastes. The favourites are our homemade cakes, baked the old-fashioned way.",
     "sections": [
      {
       "id": "buffet",
@@ -989,7 +989,7 @@
     "meta_description": "Śniadanie bufetowe w cenie, codziennie od 7:30 do 9:30. Domowe ciasta, świeże pieczywo, sery i wędliny, espresso i cappuccino.",
     "kicker": "Codziennie, 7:30–9:30",
     "h1": "Śniadanie",
-    "lead": "Śniadanie jest wliczone w cenę. To bufet na słodko i na słono, a na nim codziennie domowe ciasta.",
+    "lead": "Zdrowe śniadanie to dla nas najlepszy początek dnia: korzystamy ze świeżych, wysokiej jakości produktów z regionu i staramy się zadowolić każdy gust. Największym powodzeniem cieszą się nasze domowe ciasta, pieczone jak dawniej.",
     "sections": [
      {
       "id": "buffet",
@@ -1103,8 +1103,8 @@
         "d": "Oltre 150 km, un solo skipass"
        },
        {
-        "t": "Deposito sci",
-        "d": "In hotel, anche per gli scarponi"
+        "t": "Deposito sci e scarponi",
+        "d": "Disponibile in hotel"
        },
        {
         "t": "Stagione 2026/27",
@@ -1198,8 +1198,8 @@
         "d": "Over 150 km, one ski pass"
        },
        {
-        "t": "Ski room",
-        "d": "At the hotel, for boots too"
+        "t": "Ski and boot room",
+        "d": "At the hotel"
        },
        {
         "t": "2026/27 season",
@@ -1293,8 +1293,8 @@
         "d": "Ponad 150 km na jednym skipassie"
        },
        {
-        "t": "Narciarnia",
-        "d": "W hotelu, także na buty narciarskie"
+        "t": "Przechowalnia nart i butów",
+        "d": "W hotelu"
        },
        {
         "t": "Sezon 2026/27",
@@ -1436,7 +1436,7 @@
      },
      {
       "q": "Quali sono gli orari di colazione, arrivo e partenza?",
-      "a": "La colazione è a buffet, tutti i giorni dalle 7:30 alle 9:30, ed è inclusa nel prezzo. L'arrivo (check-in) è dalle 14:00, la partenza (check-out) entro le 10:00."
+      "a": "La colazione è a buffet, tutti i giorni dalle 7:30 alle 9:30, ed è inclusa nel prezzo. L'arrivo (check-in) è dalle 14:00, la partenza (check-out) entro le 10:00. Su richiesta, in base alla disponibilità, late check-out fino alle 14:00 (25 €) o fino alle 18:00 (50 €)."
      },
      {
       "q": "C'è il parcheggio? Avete un box auto?",
@@ -1448,11 +1448,11 @@
      },
      {
       "q": "Accettate animali?",
-      "a": "Non accettiamo gatti. Se volete portare il cane, chiedeteci prima di prenotare."
+      "a": "Cani ammessi su richiesta, in base alla disponibilità delle camere: contattateci prima di prenotare. Non accettiamo gatti."
      },
      {
       "q": "Quanto è la tassa di soggiorno?",
-      "a": "È di 2 euro a persona a notte, per un massimo di 10 notti. Sono esenti i minori di 14 anni. Non è compresa nei prezzi e si paga in hotel."
+      "a": "È di 2 € a persona a notte, per un massimo di 10 notti. Sono esenti i ragazzi sotto i 14 anni. Non è compresa nel prezzo e si paga in hotel, in contanti."
      },
      {
       "q": "Il Wi-Fi è gratuito?",
@@ -1539,7 +1539,7 @@
      },
      {
       "q": "What are the times for breakfast, check-in and check-out?",
-      "a": "Breakfast is a buffet, served every day from 7:30 to 9:30, and it's included in the price. Check-in is from 14:00 and check-out is by 10:00."
+      "a": "Breakfast is a buffet, served every day from 7:30 to 9:30, and it's included in the price. Check-in is from 14:00 and check-out is by 10:00. On request and subject to availability, late check-out until 14:00 (€25) or until 18:00 (€50)."
      },
      {
       "q": "Is there parking? Do you have a private garage?",
@@ -1551,11 +1551,11 @@
      },
      {
       "q": "Do you accept pets?",
-      "a": "We don't accept cats. If you'd like to bring your dog, please ask us before booking."
+      "a": "Dogs are welcome on request, depending on room availability: please contact us before booking. We don't accept cats."
      },
      {
       "q": "How much is the tourist tax?",
-      "a": "It's €2 per person per night, charged for a maximum of 10 nights. Children under 14 are exempt. It isn't included in our prices and is payable at the hotel."
+      "a": "It's €2 per person per night, charged for a maximum of 10 nights. Children under 14 are exempt. It isn't included in the price and is payable at the hotel, in cash."
      },
      {
       "q": "Is the Wi-Fi free?",
@@ -1642,7 +1642,7 @@
      },
      {
       "q": "Jakie są godziny śniadania, zameldowania i wymeldowania?",
-      "a": "Śniadanie w formie bufetu podajemy codziennie od 7:30 do 9:30. Jest wliczone w cenę. Zameldowanie (check-in) od 14:00, wymeldowanie (check-out) do 10:00."
+      "a": "Śniadanie w formie bufetu podajemy codziennie od 7:30 do 9:30. Jest wliczone w cenę. Zameldowanie (check-in) od 14:00, wymeldowanie (check-out) do 10:00. Na życzenie, w miarę możliwości, późne wymeldowanie do 14:00 (25 €) lub do 18:00 (50 €)."
      },
      {
       "q": "Czy jest parking? Czy macie garaż?",
@@ -1654,11 +1654,11 @@
      },
      {
       "q": "Czy przyjmujecie zwierzęta?",
-      "a": "Nie przyjmujemy kotów. Jeśli chcecie przyjechać z psem, zapytajcie nas przed rezerwacją."
+      "a": "Psy przyjmujemy na życzenie, w zależności od dostępności pokoi: skontaktujcie się z nami przed rezerwacją. Nie przyjmujemy kotów."
      },
      {
       "q": "Ile wynosi podatek turystyczny?",
-      "a": "Wynosi 2 euro za osobę za noc, maksymalnie za 10 nocy. Dzieci poniżej 14 lat są z niego zwolnione. Nie jest wliczony w cenę i płacicie go w hotelu."
+      "a": "Wynosi 2 € za osobę za noc, maksymalnie za 10 nocy. Dzieci poniżej 14 lat są z niego zwolnione. Nie jest wliczony w cenę i płacicie go w hotelu, gotówką."
      },
      {
       "q": "Czy Wi-Fi jest bezpłatne?",
