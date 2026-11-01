@@ -29,6 +29,8 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 | Camera Matrimoniale o Doppia | 4 | letto matrimoniale oppure due letti singoli | 2 |
 | Camera Tripla | 3 | letto matrimoniale + letto singolo | fino a 3 |
 | Camera Familiare | 1 | letto matrimoniale + letto a castello | fino a 4 (adatta a famiglie con bambini) |
+
+Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334 si mette solo come letto aggiunto, se serve. Sul sito non si promette e la foto 334 resta fuori.
 | Camera Singola | 1 | letto singolo | 1 |
 - In tutte: bagno privato con doccia, TV, Wi-Fi gratuito, asciugacapelli, armadio, camere non fumatori.
 - Molte camere hanno il balcone (non tutte). Alcune sono in mansarda, con il soffitto in legno.
