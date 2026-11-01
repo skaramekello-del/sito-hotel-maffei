@@ -15,7 +15,11 @@
     });
   }
 
-  // Date proposte alla prenotazione: il primo sabato utile dentro una stagione aperta, 7 notti
+  // Stagione del sito (la sceglie lo script in testa alla pagina; i bottoni Inverno/Estate la cambiano per la visita)
+  function stagione() { return doc.classList.contains('st-estate') ? 'estate' : 'inverno'; }
+  function tipo(s) { var m = +s[0].split('-')[1]; return (m >= 5 && m <= 10) ? 'estate' : 'inverno'; }
+
+  // Date proposte alla prenotazione: il primo sabato utile dentro una stagione aperta del tipo scelto, 7 notti
   function iso(d) { return d.toISOString().slice(0, 10); }
   function parse(s) { var p = s.split('-'); return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2])); }
   function proposta() {
@@ -23,6 +27,7 @@
     var domani = new Date(oggi.getTime() + 864e5);
     var stagioni = cfg.stagioni || [];
     for (var i = 0; i < stagioni.length; i++) {
+      if (tipo(stagioni[i]) !== stagione()) continue;
       var da = parse(stagioni[i][0]), a = parse(stagioni[i][1]);
       if (a < domani) continue;
       var d = da > domani ? da : domani;
@@ -33,17 +38,34 @@
     return null;
   }
   function b64(s) { try { return btoa(unescape(encodeURIComponent(s))); } catch (e) { return ''; } }
-  var date = proposta();
-  if (date && cfg.widget) {
+  function dateUpd() {
+    var date = cfg.widget ? proposta() : null;
     var links = document.querySelectorAll('a[data-book]');
     for (var j = 0; j < links.length; j++) {
       var a = links[j];
+      if (!a.hasAttribute('data-href0')) a.setAttribute('data-href0', a.getAttribute('href'));
+      if (!date) { a.setAttribute('href', a.getAttribute('data-href0')); continue; }
       var adulti = parseInt(a.getAttribute('data-adults') || '2', 10);
       var q = { booking_widget_code: cfg.widget, date_from: date[0], date_to: date[1], currency: 'EUR', lang: cfg.bookLang || 'it', coupon_code: null, rooms: [{ adults: adulti, children: [] }], searchOrigin: 'beddybar', unlock_key: [] };
       var enc = b64(JSON.stringify(q));
       if (enc) a.href = cfg.engine + '?search=' + encodeURIComponent(enc) + '&lang=' + (cfg.bookLang || 'it');
     }
   }
+  dateUpd();
+
+  // Bottoni Inverno/Estate
+  var stBtns = document.querySelectorAll('[data-stagione]');
+  function stUpd() {
+    for (var k = 0; k < stBtns.length; k++) stBtns[k].setAttribute('aria-pressed', stBtns[k].getAttribute('data-stagione') === stagione() ? 'true' : 'false');
+  }
+  for (var k = 0; k < stBtns.length; k++) stBtns[k].addEventListener('click', function () {
+    var s = this.getAttribute('data-stagione');
+    doc.classList.remove('st-inverno', 'st-estate');
+    doc.classList.add('st-' + s);
+    try { window.sessionStorage.setItem('maffei-stagione', s); } catch (e) { /* niente */ }
+    stUpd(); dateUpd();
+  });
+  stUpd();
 
   // Gallerie delle camere
   var gals = document.querySelectorAll('.gallery');

@@ -258,3 +258,17 @@ beddy-bar{display:block}
 /* 404 e pagine legali */
 .legal-page{padding:clamp(40px,6vw,72px) 0}
 .legal-page h1{font-size:clamp(34px,4.4vw,52px);margin-bottom:12px}
+
+/* Stagione: inverno o estate (classe su <html>, scelta in testa alla pagina) */
+html.st-estate .solo-inverno,html:not(.st-estate) .solo-estate{display:none!important}
+.stagione-switch{position:absolute;top:16px;right:max(16px,calc((100% - var(--wrap))/2));z-index:2;display:flex;gap:2px;padding:3px;border-radius:999px;background:rgba(12,18,15,.55);border:1px solid rgba(255,255,255,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.stagione-switch button{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border:0;border-radius:999px;background:transparent;color:#fff;font:600 15px/1 var(--body);cursor:pointer}
+.stagione-switch button svg{width:17px;height:17px}
+.stagione-switch button[aria-pressed="true"]{background:#fff;color:#1C2621}
+.no-js .stagione-switch{display:none}
+.sezioni-stagione{display:flex;flex-direction:column}
+.section.sez-inverno{padding-top:40px}
+.section.sez-estate{padding-top:clamp(56px,8vw,104px)}
+html.st-estate .sezioni-stagione .sez-estate{order:-1;padding-top:40px}
+html.st-estate .sezioni-stagione .sez-inverno{padding-top:clamp(56px,8vw,104px)}
+@media (max-width:640px){html:not(.ck-ok) .hero-stagioni:not(.hero-sub) .wrap{padding-top:76px}.stagione-switch{top:14px}}

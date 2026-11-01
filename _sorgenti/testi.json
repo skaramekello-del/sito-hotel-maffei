@@ -25,7 +25,13 @@
        },
        {
         "t": "Soggiorni d'inverno",
-        "d": "In alta stagione da sabato a sabato (7 notti) o da sabato a venerdì (6 notti). Nei periodi tranquilli anche soggiorni più brevi."
+        "d": "In alta stagione si preferiscono i soggiorni settimanali, di solito con arrivo il sabato. Nei periodi più tranquilli anche meno notti.",
+        "stagione": "inverno"
+       },
+       {
+        "t": "Estate in Val Rendena",
+        "d": "Escursioni a piedi e in bici tra le Dolomiti di Brenta e il Parco Naturale Adamello Brenta. La Trentino Guest Card ve la inviamo prima dell'arrivo, se ce la chiedete.",
+        "stagione": "estate"
        },
        {
         "t": "Colazione 7:30–9:30",
@@ -33,7 +39,13 @@
        },
        {
         "t": "Deposito sci e parcheggio",
-        "d": "Deposito per sci e scarponi. Parcheggio libero e gratuito davanti all'hotel o a pochi metri; box auto su richiesta, a pagamento."
+        "d": "Deposito per sci e scarponi. Parcheggio libero e gratuito davanti all'hotel o a pochi metri; box auto su richiesta, a pagamento.",
+        "stagione": "inverno"
+       },
+       {
+        "t": "Giardino, terrazza e parcheggio",
+        "d": "Al rientro vi aspettano il giardino e la terrazza. Parcheggio libero e gratuito davanti all'hotel o a pochi metri; box auto su richiesta, a pagamento.",
+        "stagione": "estate"
        },
        {
         "t": "13 camere con bagno privato",
@@ -112,7 +124,9 @@
        "D'estate si cammina e si va in bici: intorno ci sono le Dolomiti di Brenta e il Parco Naturale Adamello Brenta. Al ritorno vi aspettano il giardino e la terrazza."
       ],
       "items": [],
-      "cta": "Scopri Pinzolo"
+      "cta": "Scopri Pinzolo",
+      "kicker_estate": "Estate e inverno",
+      "title_estate": "Nel Parco d'estate, sulle piste d'inverno"
      },
      {
       "id": "dove",
@@ -151,7 +165,13 @@
        },
        {
         "t": "Winter stays",
-        "d": "In high season, Saturday to Saturday (7 nights) or Saturday to Friday (6 nights). In quieter periods, shorter stays are possible too."
+        "d": "In high season we prefer week-long stays, usually arriving on Saturday. At quieter times, fewer nights are possible too.",
+        "stagione": "inverno"
+       },
+       {
+        "t": "Summer in Val Rendena",
+        "d": "Hiking and cycling among the Brenta Dolomites and the Adamello Brenta Nature Park. If you'd like the Trentino Guest Card, just ask and we'll send it to you before you arrive.",
+        "stagione": "estate"
        },
        {
         "t": "Breakfast 7:30–9:30",
@@ -159,7 +179,13 @@
        },
        {
         "t": "Ski storage and parking",
-        "d": "Storage for skis and boots. Free, unreserved parking in front of the hotel or a few metres away; a garage on request, at extra cost."
+        "d": "Storage for skis and boots. Free, unreserved parking in front of the hotel or a few metres away; a garage on request, at extra cost.",
+        "stagione": "inverno"
+       },
+       {
+        "t": "Garden, terrace and parking",
+        "d": "When you get back, our garden and terrace are waiting for you. Free, unreserved parking in front of the hotel or a few metres away; a garage on request, at extra cost.",
+        "stagione": "estate"
        },
        {
         "t": "13 rooms with private bathrooms",
@@ -238,7 +264,9 @@
        "In summer it's walking and cycling, with the Brenta Dolomites and the Adamello Brenta Nature Park all around. Back at the hotel, the garden and terrace are waiting for you."
       ],
       "items": [],
-      "cta": "Discover Pinzolo"
+      "cta": "Discover Pinzolo",
+      "kicker_estate": "Summer and winter",
+      "title_estate": "In the Nature Park in summer, on the slopes in winter"
      },
      {
       "id": "dove",
@@ -277,7 +305,13 @@
        },
        {
         "t": "Pobyty zimą",
-        "d": "W szczycie sezonu od soboty do soboty (7 nocy) lub od soboty do piątku (6 nocy). W spokojniejszych terminach możliwe są też krótsze pobyty."
+        "d": "W szczycie sezonu preferujemy pobyty tygodniowe, zwykle z przyjazdem w sobotę. W spokojniejszych terminach możliwe jest też mniej nocy.",
+        "stagione": "inverno"
+       },
+       {
+        "t": "Lato w Val Rendena",
+        "d": "Wędrówki piesze i rowerowe wśród Dolomitów Brenta i w Parku Przyrody Adamello Brenta. Jeśli chcecie dostać Trentino Guest Card, dajcie nam znać, a wyślemy ją Wam przed przyjazdem.",
+        "stagione": "estate"
        },
        {
         "t": "Śniadanie 7:30–9:30",
@@ -285,7 +319,13 @@
        },
        {
         "t": "Narciarnia i parking",
-        "d": "Przechowalnia nart i butów narciarskich. Parkować można bezpłatnie przed hotelem lub kilka metrów dalej; płatny garaż na życzenie."
+        "d": "Przechowalnia nart i butów narciarskich. Parkować można bezpłatnie przed hotelem lub kilka metrów dalej; płatny garaż na życzenie.",
+        "stagione": "inverno"
+       },
+       {
+        "t": "Ogród, taras i parking",
+        "d": "Po powrocie czekają na Was ogród i taras. Parkować można bezpłatnie przed hotelem lub kilka metrów dalej; płatny garaż na życzenie.",
+        "stagione": "estate"
        },
        {
         "t": "13 pokoi z własną łazienką",
@@ -364,7 +404,9 @@
        "Latem możecie chodzić po górach i jeździć na rowerze: dookoła są Dolomity Brenta i Park Przyrody Adamello Brenta. Po powrocie czekają na Was ogród i taras."
       ],
       "items": [],
-      "cta": "Poznaj Pinzolo"
+      "cta": "Poznaj Pinzolo",
+      "kicker_estate": "Lato i zima",
+      "title_estate": "Latem w Parku, zimą na stoku"
      },
      {
       "id": "dove",
@@ -2240,6 +2282,12 @@
          "Finché non cancellate i dati del browser"
         ],
         [
+         "Memoria di sessione «maffei-stagione»",
+         "Nostro",
+         "Ricordare la stagione che avete scelto (inverno o estate) durante la visita",
+         "Fino alla chiusura della scheda del browser"
+        ],
+        [
          "Cookie __stripe_mid",
          "Stripe, per conto di Beddy",
          "Prevenzione delle frodi con le carte. Arriva con la barra di prenotazione di Beddy, anche se nella barra non si paga nulla",
@@ -2332,6 +2380,12 @@
          "Until you clear your browser data"
         ],
         [
+         "Session storage “maffei-stagione”",
+         "Ours",
+         "To remember the season you chose (winter or summer) during your visit",
+         "Until you close the browser tab"
+        ],
+        [
          "Cookie __stripe_mid",
          "Stripe, on behalf of Beddy",
          "Card fraud prevention. It comes with the Beddy booking bar, even though nothing is paid in the bar",
@@ -2422,6 +2476,12 @@
          "Nasze",
          "Zapamiętanie, że zamknęliście informację o plikach cookie",
          "Do czasu usunięcia danych przeglądarki"
+        ],
+        [
+         "Pamięć sesji „maffei-stagione”",
+         "Nasze",
+         "Zapamiętanie wybranej pory roku (zima lub lato) podczas wizyty",
+         "Do zamknięcia karty przeglądarki"
         ],
         [
          "Plik cookie __stripe_mid",
@@ -2547,7 +2607,8 @@
    "km": "{n} km",
    "cookie_page": "Cookie",
    "label_gondola": "Cabinovia",
-   "label_hotel": "Hotel Maffei"
+   "label_hotel": "Hotel Maffei",
+   "season_label": "Scegli la stagione"
   },
   "en": {
    "skip": "Skip to content",
@@ -2620,7 +2681,8 @@
    "km": "{n} km",
    "cookie_page": "Cookies",
    "label_gondola": "Gondola",
-   "label_hotel": "Hotel Maffei"
+   "label_hotel": "Hotel Maffei",
+   "season_label": "Choose the season"
   },
   "pl": {
    "skip": "Przejdź do treści",
@@ -2694,7 +2756,8 @@
    "km": "{n} km",
    "cookie_page": "Pliki cookie",
    "label_gondola": "Gondola",
-   "label_hotel": "Hotel Maffei"
+   "label_hotel": "Hotel Maffei",
+   "season_label": "Wybierz porę roku"
   }
  }
 }

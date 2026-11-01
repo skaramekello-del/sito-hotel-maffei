@@ -161,6 +161,8 @@ def asset(p):
 
 # ---------------------------------------------------------------- icone
 ICON = {
+ 'neve': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M4.9 7l14.2 10M4.9 17L19.1 7M9 4l3 2 3-2M9 20l3-2 3 2"/></svg>',
+ 'sole': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
  'wa': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9.5 9.5c.3 1.6 1.4 3.2 3 4 .5.2 1 .2 1.4-.2l.6-.6"/></svg>',
  'menu': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
  'prev': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
@@ -182,7 +184,17 @@ def book_btn(lang, label=None, adults=2, cls='btn', sr='', con_date=True):
     return f'<a class="{cls}" href="{book_href(lang)}"{dati}>{ICON["cal"]}{e(lab)}{extra}</a>'
 
 # ---------------------------------------------------------------- testata e piede
-def head(page, lang, t, hero_n=None, extra_ld=None):
+def srcset_webp(n):
+    d = foto(n, hero=True)
+    return ', '.join(f"/img/foto/{d['slug']}-{w}.webp {w}w" for w in d['widths'])
+
+# Stagione del sito: quella scelta durante la visita (sessionStorage), altrimenti estate da maggio a ottobre
+SCRIPT_STAGIONE = ("var D=document.documentElement,M=window.MAFFEI,st;try{st=sessionStorage.getItem('maffei-stagione')}catch(e){}"
+                   "if(st!=='estate'&&st!=='inverno'){var m=new Date().getMonth();st=(m>=4&&m<=9)?'estate':'inverno'}"
+                   "D.classList.add('st-'+st);if(M.heroPre){var l=document.createElement('link');l.rel='preload';l.as='image';l.type='image/webp';"
+                   "l.setAttribute('imagesrcset',M.heroPre[st]);l.setAttribute('imagesizes','100vw');l.setAttribute('fetchpriority','high');document.head.appendChild(l)}")
+
+def head(page, lang, t, hero_n=None, extra_ld=None, hero_estate=None):
     title = t['meta_title']; desc = t['meta_description']
     alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{absu(page, l)}">' for l in LANGS)
     alts += f'<link rel="alternate" hreflang="x-default" href="{absu(page, "it")}">'
@@ -190,16 +202,16 @@ def head(page, lang, t, hero_n=None, extra_ld=None):
     og = og_image(og_n)
     og_alt = ''.join(f'<meta property="og:locale:alternate" content="{C["locale"][l]}">' for l in LANGS if l != lang)
     pre = ''
-    if hero_n:
-        d = foto(hero_n, hero=True)
-        base = f"/img/foto/{d['slug']}"
-        pre = f'<link rel="preload" as="image" type="image/webp" imagesrcset="{", ".join(f"{base}-{w}.webp {w}w" for w in d["widths"])}" imagesizes="100vw" fetchpriority="high">'
+    if hero_n and not hero_estate:
+        pre = f'<link rel="preload" as="image" type="image/webp" imagesrcset="{srcset_webp(hero_n)}" imagesizes="100vw" fetchpriority="high">'
     ld = [jsonld_breadcrumb(page, lang, t)] if page != 'home' else []
     if extra_ld:
         ld.extend(extra_ld)
     lds = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld if x)
     cfg = {'widget': C['prenotazione']['widget'], 'engine': C['prenotazione']['engine'], 'bookLang': C['prenotazione']['lingua_engine'][lang],
            'beddyScript': C['prenotazione']['script'], 'stagioni': C['prenotazione']['stagioni']}
+    if hero_n and hero_estate:
+        cfg['heroPre'] = {'inverno': srcset_webp(hero_n), 'estate': srcset_webp(hero_estate)}
     return f'''<!DOCTYPE html>
 <html lang="{lang}" class="no-js{' cta-vista' if page == 'home' and hero_n else ''}">
 <head>
@@ -232,7 +244,7 @@ def head(page, lang, t, hero_n=None, extra_ld=None):
 {pre}
 <link rel="stylesheet" href="{asset('/assets/sito.css')}">
 <style id="beddy-default-font"></style>
-<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');window.MAFFEI={json.dumps(cfg)};try{{if(localStorage.getItem('maffei-cookie-ok')==='1')document.documentElement.classList.add('ck-ok')}}catch(e){{}}</script>
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');window.MAFFEI={json.dumps(cfg)};{SCRIPT_STAGIONE}try{{if(localStorage.getItem('maffei-cookie-ok')==='1')document.documentElement.classList.add('ck-ok')}}catch(e){{}}</script>
 <script src="{asset('/assets/sito.js')}" defer></script>
 {lds}
 </head>
@@ -332,15 +344,25 @@ def jsonld_rooms(lang, t):
     return {'@context': 'https://schema.org', '@type': 'ItemList', 'itemListElement': items}
 
 # ---------------------------------------------------------------- pagine
-def hero(n, lang, t, sub=False, pos='50% 50%'):
+def stagione_switch(lang):
+    b = lambda k, ic: f'<button type="button" data-stagione="{k}" aria-pressed="false">{ICON[ic]}{e(ui(lang, "season_" + ("winter" if k == "inverno" else "summer")))}</button>'
+    return f'<div class="stagione-switch" role="group" aria-label="{e(ui(lang, "season_label"))}">{b("inverno", "neve")}{b("estate", "sole")}</div>'
+
+def hero(n, lang, t, sub=False, pos='50% 50%', n_estate=None, pos_estate='50% 50%'):
     cls = 'hero hero-sub' if sub else 'hero'
     k = kicker(t.get('kicker', ''))
     lead = f'<p class="lead">{e(t.get("lead", ""))}</p>' if t.get('lead') else ''
     cta = ''
     if not sub:
         cta = f'<div class="cta">{book_btn(lang)}<a class="btn btn-line" href="{wa_link(lang)}" rel="noopener">{ICON["wa"]}{e(ui(lang, "whatsapp"))}</a></div>'
+    if n_estate:
+        cls += ' hero-stagioni'
+        pics = (picture(n, lang, sizes="100vw", hero=True, cls='solo-inverno')
+                + picture(n_estate, lang, sizes="100vw", hero=True, cls='solo-estate', style=f'object-position:{pos_estate}') + stagione_switch(lang))
+    else:
+        pics = picture(n, lang, sizes="100vw", eager=True, hero=True)
     return f'''<section class="{cls}" style="--pos:{pos}">
-{picture(n, lang, sizes="100vw", eager=True, hero=True)}
+{pics}
 <div class="wrap">{k}<h1>{e(t['h1'])}</h1>{lead}{cta}</div>
 </section>
 '''
@@ -365,13 +387,16 @@ def room_names(lang):
     tc = page_t('camere', lang)
     return {r['id']: sec(tc, r['id'])['title'] for r in C['camere']}
 
+def solo(i):
+    return f' class="solo-{i["stagione"]}"' if i.get('stagione') else ''
+
 def render_home(lang):
     t = page_t('home', lang); fp = C['foto_pagine']
     names = room_names(lang)
-    out = [head('home', lang, t, hero_n=fp['home_hero'], extra_ld=[jsonld_hotel(lang, t)]), header('home', lang), '<main id="main">']
-    out.append(hero(fp['home_hero'], lang, t, pos='35% 50%'))
+    out = [head('home', lang, t, hero_n=fp['home_hero'], extra_ld=[jsonld_hotel(lang, t)], hero_estate=fp['home_hero_estate']), header('home', lang), '<main id="main">']
+    out.append(hero(fp['home_hero'], lang, t, pos='35% 50%', n_estate=fp['home_hero_estate'], pos_estate='40% 55%'))
     s = sec(t, 'in-breve')
-    lis = ''.join(f'<li><h3>{e(i["t"])}</h3><p>{e(i["d"])}{int_link(lang, i)}</p></li>' for i in s['items'])
+    lis = ''.join(f'<li{solo(i)}><h3>{e(i["t"])}</h3><p>{e(i["d"])}{int_link(lang, i)}</p></li>' for i in s['items'])
     out.append(f'<section class="section" aria-labelledby="s-breve"><div class="wrap"><div class="section-head center">{kicker(s["kicker"])}<h2 id="s-breve">{e(s["title"])}</h2></div><ul class="facts">{lis}</ul></div></section>')
     s = sec(t, 'camere')
     lines = {}
@@ -388,7 +413,11 @@ def render_home(lang):
     s = sec(t, 'luca-manuela')
     out.append(f'<section class="section" style="padding-top:clamp(56px,8vw,104px)" aria-labelledby="s-noi"><div class="wrap grid-2"><div class="hosts-photo">{picture(fp["home_luca_manuela"], lang, sizes="(min-width: 860px) 520px, 100vw")}</div><div>{kicker(s["kicker"])}<h2 id="s-noi" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p class="sign">{e(ui(lang, "signature"))}</p></div></div></section>')
     s = sec(t, 'pinzolo')
-    out.append(f'<section class="section" aria-labelledby="s-pinzolo"><div class="wrap grid-2"><figure class="figure" style="--ratio:3/2">{picture(fp["home_pinzolo"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure><div>{kicker(s["kicker"])}<h2 id="s-pinzolo" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{url("pinzolo", lang)}">{e(s["cta"])}</a></p></div></div></section>')
+    figs = ''.join(f'<figure class="figure solo-{k}" style="--ratio:3/2">{picture(fp[f], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure>' for k, f in (('inverno', 'home_pinzolo'), ('estate', 'home_pinzolo_estate')))
+    p_inv, p_est = (f'<p>{linkify(e(x))}</p>' for x in s['paragraphs'])
+    tit = f'<span class="solo-inverno">{e(s["title"])}</span><span class="solo-estate">{e(s["title_estate"])}</span>'
+    kic = f'<span class="kicker"><span class="solo-inverno">{e(s["kicker"])}</span><span class="solo-estate">{e(s["kicker_estate"])}</span></span>'
+    out.append(f'<section class="section" aria-labelledby="s-pinzolo"><div class="wrap grid-2">{figs}<div>{kic}<h2 id="s-pinzolo" style="margin-bottom:16px">{tit}</h2><div class="solo-inverno">{p_inv}{p_est}</div><div class="solo-estate">{p_est}{p_inv}</div><p style="margin-top:18px"><a class="btn btn-line" href="{url("pinzolo", lang)}">{e(s["cta"])}</a></p></div></div></section>')
     s = sec(t, 'dove')
     out.append(f'<section class="section" aria-labelledby="s-dove"><div class="wrap grid-2"><div>{kicker(s["kicker"])}<h2 id="s-dove" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{url("contatti", lang)}">{e(s["cta"])}</a></p></div>{foto_dove(fp["home_dove"], lang, "(min-width: 860px) 560px, 100vw")}</div></section>')
     s = sec(t, 'recensioni'); rv = C['recensioni']
@@ -488,13 +517,15 @@ def render_ristoranti(lang, s):
 
 def render_pinzolo(lang):
     t = page_t('pinzolo', lang); fp = C['foto_pagine']; L = C['link_esterni']
-    out = [head('pinzolo', lang, t, hero_n=fp['pinzolo_hero']), header('pinzolo', lang), '<main id="main">']
-    out.append(hero(fp['pinzolo_hero'], lang, t, sub=True, pos='50% 40%'))
+    out = [head('pinzolo', lang, t, hero_n=fp['pinzolo_hero'], hero_estate=fp['pinzolo_hero_estate']), header('pinzolo', lang), '<main id="main">']
+    out.append(hero(fp['pinzolo_hero'], lang, t, sub=True, pos='50% 40%', n_estate=fp['pinzolo_hero_estate'], pos_estate='50% 40%'))
     out.append(crumbs('pinzolo', lang, t))
     s = sec(t, 'inverno')
-    out.append(f'<section class="section" style="padding-top:40px" aria-labelledby="s-inverno"><div class="wrap grid-2" style="align-items:start"><div><span class="kicker">{e(ui(lang, "season_winter"))}</span><h2 id="s-inverno" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}{items_list(s)}{cta_book(lang, s)}</div><figure class="figure" style="--ratio:4/3">{picture(fp["pinzolo_inverno"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure></div></section>')
+    out.append('<div class="sezioni-stagione">')
+    out.append(f'<section class="section sez-inverno" aria-labelledby="s-inverno"><div class="wrap grid-2" style="align-items:start"><div><span class="kicker">{e(ui(lang, "season_winter"))}</span><h2 id="s-inverno" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}{items_list(s)}{cta_book(lang, s)}</div><figure class="figure" style="--ratio:4/3">{picture(fp["pinzolo_inverno"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure></div></section>')
     s = sec(t, 'estate')
-    out.append(f'<section class="section" style="padding-top:clamp(56px,8vw,104px)" aria-labelledby="s-estate"><div class="wrap grid-2" style="align-items:start"><figure class="figure" style="--ratio:4/3">{picture(fp["pinzolo_estate"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure><div><span class="kicker">{e(ui(lang, "season_summer"))}</span><h2 id="s-estate" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}{items_list(s)}{cta_book(lang, s, con_date=False)}</div></div></section>')
+    out.append(f'<section class="section sez-estate" aria-labelledby="s-estate"><div class="wrap grid-2" style="align-items:start"><figure class="figure" style="--ratio:4/3">{picture(fp["pinzolo_estate"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure><div><span class="kicker">{e(ui(lang, "season_summer"))}</span><h2 id="s-estate" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}{items_list(s)}{cta_book(lang, s, con_date=False)}</div></div></section>')
+    out.append('</div>')
     s = sec(t, 'come-arrivare')
     lis = ''
     for i in s['items']:
