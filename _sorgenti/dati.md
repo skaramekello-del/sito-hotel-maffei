@@ -21,6 +21,7 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 - Dalla Ski Area Pinzolo la Pinzolo–Campiglio Express collega alle piste di Madonna di Campiglio (circa 16 minuti di impianto): un comprensorio di oltre 150 km di piste (Skiarea Campiglio Dolomiti di Brenta) con un solo skipass.
 - Intorno: Dolomiti di Brenta, Parco Naturale Adamello Brenta, Val Rendena; d'estate escursioni e bici.
 - Impianti di Pinzolo: apertura della stagione invernale 2026/27 prevista il 3 dicembre 2026.
+- Hotel aperto d'estate di solito dal 1 giugno al 20 settembre; le date possono variare leggermente (Luca, 1/11/2026). Nel sito: stagione estiva 2027 dal 1/6 al 20/9, per le date proposte dal bottone Prenota.
 
 ## Camere (nomi come nel sistema di prenotazione)
 | Tipologia | Quante | Letti | Ospiti |
