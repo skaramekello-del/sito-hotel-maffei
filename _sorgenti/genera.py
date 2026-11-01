@@ -249,7 +249,7 @@ def header(page, lang):
         f'<a href="{url(page, l)}" hreflang="{l}" lang="{l}"{CUR if l == lang else ""}>{l.upper()}</a>' for l in LANGS)
     return f'''<body>
 <a class="skip" href="#main">{e(ui(lang, 'skip'))}</a>
-<div class="cookie" role="region" aria-label="{e(ui(lang, 'cookie_label'))}"><div class="wrap"><p>{e(ui(lang, 'cookie_text'))} <a href="{url('privacy', lang)}">{e(ui(lang, 'cookie_more'))}</a></p><button class="btn btn-line" type="button">{e(ui(lang, 'cookie_ok'))}</button></div></div>
+<div class="cookie" role="region" aria-label="{e(ui(lang, 'cookie_label'))}"><div class="wrap"><p>{e(ui(lang, 'cookie_text'))} <a href="{url('cookie', lang)}">{e(ui(lang, 'cookie_more'))}</a></p><button class="btn btn-line" type="button">{e(ui(lang, 'cookie_ok'))}</button></div></div>
 <header class="top">
 <div class="wrap">
 <a class="logo" href="{url('home', lang)}"><picture><source type="image/webp" srcset="/img/logo/logo-maffei-128.webp 1x, /img/logo/logo-maffei-256.webp 2x"><img src="/img/logo/logo-maffei-128.png" width="{LOGO_W128}" height="128" alt="" style="height:64px;width:auto"></picture><span class="logo-name">Hotel Garnì Maffei<small>Pinzolo · <span aria-hidden="true">★★★</span><span class="sr-only">{e(ui(lang, 'stars'))}</span></small></span></a>
@@ -276,7 +276,7 @@ def footer(page, lang):
 <li>{e(ui(lang, 'phone_label'))}: <a href="tel:{c['fisso_tel']}">{e(c['fisso'])}</a></li>
 <li><a href="mailto:{c['email']}">{e(c['email'])}</a></li>
 <li><a href="{c['instagram']}" rel="noopener">{e(ui(lang, 'instagram'))}</a></li></ul></div>
-<div><h2>{e(ui(lang, 'footer_info'))}</h2><ul>{menu}<li><a href="{url('privacy', lang)}">{e(ui(lang, 'privacy'))}</a></li></ul>{note}</div>
+<div><h2>{e(ui(lang, 'footer_info'))}</h2><ul>{menu}<li><a href="{url('privacy', lang)}">{e(ui(lang, 'privacy'))}</a></li><li><a href="{url('cookie', lang)}">{e(ui(lang, 'cookie_page'))}</a></li></ul>{note}</div>
 <div><h2>{e(ui(lang, 'footer_company'))}</h2><p>{e(so['ragione'])}<br>{e(ui(lang, 'company_vat'))} {e(so['piva'])} · {e(ui(lang, 'company_rea'))} {e(so['rea'])}<br>{e(ui(lang, 'company_cin'))} {e(so['cin'])}</p></div>
 </div>
 <p class="legal">© {date.today().year} {e(C['nome'])} · {langs}</p>
@@ -345,7 +345,7 @@ def hero(n, lang, t, sub=False, pos='50% 50%'):
 </section>
 '''
 
-NAV_KEY = {'camere': 'nav_rooms', 'colazione': 'nav_breakfast', 'pinzolo': 'nav_pinzolo', 'contatti': 'nav_contact', 'privacy': 'privacy'}
+NAV_KEY = {'camere': 'nav_rooms', 'colazione': 'nav_breakfast', 'pinzolo': 'nav_pinzolo', 'contatti': 'nav_contact', 'privacy': 'privacy', 'cookie': 'cookie_page'}
 
 def page_label(page, lang, t):
     k = NAV_KEY.get(page)
@@ -527,25 +527,39 @@ def render_contatti(lang):
 
 FAQ_TITLE = {'it': 'Domande frequenti', 'en': 'Frequently asked questions', 'pl': 'Najczęściej zadawane pytania'}
 
-def render_privacy(lang):
-    t = page_t('privacy', lang)
-    out = [head('privacy', lang, t), header('privacy', lang), '<main id="main" class="legal-page">' + crumbs('privacy', lang, t) + '<div class="wrap prose">']
-    out.append(f'<h1>{e(t["h1"])}</h1><p class="lead">{e(t["lead"])}</p>')
+# dove il testo legale nomina l'altra pagina, il nome diventa un collegamento
+RIMANDI = {'privacy': ('cookie', {'it': r'pagina Cookie', 'en': r'Cookies page', 'pl': r'„Pliki cookie”'}),
+           'cookie': ('privacy', {'it': r'informativa privacy', 'en': r'privacy policy', 'pl': r'polity(?:ka|ce) prywatności'})}
+
+def render_legale(page, lang):
+    t = page_t(page, lang)
+    dest, rx = RIMANDI[page][0], RIMANDI[page][1][lang]
+    def lk(h):
+        return re.sub(rx, lambda m: f'<a href="{url(dest, lang)}">{m.group(0)}</a>', linkify(h))
+    out = [head(page, lang, t), header(page, lang), '<main id="main" class="legal-page">' + crumbs(page, lang, t) + '<div class="wrap prose">']
+    out.append(f'<h1>{e(t["h1"])}</h1><p class="lead">{lk(e(t["lead"]))}</p>')
     for s in t.get('sections', []):
         if s.get('id') == 'dati':
             ps = ''
             for para in s.get('paragraphs', []):
                 m = re.match(r'^([^.]{3,45}\.)\s+(.*)$', para)
-                ps += (f'<p><strong>{e(m.group(1))}</strong> {linkify(e(m.group(2)))}</p>' if m else f'<p>{linkify(e(para))}</p>')
+                ps += (f'<p><strong>{e(m.group(1))}</strong> {lk(e(m.group(2)))}</p>' if m else f'<p>{lk(e(para))}</p>')
             out.append(f'<h2>{e(s["title"])}</h2>{ps}')
         else:
-            out.append(f'<h2>{e(s["title"])}</h2>{paras(s)}')
+            out.append(f'<h2>{e(s["title"])}</h2>' + ''.join(f'<p>{lk(e(p))}</p>' for p in s.get('paragraphs', []) if p.strip()))
         if s.get('items'):
             out.append(items_list(s))
-    out.append('</div></main>'); out.append(footer('privacy', lang))
+        if s.get('tabella'):
+            tb = s['tabella']
+            testa = ''.join(f'<th scope="col">{e(x)}</th>' for x in tb['testa'])
+            righe = ''.join('<tr>' + ''.join(f'<td data-col="{e(tb["testa"][i])}">{lk(e(c))}</td>' for i, c in enumerate(r)) + '</tr>' for r in tb['righe'])
+            out.append(f'<div class="tabella"><table><thead><tr>{testa}</tr></thead><tbody>{righe}</tbody></table></div>')
+        if s.get('dopo'):
+            out.append(''.join(f'<p>{lk(e(x))}</p>' for x in s['dopo']))
+    out.append('</div></main>'); out.append(footer(page, lang))
     return ''.join(out)
 
-RENDER = {'home': render_home, 'camere': render_camere, 'colazione': render_colazione, 'pinzolo': render_pinzolo, 'contatti': render_contatti, 'privacy': render_privacy}
+RENDER = {'home': render_home, 'camere': render_camere, 'colazione': render_colazione, 'pinzolo': render_pinzolo, 'contatti': render_contatti, 'privacy': lambda l: render_legale('privacy', l), 'cookie': lambda l: render_legale('cookie', l)}
 
 # ---------------------------------------------------------------- logo e icone
 def logo_files():

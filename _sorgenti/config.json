@@ -17,7 +17,8 @@
   "colazione",
   "pinzolo",
   "contatti",
-  "privacy"
+  "privacy",
+  "cookie"
  ],
  "slug": {
   "home": {
@@ -49,6 +50,11 @@
    "it": "privacy/",
    "en": "en/privacy/",
    "pl": "pl/prywatnosc/"
+  },
+  "cookie": {
+   "it": "cookie/",
+   "en": "en/cookies/",
+   "pl": "pl/cookies/"
   }
  },
  "menu": [

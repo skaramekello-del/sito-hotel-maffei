@@ -1677,244 +1677,801 @@
   },
   "privacy": {
    "it": {
-    "meta_title": "Privacy e cookie – Hotel Garnì Maffei",
-    "meta_description": "Informativa privacy e cookie dell'Hotel Garnì Maffei di Pinzolo: quali dati trattiamo e perché, quali cookie usa il sito e quali sono i vostri diritti.",
+    "meta_title": "Privacy – Hotel Garnì Maffei",
+    "meta_description": "Informativa privacy dell'Hotel Garnì Maffei di Pinzolo: chi tratta i vostri dati, perché, per quanto tempo e quali sono i vostri diritti.",
     "kicker": "",
-    "h1": "Privacy e cookie",
-    "lead": "In questa pagina vi spieghiamo quali dati personali trattiamo quando ci contattate o prenotate, e quali cookie usa il sito. Ultimo aggiornamento: 1 novembre 2026.",
+    "h1": "Privacy",
+    "lead": "In questa pagina vi spieghiamo, come chiede il Regolamento europeo sulla protezione dei dati (GDPR, articoli 13 e 14), quali dati personali trattiamo quando ci contattate, prenotate o soggiornate da noi. Dei cookie del sito parliamo nella pagina Cookie.",
     "sections": [
      {
       "id": "titolare",
-      "kicker": "",
       "title": "Chi è il titolare",
       "paragraphs": [
-       "Il titolare del trattamento è la nostra società, L&M snc di Scaramuzzi Luca e Pederzolli Manuela, che gestisce l'Hotel Garnì Maffei. Indirizzo: Via N. Bolognini 72, 38086 Pinzolo (TN). P.IVA 02588730222.",
-       "Per qualsiasi domanda sui vostri dati scriveteci a info@hotelmaffeipinzolo.it. Vi rispondiamo noi, Luca e Manuela."
-      ],
-      "items": [],
-      "cta": ""
+       "Il titolare del trattamento è L&M snc di Scaramuzzi Luca e Pederzolli Manuela, la società che gestisce l'Hotel Garnì Maffei.",
+       "Indirizzo: Via N. Bolognini 72, 38086 Pinzolo (TN). P.IVA 02588730222, REA TN-235607. Email: info@hotelmaffeipinzolo.it. PEC: lmsnc2020@pec.cgn.it.",
+       "Per qualsiasi domanda sui vostri dati scriveteci: vi rispondiamo noi, Luca e Manuela."
+      ]
      },
      {
       "id": "dati",
-      "kicker": "",
-      "title": "Quali dati trattiamo e perché",
+      "title": "Quali dati trattiamo",
       "paragraphs": [
-       "Richieste di informazioni e preventivi. Quando ci scrivete per email o su WhatsApp, o ci telefonate, usiamo il vostro nome, i recapiti e quello che ci chiedete, per esempio date e numero di persone. Ci servono per rispondervi e preparare l'eventuale soggiorno. Base giuridica: la vostra richiesta e le misure precontrattuali (art. 6, par. 1, lett. b del Regolamento UE 2016/679, GDPR).",
-       "Prenotazioni. Quando prenotate dal sito usate il sistema di prenotazione Beddy (Zucchetti Hospitality). Beddy raccoglie i dati necessari al soggiorno e al pagamento secondo la propria informativa, che vedete durante la prenotazione. Noi usiamo questi dati per gestire il vostro soggiorno (art. 6, par. 1, lett. b GDPR).",
-       "Obblighi di legge. Come tutte le strutture ricettive, comunichiamo le persone alloggiate all'autorità di pubblica sicurezza, forniamo i dati statistici e curiamo gli adempimenti fiscali (art. 6, par. 1, lett. c GDPR).",
-       "Non vendiamo i vostri dati e non li usiamo per pubblicità."
-      ],
-      "items": [],
-      "cta": ""
+       "Contatti e richieste. Nome, email, telefono e quello che ci scrivete o ci dite al telefono: date, numero di persone, domande.",
+       "Prenotazione e soggiorno. Date, camere, ospiti, prezzo, pagamenti e garanzie. Se prenotate dal sito li raccogliamo con il sistema di prenotazione Beddy; se prenotate da un portale, per esempio Booking.com, ce li trasmette il portale.",
+       "Registrazione degli ospiti. All'arrivo la legge ci chiede di comunicare alla Questura i dati del documento d'identità di ogni ospite (art. 109 del Testo unico delle leggi di pubblica sicurezza), con il servizio Alloggiati Web della Polizia di Stato.",
+       "Fatture, pagamenti e imposta di soggiorno. I dati per la fattura o la ricevuta e per l'imposta provinciale di soggiorno.",
+       "Navigazione. L'indirizzo IP e i dati tecnici che i server registrano quando visitate il sito: i dettagli sono nella pagina Cookie."
+      ]
+     },
+     {
+      "id": "finalita",
+      "title": "Perché li trattiamo e per quanto tempo",
+      "paragraphs": [],
+      "tabella": {
+       "testa": [
+        "Dati",
+        "Perché",
+        "Base giuridica (art. 6 GDPR)",
+        "Per quanto tempo"
+       ],
+       "righe": [
+        [
+         "Contatti e richieste",
+         "Rispondervi e prepararvi un preventivo",
+         "Lett. b: la vostra richiesta (misure precontrattuali)",
+         "24 mesi dall'ultimo contatto, se non prenotate"
+        ],
+        [
+         "Prenotazione e soggiorno",
+         "Gestire la prenotazione e il soggiorno; reclami e contestazioni",
+         "Lett. b: il contratto; lett. f: la tutela dei nostri diritti",
+         "10 anni dalla fine del soggiorno o dall'annullamento (art. 2946 c.c.), più il tempo di eventuali contestazioni"
+        ],
+        [
+         "Registrazione degli ospiti",
+         "Comunicazione alla Questura",
+         "Lett. c: obbligo di legge",
+         "Dopo l'invio non teniamo i dati né copie dei documenti; conserviamo per 5 anni la ricevuta di Alloggiati Web, come prevede il decreto del Ministero dell'Interno"
+        ],
+        [
+         "Fatture, pagamenti, imposta di soggiorno",
+         "Obblighi contabili e fiscali",
+         "Lett. c: obbligo di legge (art. 2220 c.c. e norme fiscali)",
+         "10 anni dalla chiusura dell'esercizio"
+        ],
+        [
+         "Navigazione",
+         "Sicurezza del sito e dei pagamenti",
+         "Lett. f: legittimo interesse alla sicurezza",
+         "Li conservano i fornitori (GitHub, Beddy, Stripe) secondo le loro regole"
+        ]
+       ]
+      },
+      "dopo": [
+       "Non vendiamo i vostri dati, non li usiamo per pubblicità e non prendiamo decisioni automatiche su di voi."
+      ]
      },
      {
       "id": "destinatari",
-      "kicker": "",
       "title": "A chi li comunichiamo",
       "paragraphs": [
-       "Solo ai fornitori che ci servono per lavorare (sistema di prenotazione, posta elettronica, consulente fiscale) e alle autorità, quando la legge lo richiede.",
-       "Se ci scrivete su WhatsApp, il servizio è fornito da Meta secondo le sue condizioni."
+       "Comunichiamo i dati solo a chi ci serve per lavorare, che li tratta come responsabile del trattamento per nostro conto (art. 28 GDPR) oppure come titolare autonomo:"
       ],
-      "items": [],
-      "cta": ""
+      "items": [
+       {
+        "t": "Prenotazioni",
+        "d": "Zucchetti Hospitality (sistema di prenotazione Beddy) e i portali da cui prenotate, per esempio Booking.com."
+       },
+       {
+        "t": "Pagamenti",
+        "d": "Stripe, le banche e i circuiti delle carte."
+       },
+       {
+        "t": "Posta e messaggi",
+        "d": "I fornitori della nostra posta elettronica e Meta, se ci scrivete su WhatsApp."
+       },
+       {
+        "t": "Sito",
+        "d": "GitHub, che ospita il sito."
+       },
+       {
+        "t": "Consulenti",
+        "d": "Il nostro consulente fiscale e, se serve, un legale."
+       },
+       {
+        "t": "Autorità",
+        "d": "Questura, uffici di statistica, Provincia per l'imposta di soggiorno, Agenzia delle Entrate e autorità giudiziarie, quando la legge lo richiede."
+       }
+      ],
+      "dopo": [
+       "L'elenco aggiornato dei fornitori, con il loro ruolo, ve lo mandiamo su richiesta."
+      ]
      },
      {
-      "id": "conservazione",
-      "kicker": "",
-      "title": "Per quanto tempo",
+      "id": "estero",
+      "title": "Dati fuori dall'Unione europea",
       "paragraphs": [
-       "Conserviamo le richieste di informazioni per il tempo necessario a rispondervi e a gestire l'eventuale soggiorno.",
-       "I dati delle prenotazioni e i documenti fiscali li teniamo per il tempo previsto dalla legge."
-      ],
-      "items": [],
-      "cta": ""
-     },
-     {
-      "id": "sito-cookie",
-      "kicker": "",
-      "title": "Il sito e i cookie",
-      "paragraphs": [
-       "Non usiamo cookie di profilazione né strumenti di statistica. Da parte nostra, il sito ricorda nel vostro browser (nella memoria locale) solo una cosa: che avete chiuso l'avviso sui cookie, così non ve lo mostra di nuovo.",
-       "La barra di prenotazione è di Beddy (Zucchetti Hospitality). Per farla funzionare, il sistema di prenotazione e il suo fornitore di pagamenti, Stripe, usano cookie tecnici, necessari anche alla sicurezza delle transazioni.",
-       "Il sito è statico e ospitato su GitHub Pages (GitHub, Inc.). Per motivi di sicurezza GitHub registra l'indirizzo IP di chi visita le pagine.",
-       "La mappa si apre su Google Maps solo se cliccate il collegamento. Non usiamo Google Fonts: i caratteri delle nostre pagine sono sul nostro sito. La barra di prenotazione si carica alla vostra prima azione sulla pagina (un tocco, un clic, il mouse, la tastiera o lo scorrimento) oppure quando una pagina si apre già scorsa, per esempio da un collegamento a una camera. In quel momento scarica i suoi file e il suo carattere dai server di Beddy e di Stripe, che ricevono così l'indirizzo IP del vostro dispositivo."
-      ],
-      "items": [],
-      "cta": ""
+       "Alcuni fornitori hanno sede negli Stati Uniti, per esempio GitHub, Stripe e Meta. In questi casi il trasferimento avviene sulla base delle clausole contrattuali standard approvate dalla Commissione europea (art. 46 GDPR) e, dove applicabile, del Data Privacy Framework UE-USA (decisione di adeguatezza del luglio 2023). Negli altri casi trasferiamo dati solo verso Paesi che la Commissione considera adeguati (art. 45 GDPR). Potete chiederci copia delle garanzie."
+      ]
      },
      {
       "id": "diritti",
-      "kicker": "",
       "title": "I vostri diritti",
       "paragraphs": [
-       "Potete chiederci in qualsiasi momento di accedere ai vostri dati, correggerli, cancellarli, limitarne l'uso o riceverne una copia, e potete opporvi al trattamento (articoli 15–22 GDPR). Basta scrivere a info@hotelmaffeipinzolo.it.",
-       "Avete anche il diritto di presentare reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it)."
+       "In qualsiasi momento potete esercitare i diritti previsti dagli articoli 15–22 del GDPR:"
       ],
-      "items": [],
-      "cta": ""
+      "items": [
+       {
+        "t": "Accesso (art. 15)",
+        "d": "Sapere quali dati trattiamo e averne una copia."
+       },
+       {
+        "t": "Rettifica (art. 16)",
+        "d": "Correggere o completare i dati sbagliati."
+       },
+       {
+        "t": "Cancellazione (art. 17)",
+        "d": "Farli cancellare, salvo quelli che la legge ci obbliga a tenere o che servono a difendere un diritto."
+       },
+       {
+        "t": "Limitazione (art. 18)",
+        "d": "Sospenderne l'uso mentre si verifica una contestazione."
+       },
+       {
+        "t": "Portabilità (art. 20)",
+        "d": "Riceverli in un formato leggibile da un computer, o farli trasmettere a un altro titolare."
+       },
+       {
+        "t": "Opposizione (art. 21)",
+        "d": "Opporvi ai trattamenti basati sul nostro legittimo interesse."
+       }
+      ],
+      "dopo": [
+       "Basta scrivere a info@hotelmaffeipinzolo.it o alla PEC lmsnc2020@pec.cgn.it. Rispondiamo entro un mese; nei casi complessi il termine può allungarsi di altri due mesi, e ve lo diciamo entro il primo. È gratuito, salvo richieste manifestamente infondate o eccessive.",
+       "Potete anche presentare reclamo al Garante per la protezione dei dati personali (Piazza Venezia 11, 00187 Roma – www.garanteprivacy.it) o all'autorità di controllo del Paese UE in cui vivete o lavorate."
+      ]
+     },
+     {
+      "id": "sicurezza",
+      "title": "Come proteggiamo i dati",
+      "paragraphs": [
+       "I dati li vediamo solo noi e i fornitori che ci servono, in programmi con accesso protetto. Il sito funziona solo in https, quindi le pagine viaggiano cifrate."
+      ]
+     },
+     {
+      "id": "aggiornamenti",
+      "title": "Aggiornamenti",
+      "paragraphs": [
+       "Questa informativa può cambiare, per esempio se cambiano i fornitori o le leggi: la versione in vigore è sempre su questa pagina.",
+       "Le versioni in inglese e in polacco sono traduzioni: in caso di dubbio vale il testo italiano.",
+       "Ultimo aggiornamento: 1 novembre 2026 (versione 1.0)."
+      ]
      }
-    ],
-    "faq": []
+    ]
    },
    "en": {
-    "meta_title": "Privacy and cookies – Hotel Garnì Maffei",
-    "meta_description": "Privacy and cookie notice for Hotel Garnì Maffei in Pinzolo: what data we handle and why, which cookies our website uses and what your rights are.",
+    "meta_title": "Privacy policy – Hotel Garnì Maffei",
+    "meta_description": "Privacy policy of Hotel Garnì Maffei in Pinzolo: who handles your data, why, for how long, and what your rights are.",
     "kicker": "",
-    "h1": "Privacy and cookies",
-    "lead": "On this page we explain what personal data we handle when you contact us or book, and which cookies our website uses. Last updated: 1 November 2026.",
+    "h1": "Privacy policy",
+    "lead": "On this page we explain, as required by the EU General Data Protection Regulation (GDPR, Articles 13 and 14), what personal data we handle when you contact us, book or stay with us. Cookies are covered on the Cookies page.",
     "sections": [
      {
       "id": "titolare",
-      "kicker": "",
-      "title": "Who is responsible for your data",
+      "title": "Who the controller is",
       "paragraphs": [
-       "The data controller is our business, L&M snc di Scaramuzzi Luca e Pederzolli Manuela, which runs Hotel Garnì Maffei. Address: Via N. Bolognini 72, 38086 Pinzolo (TN). VAT number 02588730222.",
-       "If you have any questions about your data, email us at info@hotelmaffeipinzolo.it. We, Luca and Manuela, will reply to you personally."
-      ],
-      "items": [],
-      "cta": ""
+       "The data controller is L&M snc di Scaramuzzi Luca e Pederzolli Manuela, the company that runs Hotel Garnì Maffei.",
+       "Address: Via N. Bolognini 72, 38086 Pinzolo (TN), Italy. VAT No. 02588730222, REA TN-235607. Email: info@hotelmaffeipinzolo.it. Certified email (PEC): lmsnc2020@pec.cgn.it.",
+       "If you have any questions about your data, write to us: Luca and Manuela will reply personally."
+      ]
      },
      {
       "id": "dati",
-      "kicker": "",
-      "title": "What data we use and why",
+      "title": "What data we handle",
       "paragraphs": [
-       "Enquiries and quotes. When you email us, message us on WhatsApp or phone us, we use your name, your contact details and what you ask us about, such as your dates and the number of people. We need this information to reply to you and to arrange your stay if you decide to book. Legal basis: steps taken at your request before entering into a contract (Article 6(1)(b) of Regulation (EU) 2016/679, the GDPR).",
-       "Bookings. When you book through our website, you're using the Beddy booking system (Zucchetti Hospitality). Beddy collects the details needed for your stay and for payment, in line with its own privacy notice, which you'll see while booking. We use these details to manage your stay (Article 6(1)(b) GDPR).",
-       "Legal obligations. Like all accommodation providers in Italy, we send the details of everyone staying with us to the police, provide statistical data and meet our tax requirements (Article 6(1)(c) GDPR).",
-       "We don't sell your data, and we don't use it for advertising."
-      ],
-      "items": [],
-      "cta": ""
+       "Contacts and enquiries. Your name, email, phone number and whatever you tell us by email, WhatsApp or phone: dates, number of guests, questions.",
+       "Bookings and stays. Dates, rooms, guests, price, payments and guarantees. If you book on our website, we collect them through the Beddy booking system; if you book through a portal such as Booking.com, the portal passes them on to us.",
+       "Guest registration. On arrival, Italian law requires us to send the details of each guest's identity document to the police (Article 109 of the Consolidated Law on Public Security), through the State Police's Alloggiati Web service.",
+       "Invoices, payments, tourist tax. The details needed for the invoice or receipt and for the provincial tourist tax.",
+       "Browsing data. Your IP address and the technical data that servers record when you visit the website: see the Cookies page for details."
+      ]
+     },
+     {
+      "id": "finalita",
+      "title": "Why we handle your data and for how long",
+      "paragraphs": [],
+      "tabella": {
+       "testa": [
+        "Data",
+        "Why",
+        "Legal basis (Art. 6 GDPR)",
+        "How long"
+       ],
+       "righe": [
+        [
+         "Contacts and enquiries",
+         "To reply to you and prepare a quote",
+         "Point (b): your request (pre-contractual steps)",
+         "24 months from the last contact, if you don't book"
+        ],
+        [
+         "Bookings and stays",
+         "To manage your booking and stay; complaints and disputes",
+         "Point (b): the contract; point (f): protecting our rights",
+         "10 years from the end of the stay or the cancellation (Art. 2946 of the Italian Civil Code), plus the time needed for any dispute"
+        ],
+        [
+         "Guest registration",
+         "Reporting guests to the police",
+         "Point (c): legal obligation",
+         "Once sent, we keep neither the data nor copies of documents; we keep the Alloggiati Web receipt for 5 years, as required by the Ministry of the Interior"
+        ],
+        [
+         "Invoices, payments, tourist tax",
+         "Accounting and tax obligations",
+         "Point (c): legal obligation (Art. 2220 of the Italian Civil Code and tax rules)",
+         "10 years from the end of the financial year"
+        ],
+        [
+         "Browsing data",
+         "Security of the website and payments",
+         "Point (f): legitimate interest in security",
+         "Kept by our providers (GitHub, Beddy, Stripe) under their own rules"
+        ]
+       ]
+      },
+      "dopo": [
+       "We don't sell your data, we don't use it for advertising and we don't make automated decisions about you."
+      ]
      },
      {
       "id": "destinatari",
-      "kicker": "",
-      "title": "Who we share your data with",
+      "title": "Who we share it with",
       "paragraphs": [
-       "We share your data only with the service providers we need to run the hotel (booking system, email provider, tax adviser) and, when the law requires it, with the authorities.",
-       "If you message us on WhatsApp, the service is provided by Meta under its own terms."
+       "We only share data with the parties we need in order to work, who handle it either as processors on our behalf (Art. 28 GDPR) or as independent controllers:"
       ],
-      "items": [],
-      "cta": ""
+      "items": [
+       {
+        "t": "Bookings",
+        "d": "Zucchetti Hospitality (Beddy booking system) and the portals you book through, such as Booking.com."
+       },
+       {
+        "t": "Payments",
+        "d": "Stripe, banks and card networks."
+       },
+       {
+        "t": "Email and messages",
+        "d": "Our email providers, and Meta if you write to us on WhatsApp."
+       },
+       {
+        "t": "Website",
+        "d": "GitHub, which hosts the website."
+       },
+       {
+        "t": "Advisers",
+        "d": "Our tax adviser and, if needed, a lawyer."
+       },
+       {
+        "t": "Authorities",
+        "d": "The police, statistics offices, the Province for the tourist tax, the Revenue Agency and judicial authorities, when the law requires it."
+       }
+      ],
+      "dopo": [
+       "We'll send you the up-to-date list of providers and their roles on request."
+      ]
      },
      {
-      "id": "conservazione",
-      "kicker": "",
-      "title": "How long we keep your data",
+      "id": "estero",
+      "title": "Data outside the European Union",
       "paragraphs": [
-       "We keep your enquiries for as long as we need to reply to you and to manage your stay if you decide to book.",
-       "We keep booking details and tax records for as long as the law requires."
-      ],
-      "items": [],
-      "cta": ""
-     },
-     {
-      "id": "sito-cookie",
-      "kicker": "",
-      "title": "Our website and cookies",
-      "paragraphs": [
-       "We don't use profiling cookies or analytics tools. The website itself remembers just one thing in your browser (in its local storage): that you've closed the cookie notice, so you won't see it again.",
-       "The booking bar is provided by Beddy (Zucchetti Hospitality). To make it work, the booking system and its payment provider, Stripe, use essential cookies, which are also needed to keep transactions secure.",
-       "The website is static and hosted on GitHub Pages (GitHub, Inc.). For security reasons, GitHub records the IP address of anyone who visits our pages.",
-       "The map opens in Google Maps only if you click the link. We don't use Google Fonts: the fonts on our pages are hosted on our own website. The booking bar loads at your first action on the page (a tap, a click, the mouse, the keyboard or scrolling), or when a page opens already scrolled, for example from a link to one of the rooms. At that moment it downloads its files and its font from Beddy's and Stripe's servers, which therefore receive your device's IP address."
-      ],
-      "items": [],
-      "cta": ""
+       "Some providers are based in the United States, such as GitHub, Stripe and Meta. In these cases data is transferred on the basis of the standard contractual clauses approved by the European Commission (Art. 46 GDPR) and, where applicable, the EU-US Data Privacy Framework (adequacy decision of July 2023). Otherwise, we only transfer data to countries that the Commission considers adequate (Art. 45 GDPR). You can ask us for a copy of the safeguards."
+      ]
      },
      {
       "id": "diritti",
-      "kicker": "",
       "title": "Your rights",
       "paragraphs": [
-       "You can ask us at any time to give you access to your data, correct it, delete it, restrict how we use it, stop processing it or send you a copy (Articles 15–22 GDPR). Just email us at info@hotelmaffeipinzolo.it.",
-       "You also have the right to make a complaint to the Italian data protection authority, the Garante per la protezione dei dati personali (www.garanteprivacy.it)."
+       "You can exercise the rights set out in Articles 15–22 of the GDPR at any time:"
       ],
-      "items": [],
-      "cta": ""
+      "items": [
+       {
+        "t": "Access (Art. 15)",
+        "d": "Find out what data we hold and get a copy."
+       },
+       {
+        "t": "Rectification (Art. 16)",
+        "d": "Correct or complete inaccurate data."
+       },
+       {
+        "t": "Erasure (Art. 17)",
+        "d": "Have it deleted, except data the law requires us to keep or that we need to defend a legal claim."
+       },
+       {
+        "t": "Restriction (Art. 18)",
+        "d": "Have its use suspended while a dispute is being checked."
+       },
+       {
+        "t": "Portability (Art. 20)",
+        "d": "Receive it in a machine-readable format, or have it sent to another controller."
+       },
+       {
+        "t": "Objection (Art. 21)",
+        "d": "Object to processing based on our legitimate interest."
+       }
+      ],
+      "dopo": [
+       "Just write to info@hotelmaffeipinzolo.it or to our certified email address lmsnc2020@pec.cgn.it. We'll reply within one month; in complex cases this may be extended by two further months, and we'll tell you within the first month. It's free of charge, unless a request is manifestly unfounded or excessive.",
+       "You can also lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rome – www.garanteprivacy.it) or with the supervisory authority of the EU country where you live or work."
+      ]
+     },
+     {
+      "id": "sicurezza",
+      "title": "How we protect your data",
+      "paragraphs": [
+       "Only we and the providers we need can see your data, in systems protected by passwords. The website only works over https, so pages travel encrypted."
+      ]
+     },
+     {
+      "id": "aggiornamenti",
+      "title": "Updates",
+      "paragraphs": [
+       "This policy may change, for example if our providers or the law change: the version in force is always on this page.",
+       "The English and Polish versions are translations: in case of doubt, the Italian text prevails.",
+       "Last updated: 1 November 2026 (version 1.0)."
+      ]
      }
-    ],
-    "faq": []
+    ]
    },
    "pl": {
-    "meta_title": "Prywatność i pliki cookie – Hotel Garnì Maffei",
-    "meta_description": "Polityka prywatności Hotelu Garnì Maffei w Pinzolo: jakie dane przetwarzamy i dlaczego, jakich plików cookie używa strona i jakie macie prawa.",
+    "meta_title": "Polityka prywatności – Hotel Garnì Maffei",
+    "meta_description": "Polityka prywatności Hotelu Garnì Maffei w Pinzolo: kto przetwarza Wasze dane, w jakim celu, jak długo i jakie macie prawa.",
     "kicker": "",
-    "h1": "Prywatność i pliki cookie",
-    "lead": "Tutaj wyjaśniamy, jakie dane osobowe przetwarzamy, gdy kontaktujecie się z nami lub rezerwujecie pobyt, oraz jakich plików cookie używa nasza strona. Ostatnia aktualizacja: 1 listopada 2026 r.",
+    "h1": "Polityka prywatności",
+    "lead": "Na tej stronie wyjaśniamy, zgodnie z unijnym rozporządzeniem o ochronie danych (RODO, art. 13 i 14), jakie dane osobowe przetwarzamy, gdy kontaktujecie się z nami, rezerwujecie pobyt lub u nas mieszkacie. O plikach cookie piszemy na stronie „Pliki cookie”.",
     "sections": [
      {
       "id": "titolare",
-      "kicker": "",
-      "title": "Kto jest administratorem danych",
+      "title": "Kto jest administratorem",
       "paragraphs": [
-       "Administratorem danych osobowych jest L&M snc di Scaramuzzi Luca e Pederzolli Manuela – nasza spółka, która prowadzi Hotel Garnì Maffei. Adres: Via N. Bolognini 72, 38086 Pinzolo (TN). Numer VAT (P.IVA): 02588730222.",
-       "Jeśli macie jakiekolwiek pytania dotyczące swoich danych, napiszcie do nas na adres info@hotelmaffeipinzolo.it. Odpowiemy Wam osobiście – Luca i Manuela."
-      ],
-      "items": [],
-      "cta": ""
+       "Administratorem danych jest L&M snc di Scaramuzzi Luca e Pederzolli Manuela, spółka prowadząca Hotel Garnì Maffei.",
+       "Adres: Via N. Bolognini 72, 38086 Pinzolo (TN), Włochy. Nr VAT 02588730222, REA TN-235607. E-mail: info@hotelmaffeipinzolo.it. PEC (poczta certyfikowana): lmsnc2020@pec.cgn.it.",
+       "Jeśli macie pytania dotyczące Waszych danych, napiszcie do nas: odpowiemy osobiście – Luca i Manuela."
+      ]
      },
      {
       "id": "dati",
-      "kicker": "",
-      "title": "Jakie dane przetwarzamy i dlaczego",
+      "title": "Jakie dane przetwarzamy",
       "paragraphs": [
-       "Zapytania i oferty cenowe. Kiedy piszecie do nas e-mailem lub przez WhatsApp albo dzwonicie, wykorzystujemy Wasze imię i nazwisko, dane kontaktowe oraz to, o co pytacie, np. termin i liczbę osób. Te informacje są nam potrzebne, żeby Wam odpowiedzieć i przygotować ewentualny pobyt. Podstawa prawna: Wasze zapytanie i działania podejmowane przed zawarciem umowy (art. 6 ust. 1 lit. b rozporządzenia UE 2016/679, czyli RODO).",
-       "Rezerwacje. Gdy rezerwujecie pobyt przez naszą stronę, korzystacie z systemu rezerwacyjnego Beddy (Zucchetti Hospitality). Beddy zbiera dane potrzebne do pobytu i płatności zgodnie z własną polityką prywatności, którą zobaczycie podczas rezerwacji. My wykorzystujemy te dane do obsługi Waszego pobytu (art. 6 ust. 1 lit. b RODO).",
-       "Obowiązki prawne. Jak każdy obiekt noclegowy we Włoszech, zgłaszamy policji pobyt gości, przekazujemy dane statystyczne i dopełniamy formalności podatkowych (art. 6 ust. 1 lit. c RODO).",
-       "Nie sprzedajemy Waszych danych i nie wykorzystujemy ich w celach reklamowych."
-      ],
-      "items": [],
-      "cta": ""
+       "Kontakt i zapytania. Imię i nazwisko, e-mail, telefon oraz to, co nam piszecie lub mówicie przez telefon: daty, liczba osób, pytania.",
+       "Rezerwacja i pobyt. Daty, pokoje, goście, cena, płatności i gwarancje. Jeśli rezerwujecie na naszej stronie, zbieramy je w systemie rezerwacji Beddy; jeśli przez portal, np. Booking.com, przekazuje nam je portal.",
+       "Meldunek gości. Po przyjeździe prawo włoskie wymaga, abyśmy przekazali policji (Questura) dane z dokumentu tożsamości każdego gościa (art. 109 jednolitego tekstu ustaw o bezpieczeństwie publicznym) przez system Alloggiati Web Policji Państwowej.",
+       "Faktury, płatności, opłata miejscowa. Dane potrzebne do faktury lub paragonu oraz do prowincjonalnej opłaty miejscowej.",
+       "Przeglądanie strony. Adres IP i dane techniczne, które serwery zapisują podczas odwiedzin strony: szczegóły na stronie „Pliki cookie”."
+      ]
+     },
+     {
+      "id": "finalita",
+      "title": "Dlaczego przetwarzamy dane i jak długo",
+      "paragraphs": [],
+      "tabella": {
+       "testa": [
+        "Dane",
+        "Cel",
+        "Podstawa prawna (art. 6 RODO)",
+        "Jak długo"
+       ],
+       "righe": [
+        [
+         "Kontakt i zapytania",
+         "Odpowiedź i przygotowanie oferty",
+         "Lit. b: Wasze zapytanie (działania przed zawarciem umowy)",
+         "24 miesiące od ostatniego kontaktu, jeśli nie dojdzie do rezerwacji"
+        ],
+        [
+         "Rezerwacja i pobyt",
+         "Obsługa rezerwacji i pobytu; reklamacje i spory",
+         "Lit. b: umowa; lit. f: ochrona naszych praw",
+         "10 lat od zakończenia pobytu lub anulowania (art. 2946 włoskiego kodeksu cywilnego), plus czas ewentualnego sporu"
+        ],
+        [
+         "Meldunek gości",
+         "Przekazanie danych policji",
+         "Lit. c: obowiązek prawny",
+         "Po wysłaniu nie przechowujemy ani danych, ani kopii dokumentów; potwierdzenie z Alloggiati Web przechowujemy 5 lat, zgodnie z rozporządzeniem włoskiego Ministerstwa Spraw Wewnętrznych"
+        ],
+        [
+         "Faktury, płatności, opłata miejscowa",
+         "Obowiązki księgowe i podatkowe",
+         "Lit. c: obowiązek prawny (art. 2220 włoskiego kodeksu cywilnego i przepisy podatkowe)",
+         "10 lat od zamknięcia roku obrotowego"
+        ],
+        [
+         "Przeglądanie strony",
+         "Bezpieczeństwo strony i płatności",
+         "Lit. f: prawnie uzasadniony interes w zakresie bezpieczeństwa",
+         "Przechowują je nasi dostawcy (GitHub, Beddy, Stripe) według własnych zasad"
+        ]
+       ]
+      },
+      "dopo": [
+       "Nie sprzedajemy Waszych danych, nie wykorzystujemy ich do reklamy i nie podejmujemy wobec Was zautomatyzowanych decyzji."
+      ]
      },
      {
       "id": "destinatari",
-      "kicker": "",
       "title": "Komu przekazujemy dane",
       "paragraphs": [
-       "Wasze dane przekazujemy tylko dostawcom usług potrzebnych nam do pracy (system rezerwacyjny, poczta elektroniczna, doradca podatkowy) oraz organom publicznym, gdy wymaga tego prawo.",
-       "Jeśli piszecie do nas przez WhatsApp, usługę świadczy firma Meta zgodnie z własnym regulaminem."
+       "Przekazujemy dane tylko tym, których potrzebujemy do pracy. Przetwarzają je w naszym imieniu jako podmioty przetwarzające (art. 28 RODO) albo jako niezależni administratorzy:"
       ],
-      "items": [],
-      "cta": ""
+      "items": [
+       {
+        "t": "Rezerwacje",
+        "d": "Zucchetti Hospitality (system rezerwacji Beddy) oraz portale, przez które rezerwujecie, np. Booking.com."
+       },
+       {
+        "t": "Płatności",
+        "d": "Stripe, banki i organizacje kart płatniczych."
+       },
+       {
+        "t": "Poczta i wiadomości",
+        "d": "Dostawcy naszej poczty e-mail oraz Meta, jeśli piszecie do nas przez WhatsApp."
+       },
+       {
+        "t": "Strona",
+        "d": "GitHub, który hostuje stronę."
+       },
+       {
+        "t": "Doradcy",
+        "d": "Nasz doradca podatkowy i w razie potrzeby prawnik."
+       },
+       {
+        "t": "Urzędy",
+        "d": "Policja, urzędy statystyczne, prowincja (opłata miejscowa), urząd skarbowy i sądy, gdy wymaga tego prawo."
+       }
+      ],
+      "dopo": [
+       "Aktualną listę dostawców wraz z ich rolą prześlemy na życzenie."
+      ]
      },
      {
-      "id": "conservazione",
-      "kicker": "",
-      "title": "Jak długo przechowujemy dane",
+      "id": "estero",
+      "title": "Dane poza Unią Europejską",
       "paragraphs": [
-       "Zapytania przechowujemy tak długo, jak jest to potrzebne, żeby Wam odpowiedzieć i obsłużyć ewentualny pobyt.",
-       "Dane rezerwacji i dokumenty podatkowe zachowujemy przez okres wymagany przepisami."
-      ],
-      "items": [],
-      "cta": ""
-     },
-     {
-      "id": "sito-cookie",
-      "kicker": "",
-      "title": "Strona internetowa i pliki cookie",
-      "paragraphs": [
-       "Nie używamy profilujących plików cookie ani narzędzi analitycznych. Sami zapisujemy w Waszej przeglądarce (w pamięci lokalnej) tylko jedną informację: że zamknęliście komunikat o plikach cookie. Dzięki temu strona nie wyświetla go Wam ponownie.",
-       "Pasek rezerwacji należy do Beddy (Zucchetti Hospitality). Żeby działał, system rezerwacyjny i jego operator płatności, Stripe, używają technicznych plików cookie, potrzebnych także do zapewnienia bezpieczeństwa transakcji.",
-       "Strona jest statyczna i hostowana w serwisie GitHub Pages (GitHub, Inc.). Ze względów bezpieczeństwa GitHub rejestruje adresy IP osób, które ją odwiedzają.",
-       "Mapy Google otwierają się tylko wtedy, gdy klikniecie link. Nie korzystamy z Google Fonts: czcionki przechowujemy razem z resztą strony. Pasek rezerwacji ładuje się przy Waszym pierwszym ruchu na stronie (dotknięcie, kliknięcie, mysz, klawiatura lub przewinięcie) albo gdy strona otwiera się już przewinięta, na przykład z linku do pokoju. Wtedy pobiera swoje pliki i czcionkę z serwerów Beddy i Stripe, które otrzymują w ten sposób adres IP Waszego urządzenia."
-      ],
-      "items": [],
-      "cta": ""
+       "Niektórzy dostawcy mają siedzibę w Stanach Zjednoczonych, np. GitHub, Stripe i Meta. W takich przypadkach dane są przekazywane na podstawie standardowych klauzul umownych zatwierdzonych przez Komisję Europejską (art. 46 RODO) oraz, tam gdzie ma to zastosowanie, ram ochrony danych UE-USA (Data Privacy Framework, decyzja stwierdzająca odpowiedni stopień ochrony z lipca 2023 r.). W pozostałych przypadkach przekazujemy dane tylko do państw, które Komisja uznała za zapewniające odpowiedni stopień ochrony (art. 45 RODO). Możecie poprosić o kopię zabezpieczeń."
+      ]
      },
      {
       "id": "diritti",
-      "kicker": "",
       "title": "Wasze prawa",
       "paragraphs": [
-       "W każdej chwili możecie poprosić nas o dostęp do swoich danych, ich poprawienie, usunięcie lub ograniczenie przetwarzania. Możecie też sprzeciwić się ich przetwarzaniu albo otrzymać ich kopię (art. 15–22 RODO). Wystarczy napisać na adres info@hotelmaffeipinzolo.it.",
-       "Macie również prawo wnieść skargę do włoskiego urzędu ochrony danych osobowych – Garante per la protezione dei dati personali (www.garanteprivacy.it)."
+       "W każdej chwili możecie skorzystać z praw przewidzianych w art. 15–22 RODO:"
       ],
-      "items": [],
-      "cta": ""
+      "items": [
+       {
+        "t": "Dostęp (art. 15)",
+        "d": "Dowiedzieć się, jakie dane przetwarzamy, i otrzymać ich kopię."
+       },
+       {
+        "t": "Sprostowanie (art. 16)",
+        "d": "Poprawić lub uzupełnić błędne dane."
+       },
+       {
+        "t": "Usunięcie (art. 17)",
+        "d": "Usunąć dane, z wyjątkiem tych, które musimy przechowywać z mocy prawa lub do obrony roszczeń."
+       },
+       {
+        "t": "Ograniczenie przetwarzania (art. 18)",
+        "d": "Wstrzymać ich wykorzystanie na czas wyjaśniania sporu."
+       },
+       {
+        "t": "Przenoszenie (art. 20)",
+        "d": "Otrzymać je w formacie nadającym się do odczytu maszynowego lub przekazać je innemu administratorowi."
+       },
+       {
+        "t": "Sprzeciw (art. 21)",
+        "d": "Sprzeciwić się przetwarzaniu opartemu na naszym prawnie uzasadnionym interesie."
+       }
+      ],
+      "dopo": [
+       "Wystarczy napisać na adres info@hotelmaffeipinzolo.it lub na adres PEC lmsnc2020@pec.cgn.it. Odpowiemy w ciągu miesiąca; w złożonych sprawach termin może zostać przedłużony o kolejne dwa miesiące, o czym poinformujemy Was w ciągu pierwszego miesiąca. Jest to bezpłatne, chyba że żądanie jest ewidentnie nieuzasadnione lub nadmierne.",
+       "Możecie również złożyć skargę do włoskiego organu ochrony danych (Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rzym – www.garanteprivacy.it) lub do organu nadzorczego państwa UE, w którym mieszkacie lub pracujecie (w Polsce: Prezes Urzędu Ochrony Danych Osobowych)."
+      ]
+     },
+     {
+      "id": "sicurezza",
+      "title": "Jak chronimy dane",
+      "paragraphs": [
+       "Dane widzimy tylko my i dostawcy, których potrzebujemy, w systemach chronionych hasłem. Strona działa wyłącznie przez https, więc strony są przesyłane w formie zaszyfrowanej."
+      ]
+     },
+     {
+      "id": "aggiornamenti",
+      "title": "Aktualizacje",
+      "paragraphs": [
+       "Ta polityka może się zmienić, np. gdy zmienią się nasi dostawcy lub przepisy: obowiązująca wersja jest zawsze na tej stronie.",
+       "Wersje angielska i polska są tłumaczeniami: w razie wątpliwości obowiązuje tekst włoski.",
+       "Ostatnia aktualizacja: 1 listopada 2026 r. (wersja 1.0)."
+      ]
      }
-    ],
-    "faq": []
+    ]
+   }
+  },
+  "cookie": {
+   "it": {
+    "meta_title": "Cookie – Hotel Garnì Maffei",
+    "meta_description": "Cookie policy dell'Hotel Garnì Maffei di Pinzolo: il sito usa solo strumenti tecnici, niente cookie di analisi o di marketing.",
+    "kicker": "",
+    "h1": "Cookie",
+    "lead": "In questa pagina vi spieghiamo quali cookie e strumenti simili usa il sito, come chiedono l'art. 122 del Codice privacy (D.Lgs. 196/2003), il GDPR e le Linee guida del Garante del 10 giugno 2021.",
+    "sections": [
+     {
+      "id": "titolare",
+      "title": "Chi è il titolare",
+      "paragraphs": [
+       "L&M snc di Scaramuzzi Luca e Pederzolli Manuela, che gestisce l'Hotel Garnì Maffei. Via N. Bolognini 72, 38086 Pinzolo (TN), P.IVA 02588730222. Email: info@hotelmaffeipinzolo.it. PEC: lmsnc2020@pec.cgn.it.",
+       "Per tutto il resto sul trattamento dei dati vale la nostra informativa privacy."
+      ]
+     },
+     {
+      "id": "cosa",
+      "title": "Cosa sono i cookie",
+      "paragraphs": [
+       "I cookie sono piccoli file di testo che un sito salva nel vostro dispositivo e rilegge alle visite successive. Valgono le stesse regole per gli strumenti simili, come la memoria locale del browser."
+      ]
+     },
+     {
+      "id": "tecnici",
+      "title": "Cookie tecnici: non serve il consenso",
+      "paragraphs": [
+       "Il sito usa solo strumenti tecnici, necessari a farlo funzionare e a rendere sicuri i pagamenti. Per questi la legge non chiede il consenso (art. 122 del Codice privacy)."
+      ],
+      "tabella": {
+       "testa": [
+        "Strumento",
+        "Di chi",
+        "Perché",
+        "Durata"
+       ],
+       "righe": [
+        [
+         "Memoria locale «maffei-cookie-ok»",
+         "Nostro",
+         "Ricordare che avete chiuso l'avviso sui cookie",
+         "Finché non cancellate i dati del browser"
+        ],
+        [
+         "Cookie __stripe_mid",
+         "Stripe",
+         "Sicurezza dei pagamenti e prevenzione delle frodi nella barra di prenotazione",
+         "1 anno"
+        ],
+        [
+         "Cookie __stripe_sid",
+         "Stripe",
+         "Sicurezza dei pagamenti e prevenzione delle frodi nella barra di prenotazione",
+         "30 minuti"
+        ]
+       ]
+      },
+      "dopo": [
+       "I cookie di Stripe arrivano con la barra di prenotazione di Beddy (Zucchetti Hospitality), che si carica alla vostra prima azione sulla pagina (un tocco, un clic, il mouse, la tastiera o lo scorrimento) oppure quando una pagina si apre già scorsa. In quel momento la barra scarica i suoi file e il suo carattere dai server di Beddy e di Stripe, che ricevono l'indirizzo IP del vostro dispositivo."
+      ]
+     },
+     {
+      "id": "niente",
+      "title": "Niente cookie di analisi o di marketing",
+      "paragraphs": [
+       "Non usiamo strumenti di statistica, pubblicità o profilazione, nostri o di altri. Per questo l'avviso che vedete alla prima visita vi informa e non vi chiede una scelta.",
+       "I caratteri delle pagine sono sul nostro sito: non usiamo Google Fonts. Google Maps, Instagram, WhatsApp e i siti dei ristoranti si aprono solo se toccate il collegamento, e da lì valgono le regole di quei siti."
+      ]
+     },
+     {
+      "id": "hosting",
+      "title": "Chi ospita il sito",
+      "paragraphs": [
+       "Il sito è ospitato da GitHub Pages (GitHub, Inc., Stati Uniti). Per sicurezza GitHub registra l'indirizzo IP di chi visita le pagine. Sul trasferimento dei dati negli Stati Uniti vedete l'informativa privacy."
+      ]
+     },
+     {
+      "id": "browser",
+      "title": "Gestire i cookie dal browser",
+      "paragraphs": [
+       "Potete cancellare o bloccare i cookie dalle impostazioni del browser. Senza i cookie tecnici la barra di prenotazione potrebbe non funzionare: potete sempre prenotare scrivendoci."
+      ]
+     },
+     {
+      "id": "aggiornamenti",
+      "title": "Aggiornamenti",
+      "paragraphs": [
+       "Questa pagina cambia se cambiano gli strumenti del sito. Le versioni in inglese e in polacco sono traduzioni: in caso di dubbio vale il testo italiano.",
+       "Ultimo aggiornamento: 1 novembre 2026 (versione 1.0)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "meta_title": "Cookies – Hotel Garnì Maffei",
+    "meta_description": "Cookie policy of Hotel Garnì Maffei in Pinzolo: the website only uses technical tools, with no analytics or marketing cookies.",
+    "kicker": "",
+    "h1": "Cookies",
+    "lead": "On this page we explain which cookies and similar tools the website uses, as required by Article 122 of the Italian Privacy Code (Legislative Decree 196/2003), the GDPR and the Italian Data Protection Authority's guidelines of 10 June 2021.",
+    "sections": [
+     {
+      "id": "titolare",
+      "title": "Who the controller is",
+      "paragraphs": [
+       "L&M snc di Scaramuzzi Luca e Pederzolli Manuela, which runs Hotel Garnì Maffei. Via N. Bolognini 72, 38086 Pinzolo (TN), Italy, VAT No. 02588730222. Email: info@hotelmaffeipinzolo.it. Certified email (PEC): lmsnc2020@pec.cgn.it.",
+       "For everything else about how we handle data, see our privacy policy."
+      ]
+     },
+     {
+      "id": "cosa",
+      "title": "What cookies are",
+      "paragraphs": [
+       "Cookies are small text files that a website saves on your device and reads again on later visits. The same rules apply to similar tools, such as your browser's local storage."
+      ]
+     },
+     {
+      "id": "tecnici",
+      "title": "Technical cookies: no consent needed",
+      "paragraphs": [
+       "The website only uses technical tools, needed to make it work and to keep payments secure. The law doesn't require consent for these (Article 122 of the Privacy Code)."
+      ],
+      "tabella": {
+       "testa": [
+        "Tool",
+        "Whose",
+        "Why",
+        "Duration"
+       ],
+       "righe": [
+        [
+         "Local storage “maffei-cookie-ok”",
+         "Ours",
+         "To remember that you closed the cookie notice",
+         "Until you clear your browser data"
+        ],
+        [
+         "Cookie __stripe_mid",
+         "Stripe",
+         "Payment security and fraud prevention in the booking bar",
+         "1 year"
+        ],
+        [
+         "Cookie __stripe_sid",
+         "Stripe",
+         "Payment security and fraud prevention in the booking bar",
+         "30 minutes"
+        ]
+       ]
+      },
+      "dopo": [
+       "Stripe's cookies come with the Beddy booking bar (Zucchetti Hospitality), which loads at your first action on the page (a tap, a click, the mouse, the keyboard or scrolling) or when a page opens already scrolled. At that moment the bar downloads its files and its font from Beddy's and Stripe's servers, which receive your device's IP address."
+      ]
+     },
+     {
+      "id": "niente",
+      "title": "No analytics or marketing cookies",
+      "paragraphs": [
+       "We don't use any statistics, advertising or profiling tools, our own or anyone else's. That's why the notice you see on your first visit informs you and doesn't ask you to choose.",
+       "The fonts on our pages are hosted on our own website: we don't use Google Fonts. Google Maps, Instagram, WhatsApp and the restaurants' websites only open if you tap the link, and from then on those websites' rules apply."
+      ]
+     },
+     {
+      "id": "hosting",
+      "title": "Who hosts the website",
+      "paragraphs": [
+       "The website is hosted by GitHub Pages (GitHub, Inc., United States). For security, GitHub records the IP address of visitors. For data transfers to the United States, see our privacy policy."
+      ]
+     },
+     {
+      "id": "browser",
+      "title": "Managing cookies in your browser",
+      "paragraphs": [
+       "You can delete or block cookies in your browser settings. Without technical cookies the booking bar may not work: you can always book by writing to us."
+      ]
+     },
+     {
+      "id": "aggiornamenti",
+      "title": "Updates",
+      "paragraphs": [
+       "This page changes if the website's tools change. The English and Polish versions are translations: in case of doubt, the Italian text prevails.",
+       "Last updated: 1 November 2026 (version 1.0)."
+      ]
+     }
+    ]
+   },
+   "pl": {
+    "meta_title": "Pliki cookie – Hotel Garnì Maffei",
+    "meta_description": "Polityka plików cookie Hotelu Garnì Maffei w Pinzolo: strona używa tylko narzędzi technicznych, bez analitycznych i marketingowych plików cookie.",
+    "kicker": "",
+    "h1": "Pliki cookie",
+    "lead": "Na tej stronie wyjaśniamy, jakich plików cookie i podobnych narzędzi używa nasza strona, zgodnie z art. 122 włoskiego kodeksu ochrony prywatności (dekret ustawodawczy 196/2003), RODO oraz wytycznymi włoskiego organu ochrony danych z 10 czerwca 2021 r.",
+    "sections": [
+     {
+      "id": "titolare",
+      "title": "Kto jest administratorem",
+      "paragraphs": [
+       "L&M snc di Scaramuzzi Luca e Pederzolli Manuela, spółka prowadząca Hotel Garnì Maffei. Via N. Bolognini 72, 38086 Pinzolo (TN), Włochy, nr VAT 02588730222. E-mail: info@hotelmaffeipinzolo.it. PEC: lmsnc2020@pec.cgn.it.",
+       "We wszystkich innych sprawach dotyczących danych obowiązuje nasza polityka prywatności."
+      ]
+     },
+     {
+      "id": "cosa",
+      "title": "Czym są pliki cookie",
+      "paragraphs": [
+       "Pliki cookie to małe pliki tekstowe, które strona zapisuje na Waszym urządzeniu i odczytuje przy kolejnych wizytach. Te same zasady dotyczą podobnych narzędzi, np. pamięci lokalnej przeglądarki."
+      ]
+     },
+     {
+      "id": "tecnici",
+      "title": "Techniczne pliki cookie: zgoda nie jest potrzebna",
+      "paragraphs": [
+       "Strona używa tylko narzędzi technicznych, potrzebnych do jej działania i do bezpieczeństwa płatności. Na takie narzędzia prawo nie wymaga zgody (art. 122 kodeksu ochrony prywatności)."
+      ],
+      "tabella": {
+       "testa": [
+        "Narzędzie",
+        "Czyje",
+        "Cel",
+        "Czas"
+       ],
+       "righe": [
+        [
+         "Pamięć lokalna „maffei-cookie-ok”",
+         "Nasze",
+         "Zapamiętanie, że zamknęliście informację o plikach cookie",
+         "Do czasu usunięcia danych przeglądarki"
+        ],
+        [
+         "Plik cookie __stripe_mid",
+         "Stripe",
+         "Bezpieczeństwo płatności i zapobieganie oszustwom w pasku rezerwacji",
+         "1 rok"
+        ],
+        [
+         "Plik cookie __stripe_sid",
+         "Stripe",
+         "Bezpieczeństwo płatności i zapobieganie oszustwom w pasku rezerwacji",
+         "30 minut"
+        ]
+       ]
+      },
+      "dopo": [
+       "Pliki cookie Stripe pojawiają się razem z paskiem rezerwacji Beddy (Zucchetti Hospitality), który ładuje się przy Waszym pierwszym ruchu na stronie (dotknięcie, kliknięcie, mysz, klawiatura lub przewinięcie) albo gdy strona otwiera się już przewinięta. Wtedy pasek pobiera swoje pliki i czcionkę z serwerów Beddy i Stripe, które otrzymują w ten sposób adres IP Waszego urządzenia."
+      ]
+     },
+     {
+      "id": "niente",
+      "title": "Bez analitycznych i marketingowych plików cookie",
+      "paragraphs": [
+       "Nie używamy żadnych narzędzi statystycznych, reklamowych ani profilujących – ani własnych, ani cudzych. Dlatego informacja, którą widzicie przy pierwszej wizycie, tylko informuje i nie prosi o wybór.",
+       "Czcionki przechowujemy razem z resztą strony: nie korzystamy z Google Fonts. Mapy Google, Instagram, WhatsApp i strony restauracji otwierają się tylko wtedy, gdy klikniecie link; od tej chwili obowiązują zasady tych serwisów."
+      ]
+     },
+     {
+      "id": "hosting",
+      "title": "Kto hostuje stronę",
+      "paragraphs": [
+       "Stronę hostuje GitHub Pages (GitHub, Inc., Stany Zjednoczone). Ze względów bezpieczeństwa GitHub zapisuje adres IP odwiedzających. O przekazywaniu danych do Stanów Zjednoczonych piszemy w polityce prywatności."
+      ]
+     },
+     {
+      "id": "browser",
+      "title": "Zarządzanie plikami cookie w przeglądarce",
+      "paragraphs": [
+       "Możecie usunąć lub zablokować pliki cookie w ustawieniach przeglądarki. Bez technicznych plików cookie pasek rezerwacji może nie działać: zawsze możecie zarezerwować pobyt, pisząc do nas."
+      ]
+     },
+     {
+      "id": "aggiornamenti",
+      "title": "Aktualizacje",
+      "paragraphs": [
+       "Ta strona zmienia się, gdy zmieniają się narzędzia używane na stronie. Wersje angielska i polska są tłumaczeniami: w razie wątpliwości obowiązuje tekst włoski.",
+       "Ostatnia aktualizacja: 1 listopada 2026 r. (wersja 1.0)."
+      ]
+     }
+    ]
    }
   }
  },
@@ -1944,7 +2501,7 @@
    "footer_contacts": "Contatti",
    "footer_company": "Società",
    "footer_info": "Informazioni",
-   "privacy": "Privacy e cookie",
+   "privacy": "Privacy",
    "cookie_text": "Questo sito usa solo cookie tecnici, necessari alla prenotazione online. Nessuna profilazione.",
    "cookie_ok": "Ho capito",
    "cookie_more": "Dettagli",
@@ -1987,7 +2544,8 @@
    "tipo_osteria": "osteria trentina",
    "tipo_rifugio": "rifugio",
    "min_piedi": "{n} min a piedi",
-   "km": "{n} km"
+   "km": "{n} km",
+   "cookie_page": "Cookie"
   },
   "en": {
    "skip": "Skip to content",
@@ -2014,7 +2572,7 @@
    "footer_contacts": "Contact",
    "footer_company": "Company details",
    "footer_info": "Information",
-   "privacy": "Privacy and cookies",
+   "privacy": "Privacy policy",
    "cookie_text": "This website only uses the essential cookies needed for online booking. We don't use cookies to profile you.",
    "cookie_ok": "Got it",
    "cookie_more": "Find out more",
@@ -2057,7 +2615,8 @@
    "tipo_osteria": "Trentino osteria",
    "tipo_rifugio": "mountain refuge",
    "min_piedi": "{n} min walk",
-   "km": "{n} km"
+   "km": "{n} km",
+   "cookie_page": "Cookies"
   },
   "pl": {
    "skip": "Przejdź do treści",
@@ -2084,7 +2643,7 @@
    "footer_contacts": "Kontakt",
    "footer_company": "Dane firmy",
    "footer_info": "Informacje",
-   "privacy": "Prywatność i pliki cookie",
+   "privacy": "Polityka prywatności",
    "cookie_text": "Ta strona używa wyłącznie technicznych plików cookie, niezbędnych do rezerwacji online. Nie stosujemy profilowania.",
    "cookie_ok": "Rozumiem",
    "cookie_more": "Szczegóły",
@@ -2128,7 +2687,8 @@
    "tipo_osteria": "trydencka osteria",
    "tipo_rifugio": "schronisko",
    "min_piedi": "{n} min pieszo",
-   "km": "{n} km"
+   "km": "{n} km",
+   "cookie_page": "Pliki cookie"
   }
  }
 }

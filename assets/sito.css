@@ -209,6 +209,12 @@ a.score span{text-decoration:underline;text-underline-offset:3px}
 .contact-list a:hover{color:var(--accent);text-decoration:underline}
 .contact-list a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 .breadcrumb{font-size:14px;color:var(--muted);padding-top:16px}
+.tabella{margin:18px 0 8px}
+.tabella table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}
+.tabella th,.tabella td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+.tabella th{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tabella td:first-child{font-weight:600}
+@media (max-width:700px){.tabella thead{display:none}.tabella tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}.tabella td{display:block;border:0;padding:3px 0}.tabella td::before{content:attr(data-col);display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.tabella td:first-child{font-family:var(--display);font-weight:400;font-size:20px;padding-bottom:6px}.tabella td:first-child::before{display:none}}
 .legal-page .breadcrumb{padding-top:0;margin-bottom:18px;max-width:calc(68ch * 17 / 14)}
 .breadcrumb a{color:var(--muted)}
 
