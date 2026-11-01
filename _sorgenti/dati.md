@@ -90,4 +90,4 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 - Gourmet: Grual (Lefay Resort, Pinzolo), una stella Michelin (Guida 2025, confermata 2026), solo cena, bambini dai 12 anni in su, 10 min a piedi. La Guida 2027 esce il 12/11/2026: ricontrollare.
 - Val Genova, d'estate: Chalet Val Genova (Carisolo, 2,4 km), Ristorante Cascate Nardis (5,1 km, aprile-1 novembre), Chalet da Gino (5,5 km, maggio-ottobre), Rifugio Fontana Bona (7,8 km, giugno-settembre).
 - Nessuno di Mildas, Rendenèr, La Parzif e Grual fa la pizza.
-- Al 1/11/2026 Google segnava "chiuso temporaneamente" Al Cardo, La Parzif e Al Rocol (probabile pausa d'autunno): da ricontrollare a dicembre.
+- Riapertura per l'inverno 2026/27 di Al Cardo, La Parzif e Al Rocol confermata da Luca il 1/11/2026 (Google li segnava "chiuso temporaneamente": pausa d'autunno).
