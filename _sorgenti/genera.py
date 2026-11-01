@@ -345,6 +345,13 @@ def hero(n, lang, t, sub=False, pos='50% 50%'):
 </section>
 '''
 
+# punti della foto dall'alto (9900), in percentuale: la punta della freccia
+ETICHETTE_DOVE = (('label_gondola', 19, 40), ('label_hotel', 79, 30))
+
+def foto_dove(n, lang, sizes):
+    tag = ''.join(f'<span class="etichetta" style="left:{x}%;top:{y}%">{e(ui(lang, k))}</span>' for k, x, y in ETICHETTE_DOVE)
+    return f'<figure class="figure figure-etichette" style="--ratio:16/9">{picture(n, lang, sizes=sizes)}{tag}</figure>'
+
 NAV_KEY = {'camere': 'nav_rooms', 'colazione': 'nav_breakfast', 'pinzolo': 'nav_pinzolo', 'contatti': 'nav_contact', 'privacy': 'privacy', 'cookie': 'cookie_page'}
 
 def page_label(page, lang, t):
@@ -380,6 +387,10 @@ def render_home(lang):
     out.append(f'<section class="feature" aria-labelledby="s-colazione">{picture(fp["home_colazione"], lang, sizes="100vw")}<div class="panel">{kicker(s["kicker"])}<h2 id="s-colazione">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:16px"><a href="{url("colazione", lang)}">{e(s["cta"])}</a></p></div></section>')
     s = sec(t, 'luca-manuela')
     out.append(f'<section class="section" style="padding-top:clamp(56px,8vw,104px)" aria-labelledby="s-noi"><div class="wrap grid-2"><div class="hosts-photo">{picture(fp["home_luca_manuela"], lang, sizes="(min-width: 860px) 520px, 100vw")}</div><div>{kicker(s["kicker"])}<h2 id="s-noi" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p class="sign">{e(ui(lang, "signature"))}</p></div></div></section>')
+    s = sec(t, 'pinzolo')
+    out.append(f'<section class="section" aria-labelledby="s-pinzolo"><div class="wrap grid-2"><figure class="figure" style="--ratio:3/2">{picture(fp["home_pinzolo"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure><div>{kicker(s["kicker"])}<h2 id="s-pinzolo" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{url("pinzolo", lang)}">{e(s["cta"])}</a></p></div></div></section>')
+    s = sec(t, 'dove')
+    out.append(f'<section class="section" aria-labelledby="s-dove"><div class="wrap grid-2"><div>{kicker(s["kicker"])}<h2 id="s-dove" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{url("contatti", lang)}">{e(s["cta"])}</a></p></div>{foto_dove(fp["home_dove"], lang, "(min-width: 860px) 560px, 100vw")}</div></section>')
     s = sec(t, 'recensioni'); rv = C['recensioni']
     v_b = rv['booking']['voto'] if lang in ('it', 'pl') else rv['booking']['voto_en']
     v_g = rv['google']['voto'] if lang in ('it', 'pl') else rv['google']['voto_en']
@@ -387,10 +398,6 @@ def render_home(lang):
     qa, qc = {'it': ('«', '»'), 'en': ('“', '”'), 'pl': ('„', '”')}[lang]
     quotes = ''.join(f'<figure class="quote"><blockquote lang="{q["lingua"]}">{qa}{e(q["testo"])}{qc}</blockquote><figcaption>{e(q["autore"])} · {e(q["fonte"])}</figcaption></figure>' for q in ordine)
     out.append(f'<section class="section" aria-labelledby="s-recensioni"><div class="wrap"><div class="section-head">{kicker(s["kicker"])}<h2 id="s-recensioni">{e(s["title"])}</h2>{paras(s, "lead")}</div><div class="grid-2" style="align-items:start"><div class="scores"><a class="score" href="{rv["booking"]["url"]}" rel="noopener"><strong>{v_b}<small>/{rv["booking"]["su"]}</small></strong><span>{e(ui(lang, "reviews_booking"))} · {e(conta(lang, rv["booking"]["numero"]))}</span></a><div class="score"><strong>{v_g}<small>/{rv["google"]["su"]}</small></strong><span>{e(ui(lang, "reviews_google"))} · {e(conta(lang, rv["google"]["numero"]))}</span></div><p class="muted" style="flex-basis:100%;font-size:14px;margin:0">{e(ui(lang, "reviews_date"))}</p></div><div class="quotes">{quotes}</div></div></div></section>')
-    s = sec(t, 'pinzolo')
-    out.append(f'<section class="section" aria-labelledby="s-pinzolo"><div class="wrap grid-2"><figure class="figure" style="--ratio:3/2">{picture(fp["home_pinzolo"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure><div>{kicker(s["kicker"])}<h2 id="s-pinzolo" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{url("pinzolo", lang)}">{e(s["cta"])}</a></p></div></div></section>')
-    s = sec(t, 'dove')
-    out.append(f'<section class="section" aria-labelledby="s-dove"><div class="wrap grid-2"><div>{kicker(s["kicker"])}<h2 id="s-dove" style="margin-bottom:16px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{url("contatti", lang)}">{e(s["cta"])}</a></p></div><figure class="figure" style="--ratio:16/9">{picture(fp["home_dove"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure></div></section>')
     out.append('</main>'); out.append(footer('home', lang))
     return ''.join(out)
 
@@ -516,7 +523,7 @@ def render_contatti(lang):
     s2 = sec(t, 'prenotare')
     out.append(f'<section class="section" style="padding-top:40px" aria-labelledby="s-contatti"><div class="wrap grid-2" style="align-items:start"><div><h2 id="s-contatti" style="margin-bottom:12px">{e(s["title"])}</h2>{paras(s)}<div style="margin-top:22px">{lst}</div></div><div><h2 style="margin-bottom:12px">{e(s2["title"])}</h2>{paras(s2)}{items_list(s2)}<p style="margin-top:22px">{book_btn(lang)}</p></div></div></section>')
     s = sec(t, 'dove-siamo')
-    out.append(f'<section class="section" aria-labelledby="s-dove"><div class="wrap grid-2"><figure class="figure" style="--ratio:16/9">{picture(fp["contatti_dove"], lang, sizes="(min-width: 860px) 560px, 100vw")}</figure><div><h2 id="s-dove" style="margin-bottom:12px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{c["maps"]}" rel="noopener">{e(s["cta"] or ui(lang, "open_maps"))}</a></p></div></div></section>')
+    out.append(f'<section class="section" aria-labelledby="s-dove"><div class="wrap grid-2">{foto_dove(fp["contatti_dove"], lang, "(min-width: 860px) 560px, 100vw")}<div><h2 id="s-dove" style="margin-bottom:12px">{e(s["title"])}</h2>{paras(s)}<p style="margin-top:18px"><a class="btn btn-line" href="{c["maps"]}" rel="noopener">{e(s["cta"] or ui(lang, "open_maps"))}</a></p></div></div></section>')
     if t.get('faq'):
         qs = ''.join(f'<details><summary>{e(q["q"])}</summary><p>{linkify(e(q["a"]))}{int_link(lang, q)}</p></details>' for q in t['faq'])
         out.append(f'<section class="section faq" aria-labelledby="s-faq"><div class="wrap"><div style="max-width:860px"><h2 id="s-faq" style="margin-bottom:18px">{e(FAQ_TITLE.get(lang, "FAQ"))}</h2>{qs}</div></div></section>')

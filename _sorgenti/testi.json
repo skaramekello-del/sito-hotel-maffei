@@ -89,8 +89,8 @@
       "kicker": "Chi siamo",
       "title": "Siamo Luca e Manuela",
       "paragraphs": [
-       "Il Maffei lo gestiamo noi due, dalle camere alla colazione. Per gli ospiti c'è anche una sala soggiorno, con la stufa a olle e le poltrone rosse.",
-       "Alle mail e ai messaggi WhatsApp rispondiamo noi, di persona. Se viaggiate con il cane, scriveteci prima di prenotare; i gatti, invece, non li accettiamo."
+       "Al Maffei ci siamo noi due, ogni giorno: ci occupiamo di tutto, dalle camere alla colazione.",
+       "Alle mail e ai messaggi WhatsApp rispondiamo sempre noi, di persona."
       ],
       "items": [],
       "cta": ""
@@ -215,8 +215,8 @@
       "kicker": "About us",
       "title": "We're Luca and Manuela",
       "paragraphs": [
-       "The two of us run the Maffei, from the rooms to breakfast. Guests also have a sitting room, with a tiled stove and red armchairs.",
-       "We answer emails and WhatsApp messages personally. If you're travelling with a dog, please write to us before booking. We don't accept cats, though."
+       "At the Maffei it's the two of us, every day: we take care of everything, from the rooms to breakfast.",
+       "We always answer emails and WhatsApp messages ourselves, in person."
       ],
       "items": [],
       "cta": ""
@@ -341,8 +341,8 @@
       "kicker": "O nas",
       "title": "Jesteśmy Luca i Manuela",
       "paragraphs": [
-       "Hotel Maffei prowadzimy we dwoje – od pokoi po śniadanie. Dla gości jest też salon z piecem kaflowym i czerwonymi fotelami.",
-       "Na maile i wiadomości przez WhatsApp odpowiadamy osobiście. Jeśli podróżujecie z psem, napiszcie do nas przed rezerwacją. Kotów natomiast nie przyjmujemy."
+       "W Maffei jesteśmy we dwoje, codziennie: zajmujemy się wszystkim, od pokoi po śniadanie.",
+       "Na maile i wiadomości WhatsApp zawsze odpowiadamy sami, osobiście."
       ],
       "items": [],
       "cta": ""
@@ -2545,7 +2545,9 @@
    "tipo_rifugio": "rifugio",
    "min_piedi": "{n} min a piedi",
    "km": "{n} km",
-   "cookie_page": "Cookie"
+   "cookie_page": "Cookie",
+   "label_gondola": "Cabinovia",
+   "label_hotel": "Hotel Maffei"
   },
   "en": {
    "skip": "Skip to content",
@@ -2616,7 +2618,9 @@
    "tipo_rifugio": "mountain refuge",
    "min_piedi": "{n} min walk",
    "km": "{n} km",
-   "cookie_page": "Cookies"
+   "cookie_page": "Cookies",
+   "label_gondola": "Gondola",
+   "label_hotel": "Hotel Maffei"
   },
   "pl": {
    "skip": "Przejdź do treści",
@@ -2688,7 +2692,9 @@
    "tipo_rifugio": "schronisko",
    "min_piedi": "{n} min pieszo",
    "km": "{n} km",
-   "cookie_page": "Pliki cookie"
+   "cookie_page": "Pliki cookie",
+   "label_gondola": "Gondola",
+   "label_hotel": "Hotel Maffei"
   }
  }
 }
