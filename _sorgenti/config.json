@@ -83,7 +83,7 @@
  "societa": {
   "ragione": "L&M snc di Scaramuzzi Luca e Pederzolli Manuela",
   "piva": "02588730222",
-  "rea": "[REA da inserire]",
+  "rea": "TN-235607",
   "cin": "IT022143A14SHAM2B4"
  },
  "prenotazione": {
@@ -318,5 +318,148 @@
    "privacy": 399
   }
  },
- "cartella_master": "~/Desktop/hotel-maffei/analisi/sito-2026/foto-master"
+ "cartella_master": "~/Desktop/hotel-maffei/analisi/sito-2026/foto-master",
+ "ristoranti": {
+  "verificati": "2026-11-01",
+  "gruppi": [
+   "paese",
+   "fuori",
+   "speciale",
+   "valgenova"
+  ],
+  "elenco": [
+   {
+    "nome": "Al Rocol",
+    "gruppo": "paese",
+    "tipo": "ristorante",
+    "minuti_piedi": 4,
+    "sito": {
+     "it": "https://ristorantealrocol.it/",
+     "en": "https://ristorantealrocol.it/en/",
+     "pl": "https://ristorantealrocol.it/en/"
+    },
+    "nota": {
+     "it": "nella nostra via",
+     "en": "on our street",
+     "pl": "przy naszej ulicy"
+    }
+   },
+   {
+    "nome": "La Parzif",
+    "gruppo": "paese",
+    "tipo": "ristorante",
+    "minuti_piedi": 4,
+    "sito": {
+     "it": "https://offers.laparzif.it/",
+     "en": "https://offers.laparzif.it/en/",
+     "pl": "https://offers.laparzif.it/en/"
+    }
+   },
+   {
+    "nome": "Rendenèr Alpine Food",
+    "gruppo": "paese",
+    "tipo": "ristorante",
+    "minuti_piedi": 6,
+    "sito": "https://rendeneralpinefood.it/"
+   },
+   {
+    "nome": "Bagat",
+    "gruppo": "paese",
+    "tipo": "osteria_pizzeria",
+    "minuti_piedi": 8
+   },
+   {
+    "nome": "Al Cardo",
+    "gruppo": "paese",
+    "tipo": "pizzeria",
+    "minuti_piedi": 9,
+    "sito": "https://www.alcardo.com/"
+   },
+   {
+    "nome": "All'Antica Segheria",
+    "gruppo": "fuori",
+    "tipo": "pizzeria",
+    "luogo": "Carisolo",
+    "minuti_piedi": 12,
+    "sito": "https://www.anticasegheria.it/"
+   },
+   {
+    "nome": "La Botte",
+    "gruppo": "fuori",
+    "tipo": "pizzeria",
+    "luogo": "Giustino",
+    "minuti_piedi": 16,
+    "sito": "https://labotteristorante.it/"
+   },
+   {
+    "nome": "Mildas",
+    "gruppo": "fuori",
+    "tipo": "ristorante",
+    "luogo": "Giustino",
+    "minuti_piedi": 20,
+    "sito": "https://www.ristorantemildas.com/",
+    "nota": {
+     "it": "solo su prenotazione",
+     "en": "booking required",
+     "pl": "tylko z rezerwacją"
+    }
+   },
+   {
+    "nome": "Baita Magnabò",
+    "gruppo": "fuori",
+    "tipo": "ristorante",
+    "minuti_piedi": 26,
+    "sito": "https://magnabo.com/",
+    "nota": {
+     "it": "verso Carisolo",
+     "en": "towards Carisolo",
+     "pl": "w stronę Carisolo"
+    }
+   },
+   {
+    "nome": "Grual",
+    "gruppo": "speciale",
+    "tipo": "gourmet",
+    "minuti_piedi": 10,
+    "sito": {
+     "it": "https://grual.lefayresorts.com/it/",
+     "en": "https://grual.lefayresorts.com/en/",
+     "pl": "https://grual.lefayresorts.com/en/"
+    },
+    "nota": {
+     "it": "bambini dai 12 anni in su",
+     "en": "children aged 12 and over",
+     "pl": "dzieci od 12 lat"
+    }
+   },
+   {
+    "nome": "Chalet Val Genova",
+    "gruppo": "valgenova",
+    "tipo": "osteria",
+    "luogo": "Carisolo",
+    "km": 2.4,
+    "sito": "https://www.fioccodineve.com/chalet-val-genova/"
+   },
+   {
+    "nome": "Cascate Nardis",
+    "gruppo": "valgenova",
+    "tipo": "ristorante",
+    "km": 5.1
+   },
+   {
+    "nome": "Chalet da Gino",
+    "gruppo": "valgenova",
+    "tipo": "ristorante",
+    "km": 5.5,
+    "sito": "https://www.chaletdagino.com/"
+   },
+   {
+    "nome": "Fontana Bona",
+    "gruppo": "valgenova",
+    "tipo": "rifugio",
+    "km": 7.8,
+    "sito": "https://rifugiofontanabona.it/"
+   }
+  ]
+ }
 }

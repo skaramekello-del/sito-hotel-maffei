@@ -3,10 +3,10 @@
   "home": {
    "it": {
     "meta_title": "Hotel Garnì Maffei Pinzolo – B&B a 30 m dalla funivia",
-    "meta_description": "Il B&B di Luca e Manuela a Pinzolo: 30 m dalla cabinovia, centro a 5 minuti a piedi. Colazione inclusa, niente cena. Il prezzo migliore è sul nostro sito.",
+    "meta_description": "Il B&B di Luca e Manuela a Pinzolo: 30 m dalla cabinovia, centro a 5 minuti a piedi. Colazione inclusa, ristoranti vicini. Prezzo migliore sul nostro sito.",
     "kicker": "Pinzolo · Val Rendena · Garnì 3 stelle",
     "h1": "Camere e colazione a Pinzolo",
-    "lead": "Il B&B di Luca e Manuela, a 30 metri dalla cabinovia: colazione inclusa, niente mezza pensione. Prenotando qui, direttamente con noi, avete il prezzo migliore.",
+    "lead": "Il B&B di Luca e Manuela, a 30 metri dalla cabinovia e a pochi minuti a piedi dai ristoranti del centro. Prenotando qui, direttamente con noi, avete il prezzo migliore.",
     "sections": [
      {
       "id": "in-breve",
@@ -15,8 +15,9 @@
       "paragraphs": [],
       "items": [
        {
-        "t": "Bed & breakfast, senza cena",
-        "d": "Pernottamento e prima colazione. Niente ristorante né mezza pensione: per cena ci sono i ristoranti del centro."
+        "t": "Colazione da noi, cena in paese",
+        "d": "Siamo un hotel garnì: offriamo pernottamento e prima colazione. Per cena, i ristoranti del centro sono a pochi minuti a piedi.",
+        "link_interno": "colazione#cena"
        },
        {
         "t": "A 30 metri dalla cabinovia",
@@ -128,10 +129,10 @@
    },
    "en": {
     "meta_title": "Hotel Garnì Maffei Pinzolo – B&B 30 m from the gondola",
-    "meta_description": "Luca and Manuela's B&B in Pinzolo: 30 m from the gondola, a 5-minute walk to the centre. Breakfast included, no dinner. The best price is on our website.",
+    "meta_description": "Luca and Manuela's B&B in Pinzolo: 30 m from the gondola, a 5-minute walk to the centre. Breakfast included, restaurants nearby. Best price on our website.",
     "kicker": "Pinzolo · Val Rendena · 3-star B&B",
     "h1": "Bed and breakfast in Pinzolo",
-    "lead": "Luca and Manuela's B&B, 30 metres from the gondola: breakfast included, no half board. Book here, directly with us, for the best price.",
+    "lead": "Luca and Manuela's B&B, 30 metres from the gondola: breakfast is included, and the restaurants in the town centre are a short walk away. Book here, directly with us, for the best price.",
     "sections": [
      {
       "id": "in-breve",
@@ -140,8 +141,9 @@
       "paragraphs": [],
       "items": [
        {
-        "t": "Bed & breakfast, no dinner",
-        "d": "We're a garni hotel: room and breakfast only, with no restaurant or half board. For dinner, head to the restaurants in the town centre."
+        "t": "Breakfast here, dinner in the village",
+        "d": "We're a garni hotel, offering room and breakfast. For dinner, the restaurants in the town centre are a few minutes' walk away.",
+        "link_interno": "colazione#cena"
        },
        {
         "t": "30 metres from the gondola",
@@ -253,10 +255,10 @@
    },
    "pl": {
     "meta_title": "Hotel Garnì Maffei Pinzolo – B&B 30 m od gondoli",
-    "meta_description": "Pensjonat Luki i Manueli w Pinzolo: 30 m od gondoli, 5 minut pieszo do centrum. Śniadanie w cenie, bez kolacji. Najlepsza cena na naszej stronie.",
+    "meta_description": "Pensjonat Luki i Manueli w Pinzolo: 30 m od gondoli, 5 minut pieszo do centrum. Śniadanie w cenie, restauracje w pobliżu. Najlepsza cena na naszej stronie.",
     "kicker": "Pinzolo · Val Rendena · 3-gwiazdkowy hotel garni",
     "h1": "Pokoje ze śniadaniem w Pinzolo",
-    "lead": "Pensjonat Luki i Manueli, 30 metrów od gondoli. Śniadanie w cenie, bez obiadokolacji (HB). Rezerwując na tej stronie, bezpośrednio u nas, dostaniecie najlepszą cenę.",
+    "lead": "Pensjonat Luki i Manueli, 30 metrów od gondoli: nocleg ze śniadaniem, a do restauracji w centrum jest kilka minut spacerem. Rezerwując na tej stronie, bezpośrednio u nas, dostaniecie najlepszą cenę.",
     "sections": [
      {
       "id": "in-breve",
@@ -265,8 +267,9 @@
       "paragraphs": [],
       "items": [
        {
-        "t": "Ze śniadaniem, bez kolacji",
-        "d": "Jesteśmy hotelem garni: tylko nocleg i śniadanie. Nie mamy restauracji ani obiadokolacji (HB). Kolację zjecie w restauracjach w centrum."
+        "t": "Śniadanie u nas, kolacja w miasteczku",
+        "d": "Jesteśmy hotelem garni: oferujemy nocleg i śniadanie. Na kolację macie do wyboru restauracje w centrum, kilka minut pieszo.",
+        "link_interno": "colazione#cena"
        },
        {
         "t": "30 metrów od gondoli",
@@ -392,8 +395,9 @@
       "paragraphs": [],
       "items": [
        {
-        "t": "Solo colazione, niente cena",
-        "d": "Siamo un hotel garnì: la colazione a buffet è inclusa, tutti i giorni dalle 7:30 alle 9:30. Non abbiamo ristorante né mezza pensione; i ristoranti del centro sono a 5 minuti a piedi."
+        "t": "Pernottamento e prima colazione",
+        "d": "Siamo un hotel garnì: la colazione a buffet è inclusa, tutti i giorni dalle 7:30 alle 9:30. Per cena, i ristoranti del centro sono a pochi minuti a piedi.",
+        "link_interno": "colazione#cena"
        },
        {
         "t": "Soggiorni d'inverno",
@@ -530,8 +534,9 @@
       "paragraphs": [],
       "items": [
        {
-        "t": "Breakfast only, no dinner",
-        "d": "We're a B&B (garni hotel), which means we offer room and breakfast only. The buffet breakfast is included and served every day from 7:30 to 9:30. We have no restaurant and don't offer half board, but there are restaurants in the centre of Pinzolo, a 5-minute walk away."
+        "t": "Room and breakfast",
+        "d": "We're a B&B (garni hotel): the buffet breakfast is included and served every day from 7:30 to 9:30. For dinner, the restaurants in the centre of Pinzolo are a few minutes' walk away.",
+        "link_interno": "colazione#cena"
        },
        {
         "t": "Winter stays",
@@ -668,8 +673,9 @@
       "paragraphs": [],
       "items": [
        {
-        "t": "Tylko śniadanie, bez kolacji",
-        "d": "Jesteśmy pensjonatem ze śniadaniem (hotel garni), czyli oferujemy tylko nocleg i śniadanie. Bufet śniadaniowy jest wliczony w cenę i dostępny codziennie od 7:30 do 9:30. Nie mamy własnej restauracji i nie serwujemy obiadokolacji (HB). Do restauracji w centrum dojdziecie spacerem w 5 minut."
+        "t": "Nocleg ze śniadaniem",
+        "d": "Jesteśmy pensjonatem ze śniadaniem (hotel garni). Bufet śniadaniowy jest wliczony w cenę i dostępny codziennie od 7:30 do 9:30. Na kolację macie do wyboru restauracje w centrum Pinzolo, kilka minut pieszo.",
+        "link_interno": "colazione#cena"
        },
        {
         "t": "Pobyty zimą",
@@ -859,12 +865,19 @@
      {
       "id": "cena",
       "kicker": "Da sapere",
-      "title": "E la sera?",
+      "title": "Dove cenare a Pinzolo",
       "paragraphs": [
-       "Siamo un garnì: camere e colazione. Non abbiamo il ristorante, quindi niente cena né mezza pensione. I ristoranti del centro sono a 5 minuti a piedi."
+       "Da noi la giornata comincia con la colazione; la sera si cena fuori, e Pinzolo di ristoranti e pizzerie ne ha tanti. Questi sono quelli che consigliamo ai nostri ospiti, con la distanza dall'hotel."
       ],
       "items": [],
-      "cta": ""
+      "cta": "",
+      "nota": "Fra una stagione e l'altra alcuni locali chiudono per qualche settimana, e nei periodi più pieni conviene prenotare. Se avete un dubbio, chiedeteci.",
+      "gruppi": {
+       "paese": "In paese, a piedi",
+       "fuori": "Appena fuori Pinzolo",
+       "speciale": "Per una serata speciale",
+       "valgenova": "D'estate, in Val Genova"
+      }
      },
      {
       "id": "prenota",
@@ -944,12 +957,19 @@
      {
       "id": "cena",
       "kicker": "Good to know",
-      "title": "What about dinner?",
+      "title": "Where to eat in Pinzolo",
       "paragraphs": [
-       "We're a B&B (garni hotel), which means we offer rooms and breakfast only. We don't have a restaurant, so there's no dinner or half board. The restaurants in the centre of Pinzolo are a 5-minute walk away."
+       "At the Maffei, the day starts with breakfast; for dinner, Pinzolo has plenty of restaurants and pizzerias. Here are the ones we recommend to our guests, and how far each one is from the hotel."
       ],
       "items": [],
-      "cta": ""
+      "cta": "",
+      "nota": "Between seasons some places close for a few weeks, and at the busiest times it's best to book. If in doubt, just ask us.",
+      "gruppi": {
+       "paese": "In the village, on foot",
+       "fuori": "Just outside Pinzolo",
+       "speciale": "For a special evening",
+       "valgenova": "In summer, in Val Genova"
+      }
      },
      {
       "id": "prenota",
@@ -1029,12 +1049,19 @@
      {
       "id": "cena",
       "kicker": "Warto wiedzieć",
-      "title": "A wieczorem?",
+      "title": "Gdzie zjeść kolację w Pinzolo",
       "paragraphs": [
-       "Jesteśmy pensjonatem ze śniadaniem (hotel garni), czyli oferujemy tylko nocleg i śniadanie. Nie mamy restauracji, więc nie podajemy kolacji ani obiadokolacji (HB). Do restauracji w centrum dojdziecie pieszo w 5 minut."
+       "U nas dzień zaczyna się od śniadania, a kolację zjecie w Pinzolo, gdzie restauracji i pizzerii nie brakuje. Oto te, które polecamy naszym gościom – przy każdej podajemy odległość od hotelu."
       ],
       "items": [],
-      "cta": ""
+      "cta": "",
+      "nota": "Między sezonami niektóre lokale zamykają się na kilka tygodni, a w szczycie sezonu warto zarezerwować stolik. Jeśli macie wątpliwości, zapytajcie nas.",
+      "gruppi": {
+       "paese": "W miasteczku, pieszo",
+       "fuori": "Tuż za Pinzolo",
+       "speciale": "Na wyjątkowy wieczór",
+       "valgenova": "Latem w Val Genova"
+      }
      },
      {
       "id": "prenota",
@@ -1400,7 +1427,8 @@
     "faq": [
      {
       "q": "Fate anche la cena o la mezza pensione?",
-      "a": "No. Siamo un hotel garnì: camere e colazione. Non abbiamo il ristorante. Per cena, i ristoranti del centro di Pinzolo sono a 5 minuti a piedi."
+      "a": "Siamo un hotel garnì: offriamo pernottamento e prima colazione, senza mezza pensione. Per cena, i ristoranti del centro di Pinzolo sono a pochi minuti a piedi.",
+      "link_interno": "colazione#cena"
      },
      {
       "q": "Come funzionano i soggiorni d'inverno?",
@@ -1502,7 +1530,8 @@
     "faq": [
      {
       "q": "Do you serve dinner or offer half board?",
-      "a": "No. We're a B&B (garni hotel), which means we offer rooms and breakfast only. We don't have a restaurant. For dinner, the restaurants in the centre of Pinzolo are a 5-minute walk away."
+      "a": "We're a B&B (garni hotel), offering room and breakfast only, with no half board. For dinner, the restaurants in the centre of Pinzolo are a few minutes' walk away.",
+      "link_interno": "colazione#cena"
      },
      {
       "q": "How do winter stays work?",
@@ -1604,7 +1633,8 @@
     "faq": [
      {
       "q": "Czy oferujecie też kolację albo obiadokolację (HB)?",
-      "a": "Nie. Jesteśmy pensjonatem ze śniadaniem (hotel garni), czyli oferujemy tylko nocleg i śniadanie. Nie mamy restauracji. Na kolację możecie pójść do restauracji w centrum Pinzolo, 5 minut pieszo od hotelu."
+      "a": "Jesteśmy hotelem garni: oferujemy nocleg ze śniadaniem, bez obiadokolacji. Na kolację macie do wyboru restauracje w centrum Pinzolo, kilka minut pieszo od hotelu.",
+      "link_interno": "colazione#cena"
      },
      {
       "q": "Jak wyglądają pobyty zimą?",
@@ -1948,7 +1978,16 @@
    "company_cin": "CIN",
    "breadcrumb_label": "Percorso",
    "cookie_label": "Avviso sui cookie",
-   "stars": "3 stelle"
+   "stars": "3 stelle",
+   "link_cena": "I ristoranti che consigliamo",
+   "tipo_ristorante": "ristorante",
+   "tipo_pizzeria": "ristorante e pizzeria",
+   "tipo_osteria_pizzeria": "osteria e pizzeria",
+   "tipo_gourmet": "ristorante gourmet, una stella Michelin",
+   "tipo_osteria": "osteria trentina",
+   "tipo_rifugio": "rifugio",
+   "min_piedi": "{n} min a piedi",
+   "km": "{n} km"
   },
   "en": {
    "skip": "Skip to content",
@@ -2009,7 +2048,16 @@
    "company_cin": "CIN",
    "breadcrumb_label": "Breadcrumb",
    "cookie_label": "Cookie notice",
-   "stars": "3 stars"
+   "stars": "3 stars",
+   "link_cena": "Restaurants we recommend",
+   "tipo_ristorante": "restaurant",
+   "tipo_pizzeria": "restaurant and pizzeria",
+   "tipo_osteria_pizzeria": "osteria and pizzeria",
+   "tipo_gourmet": "gourmet restaurant, one Michelin star",
+   "tipo_osteria": "Trentino osteria",
+   "tipo_rifugio": "mountain refuge",
+   "min_piedi": "{n} min walk",
+   "km": "{n} km"
   },
   "pl": {
    "skip": "Przejdź do treści",
@@ -2071,7 +2119,16 @@
    "company_cin": "CIN",
    "breadcrumb_label": "Ścieżka nawigacji",
    "cookie_label": "Informacja o plikach cookie",
-   "stars": "3 gwiazdki"
+   "stars": "3 gwiazdki",
+   "link_cena": "Restauracje, które polecamy",
+   "tipo_ristorante": "restauracja",
+   "tipo_pizzeria": "restauracja i pizzeria",
+   "tipo_osteria_pizzeria": "osteria i pizzeria",
+   "tipo_gourmet": "restauracja gourmet z gwiazdką Michelin",
+   "tipo_osteria": "trydencka osteria",
+   "tipo_rifugio": "schronisko",
+   "min_piedi": "{n} min pieszo",
+   "km": "{n} km"
   }
  }
 }

@@ -75,9 +75,19 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 - "Owners are really friendly, welcoming and honest people. Room was clean, tidy and had an amazing view of mountains." — Ilmārs S., Google
 
 ## Societa' (pie' di pagina)
-- L&M snc di Scaramuzzi Luca e Pederzolli Manuela, P.IVA 02588730222, REA [da inserire], CIN IT022143A14SHAM2B4.
+- L&M snc di Scaramuzzi Luca e Pederzolli Manuela, P.IVA 02588730222, REA TN-235607 (dato da Luca il 1/11/2026), CIN IT022143A14SHAM2B4.
 
 ## Tono
 - Breve, caldo, concreto. Prima persona plurale ("vi aspettiamo", "prepariamo"). Firma "Luca e Manuela".
 - Frasi corte. Niente superlativi vuoti ("esperienza unica", "indimenticabile", "coccolati"), niente punti esclamativi in serie.
 - Dire subito le cose pratiche: cosa c'e', cosa non c'e', come si prenota.
+
+## Ristoranti consigliati (pagina Colazione, "Dove cenare a Pinzolo")
+- Fonte: foglio dei titolari "RISTORANTI" (gennaio 2026), sezione Pinzolo. La mezza pensione indicata nello stesso foglio non c'e' piu' (Luca, 1/11/2026): non va sul sito.
+- Ogni locale verificato il 1/11/2026 (attivita' nel 2026, indirizzo, comune, sito, distanza a piedi col router FOSSGIS dal lato di Via Bolognini dell'hotel, a 4,5 km/h), con controprova.
+- In paese, a piedi: Al Rocol (Via N. Bolognini 25, 4 min), La Parzif (Via Collini Borciol 16, 4 min), Rendenèr Alpine Food (Via Sorano 35, 6 min), Bagat (osteria e pizzeria, Via San Lorenzo 26, 8 min), Al Cardo (ristorante e pizzeria, Via Manci 20, 9 min).
+- Appena fuori Pinzolo: All'Antica Segheria (ristorante e pizzeria, Carisolo, 12 min), La Botte (ristorante e pizzeria, Giustino, 16 min), Mildas (Giustino, loc. Vadaione, 20 min, solo su prenotazione), Baita Magnabò (comune di Pinzolo, loc. Magnabò, verso Carisolo, 26 min).
+- Gourmet: Grual (Lefay Resort, Pinzolo), una stella Michelin (Guida 2025, confermata 2026), solo cena, bambini dai 12 anni in su, 10 min a piedi. La Guida 2027 esce il 12/11/2026: ricontrollare.
+- Val Genova, d'estate: Chalet Val Genova (Carisolo, 2,4 km), Ristorante Cascate Nardis (5,1 km, aprile-1 novembre), Chalet da Gino (5,5 km, maggio-ottobre), Rifugio Fontana Bona (7,8 km, giugno-settembre).
+- Nessuno di Mildas, Rendenèr, La Parzif e Grual fa la pizza.
+- Al 1/11/2026 Google segnava "chiuso temporaneamente" Al Cardo, La Parzif e Al Rocol (probabile pausa d'autunno): da ricontrollare a dicembre.

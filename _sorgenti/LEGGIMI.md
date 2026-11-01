@@ -27,7 +27,7 @@ in `img/foto/` si rifanno da sole solo se il master cambia.
 - **Stagioni aperte** (`config.json` -> `prenotazione.stagioni`): servono a proporre il primo sabato-sabato libero quando si clicca "Verifica prezzi". Aggiornarle a ogni stagione.
 - **Foto di apertura della Home** (`foto_pagine.home_hero`): d'inverno 399 (sera con la neve), d'estate 132 (sera d'estate).
 - **Recensioni** (`recensioni`): voto e numero, con il mese (testo `reviews_date` in `testi.json`).
-- **REA** (`societa.rea`): da inserire prima della pubblicazione.
+- **REA** (`societa.rea`): TN-235607 (dato da Luca il 1/11/2026).
 
 ## Anteprima privata
 ```
