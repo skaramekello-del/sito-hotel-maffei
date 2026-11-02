@@ -55,6 +55,9 @@
    "it": "cookie/",
    "en": "en/cookies/",
    "pl": "pl/cookies/"
+  },
+  "offerta-dicembre": {
+   "it": "offerte/dicembre/"
   }
  },
  "menu": [
@@ -474,5 +477,36 @@
     "sito": "https://rifugiofontanabona.it/"
    }
   ]
+ },
+ "pixel": {
+  "id": "29604829872442478",
+  "versione_consenso": "1.0"
+ },
+ "pagine_offerte": [
+  "offerta-dicembre"
+ ],
+ "offerte": {
+  "offerta-dicembre": {
+   "foto": 399,
+   "pos": "35% 50%",
+   "nome_evento": "Offerta dicembre 2026",
+   "foto_striscia": [
+    472,
+    532,
+    62
+   ],
+   "date": [
+    {
+     "etichetta": "Ponte dell'Immacolata · 4–8 dicembre",
+     "dal": "2026-12-04",
+     "al": "2026-12-08"
+    },
+    {
+     "etichetta": "Settimana 12–19 dicembre",
+     "dal": "2026-12-12",
+     "al": "2026-12-19"
+    }
+   ]
+  }
  }
 }

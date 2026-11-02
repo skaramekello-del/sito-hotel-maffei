@@ -1742,7 +1742,7 @@
        "Prenotazione e soggiorno. Date, camere, ospiti, prezzo, pagamenti e garanzie. Se prenotate dal sito li raccogliamo con il sistema di prenotazione Beddy; se prenotate da un portale, per esempio Booking.com, ce li trasmette il portale.",
        "Registrazione degli ospiti. All'arrivo la legge ci chiede di comunicare alla Questura i dati del documento d'identità di ogni ospite (art. 109 del Testo unico delle leggi di pubblica sicurezza), con il servizio Alloggiati Web della Polizia di Stato.",
        "Fatture, pagamenti e imposta di soggiorno. I dati per la fattura o la ricevuta e per l'imposta provinciale di soggiorno.",
-       "Navigazione. L'indirizzo IP e i dati tecnici che i server registrano quando visitate il sito: i dettagli sono nella pagina Cookie."
+       "Navigazione. L'indirizzo IP e i dati tecnici che i server registrano quando visitate il sito e, solo se lo accettate nel banner dei cookie, i dati raccolti dal pixel di Meta: pagine viste, clic sui bottoni per prenotare, inserzione da cui arrivate. I dettagli sono nella pagina Cookie."
       ]
      },
      {
@@ -1786,11 +1786,17 @@
          "Sicurezza del sito e del sistema di prenotazione",
          "Lett. f: legittimo interesse alla sicurezza",
          "Li conservano i fornitori (GitHub, Beddy, Stripe) secondo le loro regole"
+        ],
+        [
+         "Pixel di Meta (solo con consenso)",
+         "Misurare le visite e le prenotazioni aperte dalle nostre inserzioni su Facebook e Instagram; mostrare le inserzioni a chi ha visitato il sito",
+         "Lett. a: consenso (con l'art. 122 del Codice privacy), revocabile in ogni momento",
+         "I cookie durano 3 mesi; Meta conserva i dati secondo le sue regole"
         ]
        ]
       },
       "dopo": [
-       "Non vendiamo i vostri dati, non li usiamo per pubblicità e non prendiamo decisioni automatiche su di voi."
+       "Non vendiamo i vostri dati e non prendiamo decisioni automatiche su di voi. Li usiamo per la pubblicità solo se lo accettate nel banner dei cookie, e non carichiamo su Meta, né su altri, gli elenchi di e-mail o di telefoni dei nostri ospiti."
       ]
      },
      {
@@ -1815,6 +1821,10 @@
        {
         "t": "Sito",
         "d": "GitHub, che ospita il sito."
+       },
+       {
+        "t": "Pubblicità",
+        "d": "Meta Platforms Ireland Ltd, solo se accettate il pixel nel banner dei cookie: per la raccolta e la trasmissione dei dati con il pixel siamo contitolari con Meta (art. 26 GDPR); per il resto Meta è titolare autonomo."
        },
        {
         "t": "Consulenti",
@@ -1866,6 +1876,10 @@
        {
         "t": "Opposizione (art. 21)",
         "d": "Opporvi ai trattamenti basati sul nostro legittimo interesse."
+       },
+       {
+        "t": "Revoca del consenso (art. 7)",
+        "d": "Ritirare quando volete il consenso al pixel, da «Preferenze cookie» in fondo a ogni pagina; vale da quel momento in poi."
        }
       ],
       "dopo": [
@@ -1886,7 +1900,7 @@
       "paragraphs": [
        "Questa informativa può cambiare, per esempio se cambiano i fornitori o le leggi: la versione in vigore è sempre su questa pagina.",
        "Le versioni in inglese e in polacco sono traduzioni: in caso di dubbio vale il testo italiano.",
-       "Ultimo aggiornamento: 1 novembre 2026 (versione 1.0)."
+       "Ultimo aggiornamento: 2 novembre 2026 (versione 1.0)."
       ]
      }
     ]
@@ -1915,7 +1929,7 @@
        "Bookings and stays. Dates, rooms, guests, price, payments and guarantees. If you book on our website, we collect them through the Beddy booking system; if you book through a portal such as Booking.com, the portal passes them on to us.",
        "Guest registration. On arrival, Italian law requires us to send the details of each guest's identity document to the police (Article 109 of the Consolidated Law on Public Security), through the State Police's Alloggiati Web service.",
        "Invoices, payments, tourist tax. The details needed for the invoice or receipt and for the provincial tourist tax.",
-       "Browsing data. Your IP address and the technical data that servers record when you visit the website: see the Cookies page for details."
+       "Browsing data. Your IP address and the technical data that servers record when you visit the website and, only if you accept it on the cookie banner, the data collected by the Meta pixel: pages viewed, clicks on the booking buttons, the ad you came from. See the Cookies page for details."
       ]
      },
      {
@@ -1959,11 +1973,17 @@
          "Security of the website and the booking system",
          "Point (f): legitimate interest in security",
          "Kept by our providers (GitHub, Beddy, Stripe) under their own rules"
+        ],
+        [
+         "Meta pixel (only with consent)",
+         "To measure visits and bookings opened from our ads on Facebook and Instagram; to show our ads to people who have visited the website",
+         "Point (a): consent (together with Art. 122 of the Italian Privacy Code), which you can withdraw at any time",
+         "Cookies last 3 months; Meta keeps the data under its own rules"
         ]
        ]
       },
       "dopo": [
-       "We don't sell your data, we don't use it for advertising and we don't make automated decisions about you."
+       "We don't sell your data and we don't make automated decisions about you. We only use it for advertising if you accept this on the cookie banner, and we don't upload lists of our guests' email addresses or phone numbers to Meta or anyone else."
       ]
      },
      {
@@ -1988,6 +2008,10 @@
        {
         "t": "Website",
         "d": "GitHub, which hosts the website."
+       },
+       {
+        "t": "Advertising",
+        "d": "Meta Platforms Ireland Ltd, only if you accept the pixel on the cookie banner: for collecting and transmitting data through the pixel we are joint controllers with Meta (Art. 26 GDPR); otherwise Meta is an independent controller."
        },
        {
         "t": "Advisers",
@@ -2039,6 +2063,10 @@
        {
         "t": "Objection (Art. 21)",
         "d": "Object to processing based on our legitimate interest."
+       },
+       {
+        "t": "Withdrawing consent (Art. 7)",
+        "d": "Withdraw your consent to the pixel whenever you like, from “Cookie settings” at the bottom of every page; it applies from then on."
        }
       ],
       "dopo": [
@@ -2059,7 +2087,7 @@
       "paragraphs": [
        "This policy may change, for example if our providers or the law change: the version in force is always on this page.",
        "The English and Polish versions are translations: in case of doubt, the Italian text prevails.",
-       "Last updated: 1 November 2026 (version 1.0)."
+       "Last updated: 2 November 2026 (version 1.0)."
       ]
      }
     ]
@@ -2088,7 +2116,7 @@
        "Rezerwacja i pobyt. Daty, pokoje, goście, cena, płatności i gwarancje. Jeśli rezerwujecie na naszej stronie, zbieramy je w systemie rezerwacji Beddy; jeśli przez portal, np. Booking.com, przekazuje nam je portal.",
        "Meldunek gości. Po przyjeździe prawo włoskie wymaga, abyśmy przekazali policji (Questura) dane z dokumentu tożsamości każdego gościa (art. 109 jednolitego tekstu ustaw o bezpieczeństwie publicznym) przez system Alloggiati Web Policji Państwowej.",
        "Faktury, płatności, opłata miejscowa. Dane potrzebne do faktury lub paragonu oraz do prowincjonalnej opłaty miejscowej.",
-       "Przeglądanie strony. Adres IP i dane techniczne, które serwery zapisują podczas odwiedzin strony: szczegóły na stronie „Pliki cookie”."
+       "Przeglądanie strony. Adres IP i dane techniczne, które serwery zapisują podczas odwiedzin strony, oraz – tylko jeśli zgodzicie się na to w banerze cookie – dane zbierane przez piksel Meta: odwiedzone strony, kliknięcia w przyciski rezerwacji, reklama, z której przyszliście. Szczegóły na stronie „Pliki cookie”."
       ]
      },
      {
@@ -2132,11 +2160,17 @@
          "Bezpieczeństwo strony i systemu rezerwacji",
          "Lit. f: prawnie uzasadniony interes w zakresie bezpieczeństwa",
          "Przechowują je nasi dostawcy (GitHub, Beddy, Stripe) według własnych zasad"
+        ],
+        [
+         "Piksel Meta (tylko za zgodą)",
+         "Mierzenie wizyt i rezerwacji otwartych z naszych reklam na Facebooku i Instagramie; wyświetlanie reklam osobom, które odwiedziły stronę",
+         "Lit. a: zgoda (wraz z art. 122 włoskiego kodeksu ochrony prywatności), którą można w każdej chwili wycofać",
+         "Pliki cookie działają 3 miesiące; Meta przechowuje dane według własnych zasad"
         ]
        ]
       },
       "dopo": [
-       "Nie sprzedajemy Waszych danych, nie wykorzystujemy ich do reklamy i nie podejmujemy wobec Was zautomatyzowanych decyzji."
+       "Nie sprzedajemy Waszych danych i nie podejmujemy wobec Was zautomatyzowanych decyzji. Do reklamy używamy ich tylko wtedy, gdy zgodzicie się na to w banerze cookie, i nie przesyłamy do Meta ani nikomu innemu list adresów e-mail czy numerów telefonów naszych gości."
       ]
      },
      {
@@ -2161,6 +2195,10 @@
        {
         "t": "Strona",
         "d": "GitHub, który hostuje stronę."
+       },
+       {
+        "t": "Reklama",
+        "d": "Meta Platforms Ireland Ltd, tylko jeśli zaakceptujecie piksel w banerze cookie: w zakresie zbierania i przekazywania danych przez piksel jesteśmy współadministratorami z Meta (art. 26 RODO); poza tym Meta jest niezależnym administratorem."
        },
        {
         "t": "Doradcy",
@@ -2212,6 +2250,10 @@
        {
         "t": "Sprzeciw (art. 21)",
         "d": "Sprzeciwić się przetwarzaniu opartemu na naszym prawnie uzasadnionym interesie."
+       },
+       {
+        "t": "Wycofanie zgody (art. 7)",
+        "d": "Możecie w każdej chwili wycofać zgodę na piksel przez „Ustawienia plików cookie” na dole każdej strony; obowiązuje to od tej chwili."
        }
       ],
       "dopo": [
@@ -2232,7 +2274,7 @@
       "paragraphs": [
        "Ta polityka może się zmienić, np. gdy zmienią się nasi dostawcy lub przepisy: obowiązująca wersja jest zawsze na tej stronie.",
        "Wersje angielska i polska są tłumaczeniami: w razie wątpliwości obowiązuje tekst włoski.",
-       "Ostatnia aktualizacja: 1 listopada 2026 r. (wersja 1.0)."
+       "Ostatnia aktualizacja: 2 listopada 2026 r. (wersja 1.0)."
       ]
      }
     ]
@@ -2241,10 +2283,10 @@
   "cookie": {
    "it": {
     "meta_title": "Cookie – Hotel Garnì Maffei",
-    "meta_description": "Cookie policy dell'Hotel Garnì Maffei di Pinzolo: il sito usa solo strumenti tecnici, niente cookie di analisi o di marketing.",
+    "meta_description": "Cookie policy dell'Hotel Garnì Maffei di Pinzolo: cookie tecnici e, solo con il vostro consenso, il pixel di Meta per misurare le inserzioni.",
     "kicker": "",
     "h1": "Cookie",
-    "lead": "In questa pagina vi spieghiamo quali cookie e strumenti simili usa il sito, come chiedono l'art. 122 del Codice privacy (D.Lgs. 196/2003), il GDPR e le Linee guida del Garante del 10 giugno 2021.",
+    "lead": "In questa pagina vi spieghiamo quali cookie e strumenti simili usa il sito, quali servono a farlo funzionare e quale usiamo solo se lo accettate, come chiedono l'art. 122 del Codice privacy (D.Lgs. 196/2003), il GDPR e le Linee guida del Garante del 10 giugno 2021.",
     "sections": [
      {
       "id": "titolare",
@@ -2265,7 +2307,7 @@
       "id": "tecnici",
       "title": "Cookie tecnici: non serve il consenso",
       "paragraphs": [
-       "Il sito usa solo strumenti tecnici, necessari a farlo funzionare e a rendere sicuri i pagamenti. Per questi la legge non chiede il consenso (art. 122 del Codice privacy)."
+       "Questi strumenti servono a far funzionare il sito, a ricordare la vostra scelta sui cookie e a rendere sicuri i pagamenti. Per questi la legge non chiede il consenso (art. 122 del Codice privacy)."
       ],
       "tabella": {
        "testa": [
@@ -2276,10 +2318,10 @@
        ],
        "righe": [
         [
-         "Memoria locale «maffei-cookie-ok»",
+         "Memoria locale «maffei-consenso»",
          "Nostro",
-         "Ricordare che avete chiuso l'avviso sui cookie",
-         "Finché non cancellate i dati del browser"
+         "Ricordare la vostra scelta sul banner (accetto o rifiuto), con la data e la versione di questa pagina",
+         "6 mesi, poi ve la richiediamo"
         ],
         [
          "Memoria di sessione «maffei-stagione»",
@@ -2306,11 +2348,59 @@
       ]
      },
      {
-      "id": "niente",
-      "title": "Niente cookie di analisi o di marketing",
+      "id": "marketing",
+      "title": "Pixel di Meta: solo se accettate",
       "paragraphs": [
-       "Non usiamo strumenti di statistica, pubblicità o profilazione, nostri o di altri. Per questo l'avviso che vedete alla prima visita vi informa e non vi chiede una scelta.",
+       "Se nel banner cliccate «Accetta», il sito carica il pixel di Meta (Meta Platforms Ireland Ltd). Ci serve per sapere quante visite arrivano dalle nostre inserzioni su Facebook e Instagram e quante persone poi aprono la prenotazione, e per mostrare le nostre inserzioni a chi ha già visitato il sito.",
+       "Se cliccate «Rifiuta», o non scegliete, il pixel non si carica e dal nostro sito a Meta non arriva nulla."
+      ],
+      "tabella": {
+       "testa": [
+        "Strumento",
+        "Di chi",
+        "Perché",
+        "Durata"
+       ],
+       "righe": [
+        [
+         "Cookie _fbp",
+         "Meta, sul nostro dominio",
+         "Riconoscere il browser tra una visita e l'altra, per misurare le inserzioni",
+         "3 mesi"
+        ],
+        [
+         "Cookie _fbc",
+         "Meta, sul nostro dominio",
+         "Ricordare il clic sull'inserzione da cui siete arrivati",
+         "3 mesi"
+        ],
+        [
+         "Memoria di sessione «maffei-utm»",
+         "Nostro",
+         "Ricordare da quale inserzione siete arrivati, per passarlo al motore di prenotazione",
+         "Fino alla chiusura della scheda del browser"
+        ]
+       ]
+      },
+      "dopo": [
+       "Il pixel registra le pagine che visitate, il clic sui bottoni per prenotare, l'indirizzo IP e i dati tecnici del browser. Per la raccolta e la trasmissione di questi dati siamo contitolari con Meta (art. 26 GDPR, secondo le condizioni di Meta per gli strumenti business); quello che Meta fa dopo lo decide Meta, come titolare autonomo, secondo la sua informativa: www.facebook.com/privacy/policy. Meta può usare anche i propri cookie sul dominio facebook.com. I dati possono andare negli Stati Uniti: ne parliamo nell'informativa privacy.",
+       "Potete cambiare idea quando volete con «Preferenze cookie», in fondo a ogni pagina: se revocate il consenso, il pixel si ferma e cancelliamo i cookie _fbp e _fbc dal nostro dominio."
+      ]
+     },
+     {
+      "id": "niente",
+      "title": "Niente statistiche e nessun altro strumento pubblicitario",
+      "paragraphs": [
+       "Non usiamo strumenti di statistica, come Google Analytics, né altri strumenti pubblicitari oltre al pixel di Meta.",
        "I caratteri delle pagine sono sul nostro sito: non usiamo Google Fonts. Google Maps, Instagram, WhatsApp e i siti dei ristoranti si aprono solo se toccate il collegamento, e da lì valgono le regole di quei siti."
+      ]
+     },
+     {
+      "id": "scelta",
+      "title": "Come scegliete",
+      "paragraphs": [
+       "Alla prima visita il banner vi chiede se accettare o rifiutare il pixel di Meta, con due bottoni uguali. Se non scegliete, valgono solo i cookie tecnici e potete navigare lo stesso.",
+       "La scelta resta sul vostro dispositivo, con la data e la versione di questa pagina, e non ve la richiediamo prima di 6 mesi, salvo che cambi l'elenco degli strumenti. Potete cambiarla quando volete da «Preferenze cookie», in fondo a ogni pagina."
       ]
      },
      {
@@ -2331,18 +2421,18 @@
       "id": "aggiornamenti",
       "title": "Aggiornamenti",
       "paragraphs": [
-       "Questa pagina cambia se cambiano gli strumenti del sito. Le versioni in inglese e in polacco sono traduzioni: in caso di dubbio vale il testo italiano.",
-       "Ultimo aggiornamento: 1 novembre 2026 (versione 1.0)."
+       "Questa pagina cambia se cambiano gli strumenti del sito; se l'elenco cambia in modo importante, il banner vi richiede la scelta. Le versioni in inglese e in polacco sono traduzioni: in caso di dubbio vale il testo italiano.",
+       "Ultimo aggiornamento: 2 novembre 2026 (versione 1.0)."
       ]
      }
     ]
    },
    "en": {
     "meta_title": "Cookies – Hotel Garnì Maffei",
-    "meta_description": "Cookie policy of Hotel Garnì Maffei in Pinzolo: the website only uses technical tools, with no analytics or marketing cookies.",
+    "meta_description": "Cookie policy of Hotel Garnì Maffei in Pinzolo: essential cookies and, only with your consent, the Meta pixel to measure our ads.",
     "kicker": "",
     "h1": "Cookies",
-    "lead": "On this page we explain which cookies and similar tools the website uses, as required by Article 122 of the Italian Privacy Code (Legislative Decree 196/2003), the GDPR and the Italian Data Protection Authority's guidelines of 10 June 2021.",
+    "lead": "On this page we explain which cookies and similar tools the website uses, which ones it needs to work and which one we only use if you accept, as required by Article 122 of the Italian Privacy Code (Legislative Decree 196/2003), the GDPR and the Italian Data Protection Authority's guidelines of 10 June 2021.",
     "sections": [
      {
       "id": "titolare",
@@ -2363,7 +2453,7 @@
       "id": "tecnici",
       "title": "Technical cookies: no consent needed",
       "paragraphs": [
-       "The website only uses technical tools, needed to make it work and to keep payments secure. The law doesn't require consent for these (Article 122 of the Privacy Code)."
+       "These tools are needed to make the website work, to remember your cookie choice and to keep payments secure. The law doesn't require consent for these (Article 122 of the Privacy Code)."
       ],
       "tabella": {
        "testa": [
@@ -2374,10 +2464,10 @@
        ],
        "righe": [
         [
-         "Local storage “maffei-cookie-ok”",
+         "Local storage “maffei-consenso”",
          "Ours",
-         "To remember that you closed the cookie notice",
-         "Until you clear your browser data"
+         "To remember your choice on the banner (accept or reject), with the date and the version of this page",
+         "6 months, then we ask again"
         ],
         [
          "Session storage “maffei-stagione”",
@@ -2404,11 +2494,59 @@
       ]
      },
      {
-      "id": "niente",
-      "title": "No analytics or marketing cookies",
+      "id": "marketing",
+      "title": "Meta pixel: only if you accept",
       "paragraphs": [
-       "We don't use any statistics, advertising or profiling tools, our own or anyone else's. That's why the notice you see on your first visit informs you and doesn't ask you to choose.",
+       "If you click “Accept” on the banner, the website loads the Meta pixel (Meta Platforms Ireland Ltd). We use it to find out how many visits come from our ads on Facebook and Instagram and how many people then open the booking page, and to show our ads to people who have already visited the website.",
+       "If you click “Reject”, or don't choose, the pixel doesn't load and nothing is sent from our website to Meta."
+      ],
+      "tabella": {
+       "testa": [
+        "Tool",
+        "Whose",
+        "Why",
+        "Duration"
+       ],
+       "righe": [
+        [
+         "Cookie _fbp",
+         "Meta, on our domain",
+         "To recognise the browser between visits, to measure our ads",
+         "3 months"
+        ],
+        [
+         "Cookie _fbc",
+         "Meta, on our domain",
+         "To remember the click on the ad you came from",
+         "3 months"
+        ],
+        [
+         "Session storage “maffei-utm”",
+         "Ours",
+         "To remember which ad you came from, so it can be passed on to the booking engine",
+         "Until you close the browser tab"
+        ]
+       ]
+      },
+      "dopo": [
+       "The pixel records the pages you visit, clicks on the booking buttons, your IP address and technical browser data. For collecting and transmitting this data we are joint controllers with Meta (Art. 26 GDPR, under Meta's terms for business tools); what Meta does afterwards is decided by Meta, as an independent controller, under its own policy: www.facebook.com/privacy/policy. Meta may also use its own cookies on the facebook.com domain. Data may be transferred to the United States: see our privacy policy.",
+       "You can change your mind at any time with “Cookie settings”, at the bottom of every page: if you withdraw your consent, the pixel stops and we delete the _fbp and _fbc cookies from our domain."
+      ]
+     },
+     {
+      "id": "niente",
+      "title": "No analytics and no other advertising tools",
+      "paragraphs": [
+       "We don't use any analytics tools, such as Google Analytics, or any advertising tools other than the Meta pixel.",
        "The fonts on our pages are hosted on our own website: we don't use Google Fonts. Google Maps, Instagram, WhatsApp and the restaurants' websites only open if you tap the link, and from then on those websites' rules apply."
+      ]
+     },
+     {
+      "id": "scelta",
+      "title": "How you choose",
+      "paragraphs": [
+       "On your first visit, the banner asks you whether to accept or reject the Meta pixel, with two identical buttons. If you don't choose, only the essential cookies are used and you can carry on browsing.",
+       "Your choice is kept on your device, with the date and the version of this page, and we won't ask again for 6 months, unless the list of tools changes. You can change it at any time from “Cookie settings”, at the bottom of every page."
       ]
      },
      {
@@ -2429,18 +2567,18 @@
       "id": "aggiornamenti",
       "title": "Updates",
       "paragraphs": [
-       "This page changes if the website's tools change. The English and Polish versions are translations: in case of doubt, the Italian text prevails.",
-       "Last updated: 1 November 2026 (version 1.0)."
+       "This page changes if the website's tools change; if the list changes significantly, the banner will ask for your choice again. The English and Polish versions are translations: in case of doubt, the Italian text prevails.",
+       "Last updated: 2 November 2026 (version 1.0)."
       ]
      }
     ]
    },
    "pl": {
     "meta_title": "Pliki cookie – Hotel Garnì Maffei",
-    "meta_description": "Polityka plików cookie Hotelu Garnì Maffei w Pinzolo: strona używa tylko narzędzi technicznych, bez analitycznych i marketingowych plików cookie.",
+    "meta_description": "Polityka plików cookie Hotelu Garnì Maffei w Pinzolo: techniczne pliki cookie i, tylko za Waszą zgodą, piksel Meta do mierzenia reklam.",
     "kicker": "",
     "h1": "Pliki cookie",
-    "lead": "Na tej stronie wyjaśniamy, jakich plików cookie i podobnych narzędzi używa nasza strona, zgodnie z art. 122 włoskiego kodeksu ochrony prywatności (dekret ustawodawczy 196/2003), RODO oraz wytycznymi włoskiego organu ochrony danych z 10 czerwca 2021 r.",
+    "lead": "Na tej stronie wyjaśniamy, jakich plików cookie i podobnych narzędzi używa nasza strona, które są potrzebne do jej działania, a którego używamy tylko za Waszą zgodą, zgodnie z art. 122 włoskiego kodeksu ochrony prywatności (dekret ustawodawczy 196/2003), RODO oraz wytycznymi włoskiego organu ochrony danych z 10 czerwca 2021 r.",
     "sections": [
      {
       "id": "titolare",
@@ -2461,7 +2599,7 @@
       "id": "tecnici",
       "title": "Techniczne pliki cookie: zgoda nie jest potrzebna",
       "paragraphs": [
-       "Strona używa tylko narzędzi technicznych, potrzebnych do jej działania i do bezpieczeństwa płatności. Na takie narzędzia prawo nie wymaga zgody (art. 122 kodeksu ochrony prywatności)."
+       "Te narzędzia są potrzebne do działania strony, zapamiętania Waszego wyboru dotyczącego plików cookie i bezpieczeństwa płatności. Na takie narzędzia prawo nie wymaga zgody (art. 122 kodeksu ochrony prywatności)."
       ],
       "tabella": {
        "testa": [
@@ -2472,10 +2610,10 @@
        ],
        "righe": [
         [
-         "Pamięć lokalna „maffei-cookie-ok”",
+         "Pamięć lokalna „maffei-consenso”",
          "Nasze",
-         "Zapamiętanie, że zamknęliście informację o plikach cookie",
-         "Do czasu usunięcia danych przeglądarki"
+         "Zapamiętanie Waszego wyboru w banerze (zgoda lub odmowa) wraz z datą i wersją tej strony",
+         "6 miesięcy, potem zapytamy ponownie"
         ],
         [
          "Pamięć sesji „maffei-stagione”",
@@ -2502,11 +2640,59 @@
       ]
      },
      {
-      "id": "niente",
-      "title": "Bez analitycznych i marketingowych plików cookie",
+      "id": "marketing",
+      "title": "Piksel Meta: tylko za Waszą zgodą",
       "paragraphs": [
-       "Nie używamy żadnych narzędzi statystycznych, reklamowych ani profilujących – ani własnych, ani cudzych. Dlatego informacja, którą widzicie przy pierwszej wizycie, tylko informuje i nie prosi o wybór.",
+       "Jeśli w banerze klikniecie „Akceptuję”, strona załaduje piksel Meta (Meta Platforms Ireland Ltd). Dzięki niemu wiemy, ile wizyt pochodzi z naszych reklam na Facebooku i Instagramie i ile osób otwiera potem rezerwację, a także możemy pokazywać nasze reklamy osobom, które już odwiedziły stronę.",
+       "Jeśli klikniecie „Odrzucam” albo nie dokonacie wyboru, piksel się nie ładuje i z naszej strony nic nie trafia do Meta."
+      ],
+      "tabella": {
+       "testa": [
+        "Narzędzie",
+        "Czyje",
+        "Cel",
+        "Czas"
+       ],
+       "righe": [
+        [
+         "Plik cookie _fbp",
+         "Meta, w naszej domenie",
+         "Rozpoznanie przeglądarki między wizytami, aby mierzyć reklamy",
+         "3 miesiące"
+        ],
+        [
+         "Plik cookie _fbc",
+         "Meta, w naszej domenie",
+         "Zapamiętanie kliknięcia w reklamę, z której przyszliście",
+         "3 miesiące"
+        ],
+        [
+         "Pamięć sesji „maffei-utm”",
+         "Nasze",
+         "Zapamiętanie, z której reklamy przyszliście, aby przekazać to systemowi rezerwacji",
+         "Do zamknięcia karty przeglądarki"
+        ]
+       ]
+      },
+      "dopo": [
+       "Piksel zapisuje odwiedzane strony, kliknięcia w przyciski rezerwacji, adres IP i dane techniczne przeglądarki. W zakresie zbierania i przekazywania tych danych jesteśmy współadministratorami z Meta (art. 26 RODO, zgodnie z warunkami Meta dla narzędzi biznesowych); o dalszym przetwarzaniu decyduje Meta jako niezależny administrator, zgodnie ze swoją polityką: www.facebook.com/privacy/policy. Meta może używać także własnych plików cookie w domenie facebook.com. Dane mogą być przekazywane do Stanów Zjednoczonych: piszemy o tym w polityce prywatności.",
+       "Możecie zmienić zdanie w każdej chwili przez „Ustawienia plików cookie” na dole każdej strony: po wycofaniu zgody piksel przestaje działać, a my usuwamy pliki cookie _fbp i _fbc z naszej domeny."
+      ]
+     },
+     {
+      "id": "niente",
+      "title": "Bez statystyk i bez innych narzędzi reklamowych",
+      "paragraphs": [
+       "Nie używamy narzędzi statystycznych, takich jak Google Analytics, ani innych narzędzi reklamowych poza pikselem Meta.",
        "Czcionki przechowujemy razem z resztą strony: nie korzystamy z Google Fonts. Mapy Google, Instagram, WhatsApp i strony restauracji otwierają się tylko wtedy, gdy klikniecie link; od tej chwili obowiązują zasady tych serwisów."
+      ]
+     },
+     {
+      "id": "scelta",
+      "title": "Jak dokonujecie wyboru",
+      "paragraphs": [
+       "Przy pierwszej wizycie baner pyta, czy akceptujecie piksel Meta, czy go odrzucacie – oba przyciski wyglądają tak samo. Jeśli nie wybierzecie, działają tylko techniczne pliki cookie i możecie dalej przeglądać stronę.",
+       "Wybór zostaje zapisany na Waszym urządzeniu wraz z datą i wersją tej strony i nie zapytamy o niego ponownie przed upływem 6 miesięcy, chyba że zmieni się lista narzędzi. Możecie go zmienić w każdej chwili przez „Ustawienia plików cookie” na dole każdej strony."
       ]
      },
      {
@@ -2527,8 +2713,58 @@
       "id": "aggiornamenti",
       "title": "Aktualizacje",
       "paragraphs": [
-       "Ta strona zmienia się, gdy zmieniają się narzędzia używane na stronie. Wersje angielska i polska są tłumaczeniami: w razie wątpliwości obowiązuje tekst włoski.",
-       "Ostatnia aktualizacja: 1 listopada 2026 r. (wersja 1.0)."
+       "Ta strona zmienia się, gdy zmieniają się narzędzia używane na stronie; jeśli lista zmieni się istotnie, baner ponownie zapyta o Wasz wybór. Wersje angielska i polska są tłumaczeniami: w razie wątpliwości obowiązuje tekst włoski.",
+       "Ostatnia aktualizacja: 2 listopada 2026 r. (wersja 1.0)."
+      ]
+     }
+    ]
+   }
+  },
+  "offerta-dicembre": {
+   "it": {
+    "meta_title": "Dicembre a Pinzolo – Hotel Garnì Maffei",
+    "meta_description": "Dicembre a Pinzolo prima delle feste: piste appena aperte, a 30 metri dalla cabinovia, colazione con le torte fatte in casa. Prezzo migliore sul nostro sito.",
+    "kicker": "Dicembre 2026 · Pinzolo",
+    "h1": "Dicembre a Pinzolo, prima delle feste",
+    "lead": "Piste appena aperte, paese tranquillo e la colazione con le torte fatte in casa, a 30 metri dalla cabinovia. Per il ponte dell'Immacolata e per le settimane di dicembre, il prezzo migliore lo trovate qui, prenotando direttamente con noi.",
+    "sections": [
+     {
+      "id": "perche",
+      "kicker": "Perché dicembre",
+      "title": "Sciare prima di Natale",
+      "paragraphs": [],
+      "items": [
+       {
+        "t": "Piste appena aperte",
+        "d": "Gli impianti di Pinzolo aprono il 3 dicembre (apertura prevista). La cabinovia parte a 30 metri dall'hotel, sulla nostra stessa strada."
+       },
+       {
+        "t": "Skipass di bassa stagione",
+        "d": "Fino al 19 dicembre lo skipass della Skiarea Campiglio Dolomiti di Brenta ha la tariffa di bassa stagione."
+       },
+       {
+        "t": "Un paese tranquillo",
+        "d": "Prima delle feste Pinzolo è più calmo, e i ristoranti del centro sono a pochi minuti a piedi."
+       },
+       {
+        "t": "Colazione con le torte fatte in casa",
+        "d": "Ogni mattina dalle 7:30 alle 9:30, a buffet, inclusa nel prezzo."
+       },
+       {
+        "t": "Deposito sci e parcheggio",
+        "d": "Deposito per sci e scarponi in hotel. Parcheggio libero e gratuito davanti all'hotel o a pochi metri."
+       },
+       {
+        "t": "Late check-out",
+        "d": "Su richiesta, in base alla disponibilità: fino alle 14:00 (25 €) o fino alle 18:00 (50 €)."
+       }
+      ]
+     },
+     {
+      "id": "prenota",
+      "title": "Prenotate direttamente da noi",
+      "paragraphs": [
+       "Sul nostro sito trovate il prezzo migliore e le date libere, senza intermediari. Se cercate altre date o una camera per la famiglia, scriveteci su WhatsApp al +39 366 480 5227 o a info@hotelmaffeipinzolo.it: vi rispondiamo noi, Luca e Manuela."
       ]
      }
     ]
@@ -2562,8 +2798,7 @@
    "footer_company": "Società",
    "footer_info": "Informazioni",
    "privacy": "Privacy",
-   "cookie_text": "Questo sito usa solo cookie tecnici, necessari alla prenotazione online. Nessuna profilazione.",
-   "cookie_ok": "Ho capito",
+   "cookie_text": "Usiamo cookie tecnici e, solo se accettate, il pixel di Meta per misurare le visite che arrivano dalle nostre inserzioni su Facebook e Instagram.",
    "cookie_more": "Dettagli",
    "room_guests": "Ospiti",
    "room_beds": "Letti",
@@ -2594,7 +2829,7 @@
    "company_vat": "P.IVA",
    "company_cin": "CIN",
    "breadcrumb_label": "Percorso",
-   "cookie_label": "Avviso sui cookie",
+   "cookie_label": "Scelta sui cookie",
    "stars": "3 stelle",
    "link_cena": "I ristoranti che consigliamo",
    "tipo_ristorante": "ristorante",
@@ -2608,7 +2843,10 @@
    "cookie_page": "Cookie",
    "label_gondola": "Cabinovia",
    "label_hotel": "Hotel Maffei",
-   "season_label": "Scegli la stagione"
+   "season_label": "Scegli la stagione",
+   "cookie_si": "Accetta",
+   "cookie_no": "Rifiuta",
+   "cookie_pref": "Preferenze cookie"
   },
   "en": {
    "skip": "Skip to content",
@@ -2636,8 +2874,7 @@
    "footer_company": "Company details",
    "footer_info": "Information",
    "privacy": "Privacy policy",
-   "cookie_text": "This website only uses the essential cookies needed for online booking. We don't use cookies to profile you.",
-   "cookie_ok": "Got it",
+   "cookie_text": "We use essential cookies and, only if you accept, the Meta pixel to measure visits that come from our ads on Facebook and Instagram.",
    "cookie_more": "Find out more",
    "room_guests": "Guests",
    "room_beds": "Beds",
@@ -2668,7 +2905,7 @@
    "company_vat": "VAT No.",
    "company_cin": "CIN",
    "breadcrumb_label": "Breadcrumb",
-   "cookie_label": "Cookie notice",
+   "cookie_label": "Cookie choice",
    "stars": "3 stars",
    "link_cena": "Restaurants we recommend",
    "tipo_ristorante": "restaurant",
@@ -2682,7 +2919,10 @@
    "cookie_page": "Cookies",
    "label_gondola": "Gondola",
    "label_hotel": "Hotel Maffei",
-   "season_label": "Choose the season"
+   "season_label": "Choose the season",
+   "cookie_si": "Accept",
+   "cookie_no": "Reject",
+   "cookie_pref": "Cookie settings"
   },
   "pl": {
    "skip": "Przejdź do treści",
@@ -2710,8 +2950,7 @@
    "footer_company": "Dane firmy",
    "footer_info": "Informacje",
    "privacy": "Polityka prywatności",
-   "cookie_text": "Ta strona używa wyłącznie technicznych plików cookie, niezbędnych do rezerwacji online. Nie stosujemy profilowania.",
-   "cookie_ok": "Rozumiem",
+   "cookie_text": "Używamy technicznych plików cookie oraz – tylko jeśli się zgodzicie – piksela Meta, aby mierzyć wizyty z naszych reklam na Facebooku i Instagramie.",
    "cookie_more": "Szczegóły",
    "room_guests": "Liczba osób",
    "room_beds": "Łóżka",
@@ -2743,7 +2982,7 @@
    "company_vat": "Nr VAT",
    "company_cin": "CIN",
    "breadcrumb_label": "Ścieżka nawigacji",
-   "cookie_label": "Informacja o plikach cookie",
+   "cookie_label": "Wybór plików cookie",
    "stars": "3 gwiazdki",
    "link_cena": "Restauracje, które polecamy",
    "tipo_ristorante": "restauracja",
@@ -2757,7 +2996,10 @@
    "cookie_page": "Pliki cookie",
    "label_gondola": "Gondola",
    "label_hotel": "Hotel Maffei",
-   "season_label": "Wybierz porę roku"
+   "season_label": "Wybierz porę roku",
+   "cookie_si": "Akceptuję",
+   "cookie_no": "Odrzucam",
+   "cookie_pref": "Ustawienia plików cookie"
   }
  }
 }

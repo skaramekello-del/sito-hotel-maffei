@@ -1,4 +1,4 @@
-/* Hotel Garnì Maffei — piccoli comportamenti del sito (nessun tracciamento) */
+/* Hotel Garnì Maffei — piccoli comportamenti del sito (il pixel di Meta parte solo dopo "Accetta") */
 (function () {
   var doc = document.documentElement;
   doc.classList.remove('no-js');
@@ -38,17 +38,39 @@
     return null;
   }
   function b64(s) { try { return btoa(unescape(encodeURIComponent(s))); } catch (e) { return ''; } }
+  // Parametri della campagna (utm_*, fbclid, gclid): dai link Prenota passano al motore Beddy (la barra Beddy lo fa da se').
+  // Senza consenso si passano solo quelli dell'indirizzo di questa pagina; con il consenso si ricordano per la visita.
+  function campagna() {
+    var out = [];
+    window.location.search.slice(1).split('&').forEach(function (p) {
+      var k = decodeURIComponent(p.split('=')[0] || '');
+      if (/^utm_/.test(k) || k === 'fbclid' || k === 'gclid') out.push(p);
+    });
+    if (cfg.consenso === 'si') {
+      try {
+        if (out.length) window.sessionStorage.setItem('maffei-utm', out.join('&'));
+        else return window.sessionStorage.getItem('maffei-utm') || '';
+      } catch (e) { /* niente */ }
+    }
+    return out.join('&');
+  }
   function dateUpd() {
-    var date = cfg.widget ? proposta() : null;
+    var date = cfg.widget ? proposta() : null, par = campagna();
     var links = document.querySelectorAll('a[data-book]');
     for (var j = 0; j < links.length; j++) {
       var a = links[j];
       if (!a.hasAttribute('data-href0')) a.setAttribute('data-href0', a.getAttribute('href'));
-      if (!date) { a.setAttribute('href', a.getAttribute('data-href0')); continue; }
-      var adulti = parseInt(a.getAttribute('data-adults') || '2', 10);
-      var q = { booking_widget_code: cfg.widget, date_from: date[0], date_to: date[1], currency: 'EUR', lang: cfg.bookLang || 'it', coupon_code: null, rooms: [{ adults: adulti, children: [] }], searchOrigin: 'beddybar', unlock_key: [] };
-      var enc = b64(JSON.stringify(q));
-      if (enc) a.href = cfg.engine + '?search=' + encodeURIComponent(enc) + '&lang=' + (cfg.bookLang || 'it');
+      // i bottoni delle offerte hanno date fisse
+      var d = a.getAttribute('data-dal') ? [a.getAttribute('data-dal'), a.getAttribute('data-al')] : date;
+      var h = a.getAttribute('data-href0');
+      if (d && cfg.widget) {
+        var adulti = parseInt(a.getAttribute('data-adults') || '2', 10);
+        var q = { booking_widget_code: cfg.widget, date_from: d[0], date_to: d[1], currency: 'EUR', lang: cfg.bookLang || 'it', coupon_code: null, rooms: [{ adults: adulti, children: [] }], searchOrigin: 'beddybar', unlock_key: [] };
+        var enc = b64(JSON.stringify(q));
+        if (enc) h = cfg.engine + '?search=' + encodeURIComponent(enc) + '&lang=' + (cfg.bookLang || 'it');
+      }
+      if (par) h += (h.indexOf('?') < 0 ? '?' : '&') + par;
+      a.setAttribute('href', h);
     }
   }
   dateUpd();
@@ -83,16 +105,68 @@
     upd();
   })(gals[g]);
 
-  // Avviso cookie (solo cookie tecnici: e' un'informativa, non una richiesta di consenso)
+  // Consenso: "Accetta" carica il pixel di Meta; "Rifiuta", o nessuna scelta, non manda nulla a Meta.
+  // La scelta resta sul dispositivo con data e versione della pagina Cookie (la legge lo script in testa alla pagina).
+  function salva(s) {
+    cfg.consenso = s;
+    try {
+      window.localStorage.setItem('maffei-consenso', JSON.stringify({ s: s, t: Date.now(), v: cfg.consensoVer }));
+      window.localStorage.removeItem('maffei-cookie-ok');
+    } catch (e) { /* niente */ }
+  }
+  function pixel() {
+    if (!cfg.pixel || window.fbq) return;
+    /* codice base del pixel di Meta */
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+      t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('init', cfg.pixel);
+    window.fbq('track', 'PageView');
+    if (cfg.evento) window.fbq('track', cfg.evento.nome, cfg.evento.dati || {});
+  }
+  function togliPixel() {
+    if (window.fbq) window.fbq('consent', 'revoke');
+    var host = window.location.hostname, dom = host.split('.').slice(-2).join('.');
+    ['_fbp', '_fbc'].forEach(function (n) {
+      document.cookie = n + '=; Max-Age=0; path=/';
+      [host, '.' + host, dom, '.' + dom].forEach(function (d) { document.cookie = n + '=; Max-Age=0; path=/; domain=' + d; });
+    });
+    try { window.sessionStorage.removeItem('maffei-utm'); } catch (e) { /* niente */ }
+  }
+  if (cfg.consenso === 'si') pixel();
   var ck = document.querySelector('.cookie');
   if (ck) {
-    var ok = ck.querySelector('button');
-    if (ok) ok.addEventListener('click', function () {
+    var scelte = ck.querySelectorAll('[data-consenso]');
+    for (var c = 0; c < scelte.length; c++) scelte[c].addEventListener('click', function () {
+      var s = this.getAttribute('data-consenso');
+      salva(s);
       doc.classList.add('ck-ok');
-      try { window.localStorage.setItem('maffei-cookie-ok', '1'); } catch (e) { /* niente */ }
-      fabUpd();
+      if (s === 'si') { if (window.fbq) window.fbq('consent', 'grant'); pixel(); } else togliPixel();
+      dateUpd(); fabUpd();
     });
   }
+  // "Preferenze cookie" in fondo alla pagina: il banner torna visibile
+  var pref = document.querySelectorAll('[data-cookie-pref]');
+  for (var p = 0; p < pref.length; p++) pref[p].addEventListener('click', function () {
+    doc.classList.remove('ck-ok');
+    window.scrollTo(0, 0);
+    var b = ck && ck.querySelector('[data-consenso]');
+    if (b) b.focus({ preventScroll: true });
+    fabUpd();
+  });
+  // Evento per il pixel (solo se caricato): clic sui bottoni Prenota del sito e sulla ricerca della barra Beddy
+  document.addEventListener('click', function (ev) {
+    if (!window.fbq || cfg.consenso !== 'si') return;
+    var path = ev.composedPath ? ev.composedPath() : [ev.target];
+    for (var i = 0; i < path.length; i++) {
+      var el = path[i];
+      if (!el || !el.getAttribute) continue;
+      var orig = el.hasAttribute('data-book') ? 'bottone' : (el.classList && el.classList.contains('by-beddy-bar-ui__search-button') ? 'barra' : '');
+      if (orig) { window.fbq('trackCustom', 'ClicPrenota', { origine: orig, pagina: window.location.pathname }); return; }
+    }
+  }, true);
 
   // Bottone tondo di WhatsApp (Home): nascosto mentre il bottone WhatsApp dell'apertura si vede sopra la barra in basso
   // (nostra 65 px, Beddy fino a 90 px); se ricompare dove coprirebbe i bottoni dell'apertura, sale sopra di loro

@@ -24,6 +24,9 @@ def e(s):
 def url(page, lang):
     return '/' + C['slug'][page][lang]
 
+def lurl(page, lang):
+    return url(page, lang) if lang in C['slug'][page] else url('home', lang)
+
 def absu(page, lang):
     return DOM + url(page, lang)
 
@@ -60,7 +63,8 @@ def linkify(h):
     for a, b in ((e(c['email']), f'<a href="mailto:{c["email"]}">{e(c["email"])}</a>'),
                  (e(c['fisso']), f'<a href="tel:{c["fisso_tel"]}">{e(c["fisso"])}</a>'),
                  ('www.ski.it', '<a href="https://www.ski.it/" rel="noopener">www.ski.it</a>'),
-                 ('www.garanteprivacy.it', '<a href="https://www.garanteprivacy.it/" rel="noopener">www.garanteprivacy.it</a>')):
+                 ('www.garanteprivacy.it', '<a href="https://www.garanteprivacy.it/" rel="noopener">www.garanteprivacy.it</a>'),
+                 ('www.facebook.com/privacy/policy', '<a href="https://www.facebook.com/privacy/policy" rel="noopener">www.facebook.com/privacy/policy</a>')):
         h = h.replace(a, b)
     return h
 
@@ -194,10 +198,17 @@ SCRIPT_STAGIONE = ("var D=document.documentElement,M=window.MAFFEI,st;try{st=ses
                    "D.classList.add('st-'+st);if(M.heroPre){var l=document.createElement('link');l.rel='preload';l.as='image';l.type='image/webp';"
                    "l.setAttribute('imagesrcset',M.heroPre[st]);l.setAttribute('imagesizes','100vw');l.setAttribute('fetchpriority','high');document.head.appendChild(l)}")
 
-def head(page, lang, t, hero_n=None, extra_ld=None, hero_estate=None):
+# Scelta sul banner: {s: 'si'|'no', t: data in ms, v: versione della pagina Cookie}; si richiede dopo 180 giorni
+SCRIPT_CONSENSO = ("try{var c=JSON.parse(localStorage.getItem('maffei-consenso')||'null');"
+                   "if(c&&c.v===M.consensoVer&&Date.now()-c.t<15552e6){D.classList.add('ck-ok');M.consenso=c.s}}catch(e){}")
+
+def head(page, lang, t, hero_n=None, extra_ld=None, hero_estate=None, noindex=False, evento=None):
     title = t['meta_title']; desc = t['meta_description']
-    alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{absu(page, l)}">' for l in LANGS)
-    alts += f'<link rel="alternate" hreflang="x-default" href="{absu(page, "it")}">'
+    if noindex:
+        alts = '<meta name="robots" content="noindex">'
+    else:
+        alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{absu(page, l)}">' for l in LANGS)
+        alts += f'<link rel="alternate" hreflang="x-default" href="{absu(page, "it")}">'
     og_n = C['foto_pagine']['og'].get(page, C['foto_pagine']['og']['home'])
     og = og_image(og_n)
     og_alt = ''.join(f'<meta property="og:locale:alternate" content="{C["locale"][l]}">' for l in LANGS if l != lang)
@@ -209,7 +220,10 @@ def head(page, lang, t, hero_n=None, extra_ld=None, hero_estate=None):
         ld.extend(extra_ld)
     lds = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld if x)
     cfg = {'widget': C['prenotazione']['widget'], 'engine': C['prenotazione']['engine'], 'bookLang': C['prenotazione']['lingua_engine'][lang],
-           'beddyScript': C['prenotazione']['script'], 'stagioni': C['prenotazione']['stagioni']}
+           'beddyScript': C['prenotazione']['script'], 'stagioni': C['prenotazione']['stagioni'],
+           'pixel': C['pixel']['id'], 'consensoVer': C['pixel']['versione_consenso']}
+    if evento:
+        cfg['evento'] = evento
     if hero_n and hero_estate:
         cfg['heroPre'] = {'inverno': srcset_webp(hero_n), 'estate': srcset_webp(hero_estate)}
     return f'''<!DOCTYPE html>
@@ -220,7 +234,7 @@ def head(page, lang, t, hero_n=None, extra_ld=None, hero_estate=None):
 <meta name="format-detection" content="telephone=no">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{absu(page, lang)}">
+{'' if noindex else f'<link rel="canonical" href="{absu(page, lang)}">'}
 {alts}
 <meta name="theme-color" content="#F3F1EB" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#131916" media="(prefers-color-scheme: dark)">
@@ -244,7 +258,7 @@ def head(page, lang, t, hero_n=None, extra_ld=None, hero_estate=None):
 {pre}
 <link rel="stylesheet" href="{asset('/assets/sito.css')}">
 <style id="beddy-default-font"></style>
-<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');window.MAFFEI={json.dumps(cfg)};{SCRIPT_STAGIONE}try{{if(localStorage.getItem('maffei-cookie-ok')==='1')document.documentElement.classList.add('ck-ok')}}catch(e){{}}</script>
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');window.MAFFEI={json.dumps(cfg)};{SCRIPT_STAGIONE}{SCRIPT_CONSENSO}</script>
 <script src="{asset('/assets/sito.js')}" defer></script>
 {lds}
 </head>
@@ -258,10 +272,10 @@ def header(page, lang):
         items.append(f'<li><a href="{url(p, lang)}"{cur}>{e(ui(lang, label))}</a></li>')
     CUR = ' aria-current="true"'
     langs = ''.join(
-        f'<a href="{url(page, l)}" hreflang="{l}" lang="{l}"{CUR if l == lang else ""}>{l.upper()}</a>' for l in LANGS)
+        f'<a href="{lurl(page, l)}" hreflang="{l}" lang="{l}"{CUR if l == lang else ""}>{l.upper()}</a>' for l in LANGS)
     return f'''<body>
 <a class="skip" href="#main">{e(ui(lang, 'skip'))}</a>
-<div class="cookie" role="region" aria-label="{e(ui(lang, 'cookie_label'))}"><div class="wrap"><p>{e(ui(lang, 'cookie_text'))} <a href="{url('cookie', lang)}">{e(ui(lang, 'cookie_more'))}</a></p><button class="btn btn-line" type="button">{e(ui(lang, 'cookie_ok'))}</button></div></div>
+<div class="cookie" role="region" aria-label="{e(ui(lang, 'cookie_label'))}"><div class="wrap"><p>{e(ui(lang, 'cookie_text'))} <a href="{url('cookie', lang)}">{e(ui(lang, 'cookie_more'))}</a></p><div class="cookie-btns"><button class="btn btn-line" type="button" data-consenso="no">{e(ui(lang, 'cookie_no'))}</button><button class="btn btn-line" type="button" data-consenso="si">{e(ui(lang, 'cookie_si'))}</button></div></div></div>
 <header class="top">
 <div class="wrap">
 <a class="logo" href="{url('home', lang)}"><picture><source type="image/webp" srcset="/img/logo/logo-maffei-128.webp 1x, /img/logo/logo-maffei-256.webp 2x"><img src="/img/logo/logo-maffei-128.png" width="{LOGO_W128}" height="128" alt="" style="height:64px;width:auto"></picture><span class="logo-name">Hotel Garnì Maffei<small>Pinzolo · <span aria-hidden="true">★★★</span><span class="sr-only">{e(ui(lang, 'stars'))}</span></small></span></a>
@@ -275,7 +289,7 @@ def header(page, lang):
 
 def footer(page, lang):
     c = C['contatti']; so = C['societa']
-    langs = ' · '.join(f'<a href="{url(page, l)}" hreflang="{l}" lang="{l}">{l.upper()}</a>' for l in LANGS)
+    langs = ' · '.join(f'<a href="{lurl(page, l)}" hreflang="{l}" lang="{l}">{l.upper()}</a>' for l in LANGS)
     menu = ''.join(f'<li><a href="{url(p, lang)}">{e(ui(lang, {"camere": "nav_rooms", "colazione": "nav_breakfast", "pinzolo": "nav_pinzolo", "contatti": "nav_contact"}[p]))}</a></li>' for p in C['menu'])
     beddy_note = ui(lang, 'beddy_note')
     note = f'<p class="muted" style="font-size:14px;margin-top:14px">{e(beddy_note)}</p>' if beddy_note else ''
@@ -288,7 +302,7 @@ def footer(page, lang):
 <li>{e(ui(lang, 'phone_label'))}: <a href="tel:{c['fisso_tel']}">{e(c['fisso'])}</a></li>
 <li><a href="mailto:{c['email']}">{e(c['email'])}</a></li>
 <li><a href="{c['instagram']}" rel="noopener">{e(ui(lang, 'instagram'))}</a></li></ul></div>
-<div><h2>{e(ui(lang, 'footer_info'))}</h2><ul>{menu}<li><a href="{url('privacy', lang)}">{e(ui(lang, 'privacy'))}</a></li><li><a href="{url('cookie', lang)}">{e(ui(lang, 'cookie_page'))}</a></li></ul>{note}</div>
+<div><h2>{e(ui(lang, 'footer_info'))}</h2><ul>{menu}<li><a href="{url('privacy', lang)}">{e(ui(lang, 'privacy'))}</a></li><li><a href="{url('cookie', lang)}">{e(ui(lang, 'cookie_page'))}</a></li><li><button class="link-btn" type="button" data-cookie-pref>{e(ui(lang, 'cookie_pref'))}</button></li></ul>{note}</div>
 <div><h2>{e(ui(lang, 'footer_company'))}</h2><p>{e(so['ragione'])}<br>{e(ui(lang, 'company_vat'))} {e(so['piva'])} · {e(ui(lang, 'company_rea'))} {e(so['rea'])}<br>{e(ui(lang, 'company_cin'))} {e(so['cin'])}</p></div>
 </div>
 <p class="legal">© {date.today().year} {e(C['nome'])} · {langs}</p>
@@ -348,12 +362,14 @@ def stagione_switch(lang):
     b = lambda k, ic: f'<button type="button" data-stagione="{k}" aria-pressed="false">{ICON[ic]}{e(ui(lang, "season_" + ("winter" if k == "inverno" else "summer")))}</button>'
     return f'<div class="stagione-switch" role="group" aria-label="{e(ui(lang, "season_label"))}">{b("inverno", "neve")}{b("estate", "sole")}</div>'
 
-def hero(n, lang, t, sub=False, pos='50% 50%', n_estate=None, pos_estate='50% 50%'):
+def hero(n, lang, t, sub=False, pos='50% 50%', n_estate=None, pos_estate='50% 50%', cta_html=None):
     cls = 'hero hero-sub' if sub else 'hero'
     k = kicker(t.get('kicker', ''))
     lead = f'<p class="lead">{e(t.get("lead", ""))}</p>' if t.get('lead') else ''
     cta = ''
-    if not sub:
+    if cta_html:
+        cta = f'<div class="cta">{cta_html}</div>'
+    elif not sub:
         cta = f'<div class="cta">{book_btn(lang)}<a class="btn btn-line" href="{wa_link(lang)}" rel="noopener">{ICON["wa"]}{e(ui(lang, "whatsapp"))}</a></div>'
     if n_estate:
         cls += ' hero-stagioni'
@@ -597,7 +613,28 @@ def render_legale(page, lang):
     out.append('</div></main>'); out.append(footer(page, lang))
     return ''.join(out)
 
-RENDER = {'home': render_home, 'camere': render_camere, 'colazione': render_colazione, 'pinzolo': render_pinzolo, 'contatti': render_contatti, 'privacy': lambda l: render_legale('privacy', l), 'cookie': lambda l: render_legale('cookie', l)}
+def link_date(lang, label, dal, al, cls='btn', adulti=2):
+    """Bottone che apre il motore su date fisse (lo script aggiunge le date e i parametri della campagna)."""
+    return f'<a class="{cls}" href="{book_href(lang)}" data-book data-adults="{adulti}" data-dal="{dal}" data-al="{al}">{ICON["cal"]}{e(label)}</a>'
+
+def render_offerta(page, lang):
+    t = page_t(page, lang); o = C['offerte'][page]
+    btns = ''.join(link_date(lang, d['etichetta'], d['dal'], d['al'], cls='btn' if i == 0 else 'btn btn-line') for i, d in enumerate(o['date']))
+    out = [head(page, lang, t, hero_n=o['foto'], noindex=True, evento={'nome': 'ViewContent', 'dati': {'content_name': o['nome_evento']}}),
+           header(page, lang), '<main id="main">']
+    out.append(hero(o['foto'], lang, t, pos=o.get('pos', '50% 50%'), cta_html=btns))
+    s = sec(t, 'perche')
+    lis = ''.join(f'<li><h3>{e(i["t"])}</h3><p>{linkify(e(i["d"]))}</p></li>' for i in s['items'])
+    out.append(f'<section class="section" aria-labelledby="s-perche"><div class="wrap"><div class="section-head center">{kicker(s.get("kicker", ""))}<h2 id="s-perche">{e(s["title"])}</h2></div><ul class="facts">{lis}</ul></div></section>')
+    strip = ''.join(f'<figure class="figure" style="--ratio:4/3">{picture(n, lang, sizes="(min-width: 860px) 380px, 100vw")}</figure>' for n in o['foto_striscia'])
+    out.append(f'<section class="section" style="padding-top:0" aria-label="{e(ui(lang, "gallery_label"))}"><div class="wrap"><div class="strip-3">{strip}</div></div></section>')
+    s = sec(t, 'prenota')
+    out.append(f'<section class="section" aria-labelledby="s-prenota"><div class="wrap narrow"><h2 id="s-prenota" style="margin-bottom:14px">{e(s["title"])}</h2>{paras(s)}<div class="cta" style="margin-top:22px">{btns}<a class="btn btn-line" href="{wa_link(lang)}" rel="noopener">{ICON["wa"]}{e(ui(lang, "whatsapp"))}</a></div></div></section>')
+    out.append('</main>'); out.append(footer(page, lang))
+    return ''.join(out)
+
+RENDER = {'home': render_home, 'camere': render_camere, 'colazione': render_colazione, 'pinzolo': render_pinzolo, 'contatti': render_contatti, 'privacy': lambda l: render_legale('privacy', l), 'cookie': lambda l: render_legale('cookie', l),
+          'offerta-dicembre': lambda l: render_offerta('offerta-dicembre', l)}
 
 # ---------------------------------------------------------------- logo e icone
 def logo_files():
@@ -675,6 +712,10 @@ def main():
     n = 0
     for page in C['pagine']:
         for lang in LANGS:
+            h = RENDER[page](lang)
+            write(C['slug'][page][lang] + 'index.html', tipografia_pl_body(h) if lang == 'pl' else h); n += 1
+    for page in C.get('pagine_offerte', []):
+        for lang in C['slug'][page]:
             h = RENDER[page](lang)
             write(C['slug'][page][lang] + 'index.html', tipografia_pl_body(h) if lang == 'pl' else h); n += 1
     sitemap(); redirects(); notfound()

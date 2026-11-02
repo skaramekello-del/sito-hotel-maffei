@@ -47,6 +47,9 @@ for page in C['pagine']:
     for lang in C['lingue']:
         pages.append((page, lang, C['slug'][page][lang] + 'index.html'))
 pages.append(('404', 'it', '404.html'))
+for page in C.get('pagine_offerte', []):
+    for lang in C['slug'][page]:
+        pages.append((page, lang, C['slug'][page][lang] + 'index.html'))
 for page, lang, rel in pages:
     f = os.path.join(R, rel)
     if not os.path.exists(f):
@@ -58,7 +61,9 @@ for page, lang, rel in pages:
     desc = [a.get('content', '') for t, a in p.tags if t == 'meta' and a.get('name') == 'description']
     if not desc or not (50 <= len(desc[0]) <= 160): warns.append(f'{tag}: descrizione di {len(desc[0]) if desc else 0} caratteri')
     if p.h1 != 1: errs.append(f'{tag}: {p.h1} titoli h1')
-    if page != '404':
+    if page in C.get('pagine_offerte', []):
+        if 'noindex' not in src: errs.append(f'{tag}: pagina di offerta senza noindex')
+    elif page != '404':
         if not any(t == 'link' and a.get('rel') == 'canonical' for t, a in p.tags): errs.append(f'{tag}: manca canonical')
         hl = {a.get('hreflang') for t, a in p.tags if t == 'link' and a.get('rel') == 'alternate'}
         for l in C['lingue'] + ['x-default']:
