@@ -143,8 +143,8 @@ a.card:hover h3{text-decoration:underline;text-underline-offset:4px}
 .feature .panel h2{margin-bottom:14px}
 
 /* Luca e Manuela */
-.hosts-photo img{aspect-ratio:4/5;object-fit:cover;width:100%;max-width:390px;border-radius:var(--radius)}
-@media (max-width:860px){.hosts-photo img{max-width:300px}}
+.hosts-photo img{aspect-ratio:4/5;object-fit:cover;width:100%;max-width:300px;border-radius:var(--radius)}
+@media (max-width:860px){.hosts-photo img{max-width:230px}}
 .sign{font-family:var(--display);font-size:21px;color:var(--muted);margin-top:10px!important}
 .scores{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
 .score{flex:1 1 160px;min-width:160px;text-decoration:none;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);display:flex;flex-direction:column}

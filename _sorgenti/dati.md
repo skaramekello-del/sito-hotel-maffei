@@ -16,10 +16,10 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 - Cani ammessi su richiesta, in base alla disponibilita' delle camere: contattarci prima di prenotare (Manuela, 1/11/2026). Non accettiamo gatti.
 
 ## Posizione e distanze (decise da Luca il 31/10)
-- 30 metri dalla cabinovia di Pinzolo (Pinzolo–Prà Rodont), la cui stazione a valle e' sulla stessa strada dell'hotel. Nel linguaggio di tutti i giorni (e di Luca) e' "la funivia": nel menu e nei titoli si puo' dire "funivia", nel testo si precisa "cabinovia Pinzolo–Prà Rodont".
+- 30 metri dalla cabinovia di Pinzolo (Pinzolo–Prà Rodont–Doss del Sabion), la cui stazione a valle e' sulla stessa strada dell'hotel. Nel linguaggio di tutti i giorni (e di Luca) e' "la funivia": nel menu e nei titoli si puo' dire "funivia", nel testo si precisa "cabinovia Pinzolo–Prà Rodont–Doss del Sabion".
 - Centro di Pinzolo: 5 minuti a piedi.
 - Dalla Ski Area Pinzolo la Pinzolo–Campiglio Express collega alle piste di Madonna di Campiglio (circa 16 minuti di impianto): un comprensorio di oltre 150 km di piste (Skiarea Campiglio Dolomiti di Brenta) con un solo skipass.
-- Intorno: Dolomiti di Brenta, Parco Naturale Adamello Brenta, Val Rendena; d'estate escursioni e bici.
+- Intorno: Dolomiti di Brenta, Parco Naturale Adamello Brenta, Val Rendena; d'estate escursioni e bici. Golf: due campi da nove buche in zona (Golf Club Rendena a Bocenago, Golf Club Madonna di Campiglio).
 - Impianti di Pinzolo: apertura della stagione invernale 2026/27 prevista il 3 dicembre 2026.
 - Hotel aperto d'estate di solito dal 1 giugno al 20 settembre; le date possono variare leggermente (Luca, 1/11/2026). Nel sito: stagione estiva 2027 dal 1/6 al 20/9, per le date proposte dal bottone Prenota.
 
@@ -28,7 +28,7 @@ Aggiornato al 31/10/2026 (decisioni di Luca del 30-31/10).
 |---|---|---|---|
 | Camera Matrimoniale | 4 | letto matrimoniale | 2 |
 | Camera Doppia | 4 | due letti singoli, avvicinabili e preparati come matrimoniale su richiesta (Manuela, 1/11/2026) | 2 |
-| Camera Tripla | 3 | letto matrimoniale + letto singolo | fino a 3 |
+| Camera Tripla | 3 | letto matrimoniale + letto singolo, oppure tre letti separati | fino a 3 |
 | Camera Familiare | 1 | letto matrimoniale + letto a castello | fino a 4 (adatta a famiglie con bambini) |
 
 Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334 si mette solo come letto aggiunto, se serve. Sul sito non si promette e la foto 334 resta fuori.
@@ -42,7 +42,7 @@ Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334
 - Inclusa nel prezzo. A buffet, tutti i giorni dalle 7:30 alle 9:30, nella sala colazione con le vetrate.
 - Dolce: torte fatte in casa (ogni giorno), crostate, strudel, brioche e cornetti, biscotti, marmellate, yogurt, cereali, frutta fresca, succhi.
 - Salato: pane fresco, anche integrale, formaggi, prosciutto e salumi, uova (su richiesta).
-- Caffe' espresso e cappuccino.
+- Caffe' espresso, cappuccino e latte.
 - Prodotti freschi, molti del territorio.
 
 ## Servizi
@@ -94,4 +94,6 @@ Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334
 - Gourmet: Grual (Lefay Resort, Pinzolo), una stella Michelin (Guida 2025, confermata 2026), solo cena, bambini dai 12 anni in su, 10 min a piedi. La Guida 2027 esce il 12/11/2026: ricontrollare.
 - Val Genova, d'estate: Chalet Val Genova (Carisolo, 2,4 km), Ristorante Cascate Nardis (5,1 km, aprile-1 novembre), Chalet da Gino (5,5 km, maggio-ottobre), Rifugio Fontana Bona (7,8 km, giugno-settembre).
 - Nessuno di Mildas, Rendenèr, La Parzif e Grual fa la pizza.
+- Dal 5/11/2026 (Manuela) Baita Magnabò e Chalet Val Genova stanno nel gruppo "In auto" (1,9 e 2,4 km in auto).
+- Telefoni sul sito: letti il 6/11/2026 sui siti ufficiali; Grual = centralino del Lefay; Cascate Nardis da Pagine Gialle (non ha un sito). Bagat senza telefono: le fonti danno tre numeri diversi. Bagat e Cascate Nardis hanno il link a Google Maps.
 - Riapertura per l'inverno 2026/27 di Al Cardo, La Parzif e Al Rocol confermata da Luca il 1/11/2026 (Google li segnava "chiuso temporaneamente": pausa d'autunno).

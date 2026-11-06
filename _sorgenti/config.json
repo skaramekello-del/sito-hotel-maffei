@@ -166,9 +166,9 @@
     "pl": "do 3"
    },
    "letti": {
-    "it": "letto matrimoniale e letto singolo",
-    "en": "double bed and single bed",
-    "pl": "łóżko małżeńskie i łóżko pojedyncze"
+    "it": "letto matrimoniale e letto singolo, oppure tre letti separati",
+    "en": "double bed and single bed, or three separate beds",
+    "pl": "łóżko małżeńskie i łóżko pojedyncze albo trzy osobne łóżka"
    },
    "foto": [
     41,
@@ -340,6 +340,7 @@
   "gruppi": [
    "paese",
    "fuori",
+   "auto",
    "speciale",
    "valgenova"
   ],
@@ -358,7 +359,8 @@
      "it": "nella nostra via",
      "en": "on our street",
      "pl": "przy naszej ulicy"
-    }
+    },
+    "tel": "0465 262784"
    },
    {
     "nome": "La Parzif",
@@ -369,27 +371,31 @@
      "it": "https://offers.laparzif.it/",
      "en": "https://offers.laparzif.it/en/",
      "pl": "https://offers.laparzif.it/en/"
-    }
+    },
+    "tel": "0465 503902"
    },
    {
     "nome": "Rendenèr Alpine Food",
     "gruppo": "paese",
     "tipo": "ristorante",
     "minuti_piedi": 6,
-    "sito": "https://rendeneralpinefood.it/"
+    "sito": "https://rendeneralpinefood.it/",
+    "tel": "0465 502008"
    },
    {
     "nome": "Bagat",
     "gruppo": "paese",
     "tipo": "osteria_pizzeria",
-    "minuti_piedi": 8
+    "minuti_piedi": 8,
+    "sito": "https://www.google.com/maps/search/?api=1&query=Bagat+Via+San+Lorenzo+26+Pinzolo"
    },
    {
     "nome": "Al Cardo",
     "gruppo": "paese",
     "tipo": "pizzeria",
     "minuti_piedi": 9,
-    "sito": "https://www.alcardo.com/"
+    "sito": "https://www.alcardo.com/",
+    "tel": "0465 502580"
    },
    {
     "nome": "All'Antica Segheria",
@@ -397,7 +403,8 @@
     "tipo": "pizzeria",
     "luogo": "Carisolo",
     "minuti_piedi": 12,
-    "sito": "https://www.anticasegheria.it/"
+    "sito": "https://www.anticasegheria.it/",
+    "tel": "0465 501498"
    },
    {
     "nome": "La Botte",
@@ -405,7 +412,8 @@
     "tipo": "pizzeria",
     "luogo": "Giustino",
     "minuti_piedi": 16,
-    "sito": "https://labotteristorante.it/"
+    "sito": "https://labotteristorante.it/",
+    "tel": "0465 501488"
    },
    {
     "nome": "Mildas",
@@ -418,19 +426,21 @@
      "it": "solo su prenotazione",
      "en": "booking required",
      "pl": "tylko z rezerwacją"
-    }
+    },
+    "tel": "0465 502104"
    },
    {
     "nome": "Baita Magnabò",
-    "gruppo": "fuori",
+    "gruppo": "auto",
     "tipo": "ristorante",
-    "minuti_piedi": 26,
     "sito": "https://magnabo.com/",
     "nota": {
      "it": "verso Carisolo",
      "en": "towards Carisolo",
      "pl": "w stronę Carisolo"
-    }
+    },
+    "tel": "379 280 5496",
+    "km": 1.9
    },
    {
     "nome": "Grual",
@@ -446,35 +456,41 @@
      "it": "bambini dai 12 anni in su",
      "en": "children aged 12 and over",
      "pl": "dzieci od 12 lat"
-    }
+    },
+    "tel": "0465 768800"
    },
    {
     "nome": "Chalet Val Genova",
-    "gruppo": "valgenova",
+    "gruppo": "auto",
     "tipo": "osteria",
     "luogo": "Carisolo",
     "km": 2.4,
-    "sito": "https://www.fioccodineve.com/chalet-val-genova/"
+    "sito": "https://www.fioccodineve.com/chalet-val-genova/",
+    "tel": "0465 501211"
    },
    {
     "nome": "Cascate Nardis",
     "gruppo": "valgenova",
     "tipo": "ristorante",
-    "km": 5.1
+    "km": 5.1,
+    "tel": "0465 501454",
+    "sito": "https://www.google.com/maps/search/?api=1&query=Ristorante+Cascate+Nardis+Carisolo"
    },
    {
     "nome": "Chalet da Gino",
     "gruppo": "valgenova",
     "tipo": "ristorante",
     "km": 5.5,
-    "sito": "https://www.chaletdagino.com/"
+    "sito": "https://www.chaletdagino.com/",
+    "tel": "0465 503032"
    },
    {
     "nome": "Fontana Bona",
     "gruppo": "valgenova",
     "tipo": "rifugio",
     "km": 7.8,
-    "sito": "https://rifugiofontanabona.it/"
+    "sito": "https://rifugiofontanabona.it/",
+    "tel": "348 137 9792"
    }
   ]
  },
