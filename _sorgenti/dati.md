@@ -58,7 +58,7 @@ Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334
 - D'inverno, nelle settimane di alta stagione, si soggiorna da sabato a sabato (7 notti) o da sabato a venerdi' (6 notti); nei periodi piu' tranquilli si possono prenotare anche soggiorni piu' brevi: le date disponibili si vedono nella prenotazione online.
 - Tassa di soggiorno: 2,00 euro a persona a notte, per un massimo di 10 notti; esenti i minori di 14 anni. Non e' compresa nei prezzi e si paga in hotel, in contanti (Manuela, 1/11/2026).
 - Prezzi: il prezzo migliore e' sul nostro sito (prenotazione diretta, senza intermediari). Sul sito NON si scrivono cifre di prezzo.
-- Codice DICEMBRE5 (Luca, 6/11/2026): 5% sui soggiorni 3-20/12 prenotati sul sito, riservato alle inserzioni; compare solo sulla pagina di dicembre (noindex). Sul sito solo dopo che il coupon esiste in Beddy.
+- Codice DICEMBRE5 (Luca, 6/11/2026): 5% sui soggiorni dopo il ponte dell'Immacolata e fino a Natale (date proposte 9-24/12, da confermare; NON vale per il ponte 4-8/12) prenotati sul sito, riservato alle inserzioni; compare solo sulla pagina di dicembre (noindex). Sul sito solo dopo che il coupon esiste in Beddy.
 - Condizioni di pagamento e cancellazione: dipendono dalla tariffa e sono indicate al momento della prenotazione. Non scrivere altre regole.
 - Trentino Guest Card: chi la desidera la chiede e gliela inviamo prima dell'arrivo.
 
