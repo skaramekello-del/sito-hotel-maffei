@@ -412,7 +412,8 @@
     "gruppo": "paese",
     "tipo": "osteria_pizzeria",
     "minuti_piedi": 8,
-    "sito": "https://www.google.com/maps/search/?api=1&query=Bagat+Via+San+Lorenzo+26+Pinzolo"
+    "sito": "https://www.google.com/maps/search/?api=1&query=Bagat+Via+San+Lorenzo+26+Pinzolo",
+    "tel": "349 277 0158"
    },
    {
     "nome": "Al Cardo",

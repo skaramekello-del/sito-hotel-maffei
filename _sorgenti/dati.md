@@ -96,5 +96,5 @@ Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334
 - Val Genova, d'estate: Chalet Val Genova (Carisolo, 2,4 km), Ristorante Cascate Nardis (5,1 km, aprile-1 novembre), Chalet da Gino (5,5 km, maggio-ottobre), Rifugio Fontana Bona (7,8 km, giugno-settembre).
 - Nessuno di Mildas, Rendenèr, La Parzif e Grual fa la pizza.
 - Dal 5/11/2026 (Manuela) Baita Magnabò e Chalet Val Genova stanno nel gruppo "In auto" (1,9 e 2,4 km in auto).
-- Telefoni sul sito: letti il 6/11/2026 sui siti ufficiali; Grual = centralino del Lefay; Cascate Nardis da Pagine Gialle (non ha un sito). Bagat senza telefono: le fonti danno tre numeri diversi. Bagat e Cascate Nardis hanno il link a Google Maps.
+- Telefoni sul sito: letti il 6/11/2026 sui siti ufficiali; Grual = centralino del Lefay; Cascate Nardis da Pagine Gialle (non ha un sito). Bagat: 349 277 0158 (dato da Luca il 7/11/2026). Bagat e Cascate Nardis hanno il link a Google Maps.
 - Riapertura per l'inverno 2026/27 di Al Cardo, La Parzif e Al Rocol confermata da Luca il 1/11/2026 (Google li segnava "chiuso temporaneamente": pausa d'autunno).
