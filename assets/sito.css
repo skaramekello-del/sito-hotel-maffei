@@ -169,7 +169,7 @@ a.score span{text-decoration:underline;text-underline-offset:3px}
 .gallery-track{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:var(--radius)}
 .gallery-track::-webkit-scrollbar{display:none}
 .gallery-track figure{margin:0;flex:0 0 100%;scroll-snap-align:start}
-.gallery-track img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--radius)}
+.gallery-track img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:var(--pos,50% 50%);border-radius:var(--radius)}
 .gallery-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
 .gallery-nav button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:50%;cursor:pointer}
 .gallery-nav button svg{width:20px;height:20px}

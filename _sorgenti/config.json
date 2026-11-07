@@ -173,7 +173,8 @@
    "foto": [
     41,
     49,
-    50
+    50,
+    46
    ]
   },
   {
@@ -193,7 +194,8 @@
    "foto": [
     75,
     83,
-    333
+    333,
+    331
    ]
   },
   {
@@ -213,7 +215,8 @@
    "foto": [
     324,
     109,
-    320
+    320,
+    322
    ]
   }
  ],
@@ -292,11 +295,7 @@
   "home_pinzolo": 9540,
   "home_dove": 9900,
   "camere_hero": 62,
-  "camere_bagni": [
-   331,
-   46,
-   502
-  ],
+  "camere_bagni": [],
   "camere_balconi": [
    54,
    55,
@@ -346,6 +345,19 @@
   ],
   "elenco": [
    {
+    "nome": "La Tavola alle Funivie",
+    "gruppo": "paese",
+    "tipo": "ristorante",
+    "minuti_piedi": 1,
+    "sito": "https://www.hotelfuniviepinzolo.it/ristorante-la-tavola-alle-funivie",
+    "nota": {
+     "it": "davanti alla cabinovia",
+     "en": "opposite the gondola",
+     "pl": "naprzeciwko gondoli"
+    },
+    "tel": "0465 504019"
+   },
+   {
     "nome": "Al Rocol",
     "gruppo": "paese",
     "tipo": "ristorante",
@@ -373,6 +385,19 @@
      "pl": "https://offers.laparzif.it/en/"
     },
     "tel": "0465 503902"
+   },
+   {
+    "nome": "Lume",
+    "gruppo": "paese",
+    "tipo": "ristorante",
+    "minuti_piedi": 5,
+    "sito": "https://pinzolo.arialifehotel.com/ristorante-lume/",
+    "nota": {
+     "it": "cucina mediterranea",
+     "en": "Mediterranean cuisine",
+     "pl": "kuchnia śródziemnomorska"
+    },
+    "tel": "0465 882342"
    },
    {
     "nome": "Rendenèr Alpine Food",

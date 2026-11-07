@@ -447,7 +447,7 @@ def render_home(lang):
     return ''.join(out)
 
 def gallery(ns, lang, label):
-    figs = ''.join(f'<figure>{picture(n, lang, sizes="(min-width: 860px) 620px, 100vw")}</figure>' for n in ns)
+    figs = ''.join(f'<figure{" style=" + chr(34) + "--pos:" + F[n]["pos"] + chr(34) if F[n].get("pos") else ""}>{picture(n, lang, sizes="(min-width: 860px) 620px, 100vw")}</figure>' for n in ns)
     nav = f'<div class="gallery-nav"><button type="button" data-prev aria-label="{e(ui(lang, "gallery_prev"))}">{ICON["prev"]}</button><span class="gallery-count" aria-live="polite">1 / {len(ns)}</span><button type="button" data-next aria-label="{e(ui(lang, "gallery_next"))}">{ICON["next"]}</button></div>'
     return f'<div class="gallery" role="group" aria-label="{e(label)}"><div class="gallery-track" tabindex="0">{figs}</div>{nav}</div>'
 
