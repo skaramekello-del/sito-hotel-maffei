@@ -67,6 +67,7 @@ Nota sulla Familiare (Luca, 1/11/2026): il letto singolo in ferro della foto 334
 - Skipass online: www.ski.it
 
 ## Contatti
+- Regola (Luca, 7/11/2026): sul sito ogni numero di telefono si scrive con il prefisso internazionale +39, in tutte le lingue, anche quelli dei ristoranti.
 - Cellulare e WhatsApp: +39 366 480 5227
 - Telefono fisso: +39 0465 503587
 - Email: info@hotelmaffeipinzolo.it

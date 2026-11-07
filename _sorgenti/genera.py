@@ -526,7 +526,7 @@ def render_ristoranti(lang, s):
                 km = f'{r["km"]:g}'
                 det.append(nb(ui(lang, 'km').replace('{n}', km if lang == 'en' else km.replace('.', ','))))
             tel = r.get('tel', '')
-            num = f' · <a class="nowrap" href="tel:+39{tel.replace(" ", "")}">{e(tel if lang == "it" else "+39 " + tel)}</a>' if tel else ''
+            num = f' · <a class="nowrap" href="tel:+39{tel.replace(" ", "")}">{e("+39 " + tel)}</a>' if tel else ''
             lis += f'<li><strong>{nome}</strong><span>{e(" · ".join(x for x in det if x))}{num}</span></li>'
         if lis:
             blocchi += f'<div><h3>{e(s["gruppi"][g])}</h3><ul class="items">{lis}</ul></div>'
